@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الثامنة: مجال الرؤية وتمارين توسيعه، طريقة التبويب، وطريقة الدمج 👁️🗂️🧩 | كورس الذاكرة الخارقة</title>
+  
+  <!-- Google Fonts: Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            amiri: ['Amiri', 'serif'],
+            cairo: ['Amiri', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes sweepHorizontal {
+      0%, 100% { transform: translateX(-40%); }
+      50% { transform: translateX(40%); }
+    }
+    @keyframes sweepVertical {
+      0%, 100% { transform: translateY(-40%); }
+      50% { transform: translateY(40%); }
+    }
+    .anim-sweep-h {
+      animation: sweepHorizontal 2.5s ease-in-out infinite;
+    }
+    .anim-sweep-v {
+      animation: sweepVertical 2.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-cairo antialiased selection:bg-purple-200 selection:text-purple-900 pb-24">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/90 border-b border-purple-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      
+      <!-- Back to Home & Title -->
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2.5 rounded-xl bg-purple-50 text-purple-700 hover:bg-purple-100 transition flex items-center gap-1.5 text-sm font-black" title="الرجوع للرئيسية">
+          <span>→</span>
+          <span class="hidden sm:inline">الرئيسية</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200 hidden sm:block"></div>
+        <div>
+          <span class="text-xs font-bold text-indigo-600 uppercase tracking-wide">المحاضرة 08 من 14</span>
+          <h1 class="text-base sm:text-lg font-black text-slate-900 line-clamp-1">مجال الرؤية، طريقة التبويب، وطريقة الدمج 👁️🗂️🧩</h1>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="#quiz-section" class="px-3.5 py-2 rounded-xl bg-purple-50 text-purple-700 hover:bg-purple-100 text-xs font-black transition flex items-center gap-1.5">
+          <span>🎯 التحدي النهائي</span>
+        </a>
+        <a href="lecture7.html" class="p-2.5 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 transition text-xs font-bold" title="المحاضرة السابقة">
+          <span>← المحاضرة 7</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 space-y-12">
+
+    <!-- Top Cheerful Lecture Hero Card -->
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-teal-700 via-indigo-700 to-purple-800 text-white p-7 sm:p-10 shadow-xl shadow-indigo-700/15">
+      <div class="absolute -top-12 -right-12 w-56 h-56 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 space-y-4 max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs font-black">
+          <span>🌟 المحاضرة الثامنة</span>
+          <span>•</span>
+          <span>المحاور الثلاثة الأساسية للمحاضرة</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black leading-tight">
+          المحاضرة الثامنة: مجال الرؤية وتمارين توسيعه، طريقة التبويب، وطريقة الدمج 👁️🗂️🧩
+        </h2>
+
+        <p class="text-indigo-100 text-sm sm:text-base leading-relaxed">
+          نواصل رحلتنا في استكشاف أقوى استراتيجيات تنشيط الذاكرة وتسريع الحفظ؛ حيث نتعرف في هذه المحاضرة على ثلاث ركائز ذهنية وبصرية حاسمة: <strong>مجال الرؤية وتمارين توسيعه الأربعة</strong>، و<strong>طريقة التبويب (التصنيف) وقواعدها</strong>، و<strong>طريقة الدمج وسر حفظ أوائل الأرباع وتسميع المشايخ</strong>.
+        </p>
+
+        <!-- 3 Main Pillars Pills -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
+          <div class="bg-white/15 backdrop-blur-md p-2.5 rounded-2xl border border-white/20 text-center text-xs font-black">
+            <span>👁️ 1. مجال الرؤية وتمارين توسيعه</span>
+          </div>
+          <div class="bg-white/15 backdrop-blur-md p-2.5 rounded-2xl border border-white/20 text-center text-xs font-black">
+            <span>🗂️ 2. طريقة التبويب (التصنيف)</span>
+          </div>
+          <div class="bg-white/15 backdrop-blur-md p-2.5 rounded-2xl border border-white/20 text-center text-xs font-black">
+            <span>🧩 3. طريقة الدمج في القرآن</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المحور الأول: مجال الرؤية وتمارينه الأربعة لتوسيعه -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-8">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl font-black">1</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900">مجال الرؤية وتمارين على توسيع مجال الرؤية 👁️📐</h3>
+            <p class="text-xs text-slate-500 font-semibold">ما هو مجال الرؤية؟ ما أسباب ضموره؟ وكيف يُمكّننا من القراءة السريعة والتقاط الآيات؟</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-black">الركيزة البصرية</span>
+      </div>
+
+      <!-- مفهوم مجال الرؤية وتأثيره في القراءة والحفظ -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+        <div class="md:col-span-7 space-y-4 text-sm leading-relaxed text-slate-700">
+          <h4 class="text-base font-black text-teal-950 flex items-center gap-2">
+            <span>🔍 ما هو مجال الرؤية (Visual Field)؟</span>
+          </h4>
+          <p>
+            <strong>مجال الرؤية</strong> هو المساحة والمحيط الذي تستطيع العين إدراكه واستيعابه دون تحريك الرأس؛ أي عندما تنظر إلى نقطة أو كلمة معينة في الأمام، ما هو المدى الذي تراه حولها؟ كم ترى فوقها؟ وكم ترى تحتها؟ وكم ترى من يمينها ومن يسارها؟
+          </p>
+          <div class="p-4 bg-teal-50 rounded-2xl border border-teal-200 text-teal-950 text-xs font-semibold leading-relaxed space-y-1.5">
+            <strong class="block text-sm text-teal-900">⚡ لماذا يُمثل مجال الرؤية فارقاً جوهرياً في حفظ القرآن؟</strong>
+            <p>
+              العين العادية تقرأ كلمة بكلمة بحركة ارتدادية ضيقة. أما عندما يتسع مجال رؤيتك، تصبح قادراً على التقاط <strong>جملة كاملة أو نصف سطر بلمحة بصرية واحدة</strong>، وهذا هو حجر الأساس في مهارة <strong>القراءة السريعة (Speed Reading)</strong> التي سنتوسع فيها في المحاضرات القادمة!
+            </p>
+          </div>
+        </div>
+
+        <!-- أسباب تأثر مجال الرؤية -->
+        <div class="md:col-span-5 p-5 bg-gradient-to-br from-slate-50 to-indigo-50/50 rounded-2xl border border-slate-200 space-y-3">
+          <h5 class="text-xs font-black text-indigo-950 flex items-center gap-2">
+            <span>🏫 ما الذي قد يؤثر سلباً على مجال الرؤية؟</span>
+          </h5>
+          <p class="text-xs text-slate-600 leading-relaxed font-medium">
+            مجال الرؤية يتأثر بالبيئة والعادات اليومية دون أن نشعر!
+          </p>
+          <div class="p-3 bg-white rounded-xl border border-indigo-100 text-xs text-slate-700 space-y-1">
+            <strong class="text-indigo-900 block">مثال الفصل الدراسي:</strong>
+            <p class="leading-relaxed">
+              إذا كنت في الصغر تجلس في الفصل بجوار الحائط دائماً (مثلاً الحائط على يمينك)، فإن العين لم تكن تجد مدى بصرياً مفتوحاً من جهة اليمين، مما يؤدي بمرور السنوات إلى ضعف وضمور نسبي في مجال الرؤية الجانبي الأيمن مقارنة بالجهة الأخرى.
+            </p>
+          </div>
+          <span class="text-[11px] text-teal-700 font-bold block">
+            ✨ الخبر الرائع: مثلما تضمر عضلات العين بالإهمال، يمكن إعادة توسيعها وتقويتها بتمارين التمدد البصري!
+          </span>
+        </div>
+      </div>
+
+      <!-- التمارين الأربعة لتوسيع مجال الرؤية (كل تمرين دقيقتين) -->
+      <div class="space-y-4 pt-4 border-t border-slate-100">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h4 class="text-lg font-black text-slate-900 flex items-center gap-2">
+            <span>🏋️‍♂️ التمارين الأربعة لتوسيع مجال الرؤية (إجمالي 8 دقائق):</span>
+          </h4>
+          <span class="text-xs font-bold px-3 py-1 bg-amber-100 text-amber-800 rounded-full">
+            ⏱️ كل تمرين: دقيقتان كاملتان
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+          
+          <!-- Exercise 1: Horizontal Index Fingers -->
+          <div class="p-5 bg-white rounded-2xl border-2 border-teal-100 hover:border-teal-300 transition-all shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-teal-600 text-white flex items-center justify-center font-black text-sm">1</span>
+              <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 rounded-full font-bold text-xs">أفقي • السبابتين</span>
+            </div>
+            <h5 class="font-black text-teal-950 text-sm">تمرين السبابتين الأفقي (مستوى العينين) 👈👉</h5>
+            <p class="text-slate-600 leading-relaxed font-medium">
+              ضع سبابة اليد اليمنى وسبابة اليسرى أمام عينيك مباشرة. حرّك نظرك بينهما، ثم ابدأ في إبعاد اليدين وتوسيعهما أفقياً يميناً ويساراً بالتدريج، مع استمرار حركة العينين بينهما، حتى تصل لأقصى زاوية تستطيع عيناك رؤيتها على الجانبين.
+            </p>
+            <div class="p-2.5 bg-teal-50 rounded-xl text-teal-900 font-bold text-xs">
+              🎯 استمر في تحريك العينين يميناً ويساراً لأقصى مدى لمدة <strong>دقيقتين كاملتين</strong> دون تحريك رأسك.
+            </div>
+          </div>
+
+          <!-- Exercise 2: Vertical Index Fingers -->
+          <div class="p-5 bg-white rounded-2xl border-2 border-indigo-100 hover:border-indigo-300 transition-all shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black text-sm">2</span>
+              <span class="px-2.5 py-0.5 bg-indigo-50 text-indigo-700 rounded-full font-bold text-xs">رأسي • السبابتين</span>
+            </div>
+            <h5 class="font-black text-indigo-950 text-sm">تمرين السبابتين الرأسي (أعلى وأسفل) 👆👇</h5>
+            <p class="text-slate-600 leading-relaxed font-medium">
+              ضع سبابة للأعلى وسبابة للأسفل أمام منتصف وجهك. حرّك عينيك بينهما للأعلى والأسفل، ثم ابدأ في توسيع المسافة رأسياً ببطء، بحيث تصعد يد لأعلى وتنزل يد لأسفل، حتى تصل لنقطة يا دوبك ترى فيها حافة إصبعك.
+            </p>
+            <div class="p-2.5 bg-indigo-50 rounded-xl text-indigo-900 font-bold text-xs">
+              🎯 استمر في الصعود والنزول بالعينين بين الإصبعين لمدة <strong>دقيقتين كاملتين</strong> مع تثبيت الرأس تماماً.
+            </div>
+          </div>
+
+          <!-- Exercise 3: Horizontal Spread Moving Fingers -->
+          <div class="p-5 bg-white rounded-2xl border-2 border-purple-100 hover:border-purple-300 transition-all shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-purple-600 text-white flex items-center justify-center font-black text-sm">3</span>
+              <span class="px-2.5 py-0.5 bg-purple-50 text-purple-700 rounded-full font-bold text-xs">أفقي • أصابع متحركة</span>
+            </div>
+            <h5 class="font-black text-purple-950 text-sm">تمرين الأصابع المفرودة المتحركة أفقياً 🖐️🖐️</h5>
+            <p class="text-slate-600 leading-relaxed font-medium">
+              افرد جميع أصابع اليدين، وحرّك الأصابع حركة سريعة ومتتابعة (أصابع رايحة وأصابع جاية كأنك تعزف بالهواء). ضع يديك بجانبك ووسّع المسافة أفقياً يميناً وشمالاً حتى أقصى نقطة طرفية، وحرّك عينيك بين حركة الأصابع.
+            </p>
+            <div class="p-2.5 bg-purple-50 rounded-xl text-purple-900 font-bold text-xs">
+              🎯 الاستمرار بالعينين في التتبع الأفقي لأقصى نقطة محيطية لمدة <strong>دقيقتين كاملتين</strong>.
+            </div>
+          </div>
+
+          <!-- Exercise 4: Vertical Spread Moving Fingers -->
+          <div class="p-5 bg-white rounded-2xl border-2 border-amber-100 hover:border-amber-300 transition-all shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-amber-600 text-white flex items-center justify-center font-black text-sm">4</span>
+              <span class="px-2.5 py-0.5 bg-amber-50 text-amber-800 rounded-full font-bold text-xs">رأسي • أصابع متحركة</span>
+            </div>
+            <h5 class="font-black text-amber-950 text-sm">تمرين الأصابع المفرودة المتحركة رأسياً 🖐️↕️</h5>
+            <p class="text-slate-600 leading-relaxed font-medium">
+              نفس حركة الأصابع المفرودة السريعة والتموجية، ولكن بتطبيقها على المستوى الرأسي (يد تتحرك لأعلى ويد تتحرك لأسفل). وسّع المدى الرأسي لأقصى حد تراه عيناك في المحيط العلوي والسفلي، وحرّك عينيك صعوداً وهبوطاً.
+            </p>
+            <div class="p-2.5 bg-amber-50 rounded-xl text-amber-900 font-bold text-xs">
+              🎯 الاستمرار في التتبع الرأسي لحركة الأصابع لمدة <strong>دقيقتين كاملتين</strong>.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive 2-Minute Timer for Vision Exercises -->
+        <div class="p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white shadow-lg space-y-4">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-bold text-teal-300 uppercase tracking-widest block">مؤقت تفاعلي لتطبيق التمارين:</span>
+              <h5 class="text-lg font-black">مؤقت الدقيقتين للتمارين البصرية ⏱️</h5>
+              <p class="text-xs text-slate-300">اضغط للبدء وسيقوم المؤقت بحساب الـ 120 ثانية لتطبيق أي من التمارين الأربعة!</p>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="text-4xl font-black font-mono text-teal-400 bg-slate-800/80 px-5 py-2 rounded-2xl border border-slate-700" id="timer-display">
+                02:00
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <button onclick="startVisionTimer()" id="timer-start-btn" class="px-4 py-2 bg-teal-500 hover:bg-teal-400 text-slate-950 font-black text-xs rounded-xl shadow transition">
+                  بدء المؤقت ▶️
+                </button>
+                <button onclick="resetVisionTimer()" class="px-4 py-1.5 bg-slate-700 hover:bg-slate-600 text-white font-bold text-xs rounded-xl transition">
+                  إعادة ضبط 🔄
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- المحور الثاني: طريقة التبويب أو التصنيف -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-8">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-black">2</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900">طريقة التبويب أو التصنيف 🗂️🍎</h3>
+            <p class="text-xs text-slate-500 font-semibold">مفهوم التبويب، شروطه وقواعده، وتطبيقه في الحياة اليومية والقرآن الكريم</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-black">الركيزة التصنيفية</span>
+      </div>
+
+      <!-- الشرح النظري ومثال المشتريات -->
+      <div class="space-y-4">
+        <p class="text-sm text-slate-700 leading-relaxed font-semibold">
+          <strong>التبويب يعني التصنيف</strong>. هو تجميع العناصر المتشابهة تحت عنوان واحد أو فئة جامعة، بحيث يتعامل الدماغ مع 3 فئات كبرى بدلاً من أن يرهق نفسه في تذكر 10 عناصر متناثرة.
+        </p>
+
+        <!-- مثال قائمة المشتريات -->
+        <div class="p-5 bg-gradient-to-br from-blue-50/70 to-indigo-50/70 rounded-2xl border border-blue-200 space-y-4">
+          <div class="flex items-center gap-2 text-blue-950 font-black text-sm">
+            <span>🛒 مثال واقعي: قائمة مشتريات السوق العشوائية:</span>
+          </div>
+          
+          <div class="p-3 bg-white rounded-xl border border-blue-100 text-xs text-slate-700 font-bold flex flex-wrap items-center gap-2">
+            <span class="text-slate-400">القائمة العشوائية:</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg">مكرونة</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg">صابون إيد</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg">طماطم</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg">صابون مواعين</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg">خيار</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg">رز</span>
+          </div>
+
+          <p class="text-xs text-slate-600 font-medium">
+            لو ذهبت إلى السوق بهذه الطريقة ستنسى نصف الأغراض حتماً. لكن بمجرد تطبيق <strong>التبويب (التصنيف حسب المكان والفئة)</strong>:
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-bold">
+            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 text-emerald-950 space-y-1 text-center">
+              <span class="text-base block">🥬 محـل الخضـار</span>
+              <p class="text-emerald-800">طماطم + خيار</p>
+            </div>
+            <div class="p-3 bg-cyan-50 rounded-xl border border-cyan-200 text-cyan-950 space-y-1 text-center">
+              <span class="text-base block">🧼 المنظفـات</span>
+              <p class="text-cyan-800">صابون إيد + صابون مواعين</p>
+            </div>
+            <div class="p-3 bg-amber-50 rounded-xl border border-amber-200 text-amber-950 space-y-1 text-center">
+              <span class="text-base block">🌾 البـقـال</span>
+              <p class="text-amber-800">مكرونة + رز</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- الشروط والقواعد الصارمة لطريقة التبويب -->
+        <div class="p-5 bg-rose-50 rounded-2xl border-2 border-rose-200 space-y-3">
+          <div class="flex items-center gap-2 text-rose-950 font-black text-sm">
+            <span>⚠️ قاعدة ذهبية واستثناء هام: متى تمتنع طريقة التبويب؟</span>
+          </div>
+          <div class="space-y-2 text-xs sm:text-sm text-rose-900 leading-relaxed font-semibold">
+            <div class="flex items-start gap-2">
+              <span class="text-rose-600 font-black text-base">•</span>
+              <p>
+                <strong>1. لا يُشترط فيها الترتيب إطلاقاً:</strong> طريقة التبويب تصلح عندما لا يكون الترتيب مهماً (أي لا يهم إن اشتريت المكرونة قبل الصابون أو العكس). أما إذا كان هناك تسلسل حتمي إجباري محدد فيجب استخدام طرق أخرى (كالقصة أو الرابط اللفظي).
+              </p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-rose-600 font-black text-base">•</span>
+              <p>
+                <strong>2. اشتراط وجود أوجه تشابه أو تصنيف واضح:</strong> لا يمكن تصنيف أشياء عشوائية لا رابط بينها إطلاقاً في سلة واحدة، بل يجب أن يكون هناك رابط منطقي جامع (مثل الخضروات، المنظفات، البقالة).
+              </p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-rose-600 font-black text-base">•</span>
+              <p>
+                <strong>3. تطبيقها في القرآن الكريم:</strong> يتجلى التبويب بوضوح في <strong>الرابط الموضوعي</strong>؛ حيث نصنف آيات السورة إلى أبواب موضوعية (مثلاً: تصنيف آيات صفات المتقين معاً، وتصنيف آيات قصص الأنبياء معاً، وتصنيف أحكام المعاملات معاً).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- اللعبة التفاعلية لتصنيف الكلمات (Interactive Categorization Game) -->
+        <div class="p-6 rounded-3xl bg-slate-900 text-white space-y-5 shadow-xl">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <div>
+              <span class="text-xs font-bold text-yellow-400 uppercase tracking-widest block">لعبة عقلية تفاعلية:</span>
+              <h4 class="text-base sm:text-lg font-black">تحدي فرز وتصنيف الكلمات في أبوابها الصحيحة 🎮✨</h4>
+            </div>
+            <button onclick="resetCategorizationGame()" class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl border border-slate-700 transition">
+              إعادة تعيين اللعبة 🔄
+            </button>
+          </div>
+
+          <p class="text-xs text-slate-300">
+            انقر على الكلمة من القائمة التالية ثم اختر التصنيف المناسب لها لتسكينها في مكانها الصحيح:
+          </p>
+
+          <!-- Word Pool -->
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700 flex flex-wrap gap-2 justify-center" id="words-pool">
+            <button onclick="selectWordToCategory(this, 'تفاح', 'فواكه')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">🍎 تفاح</button>
+            <button onclick="selectWordToCategory(this, 'شامبو', 'منظفات')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">🧴 شامبو</button>
+            <button onclick="selectWordToCategory(this, 'مسطرة', 'أدوات')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">📏 مسطرة</button>
+            <button onclick="selectWordToCategory(this, 'موز', 'فواكه')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">🍌 موز</button>
+            <button onclick="selectWordToCategory(this, 'معجون أسنان', 'منظفات')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">🪥 معجون أسنان</button>
+            <button onclick="selectWordToCategory(this, 'براية', 'أدوات')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">✏️ براية</button>
+            <button onclick="selectWordToCategory(this, 'برتقال', 'فواكه')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">🍊 برتقال</button>
+            <button onclick="selectWordToCategory(this, 'مسحوق غسيل', 'منظفات')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">🧼 مسحوق غسيل</button>
+            <button onclick="selectWordToCategory(this, 'دفتر ملاحظات', 'أدوات')" class="cat-word-btn px-3.5 py-2 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow">📓 دفتر ملاحظات</button>
+          </div>
+
+          <!-- The 3 Target Category Boxes -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <!-- Category 1 -->
+            <div class="p-4 bg-slate-800 rounded-2xl border-2 border-emerald-500/40 space-y-2">
+              <div class="flex items-center justify-between text-emerald-400 font-black text-xs pb-1 border-b border-slate-700">
+                <span>🍎 فئة الفواكه</span>
+                <span id="cat-count-fawakih" class="bg-emerald-950 px-2 py-0.5 rounded text-[11px]">0/3</span>
+              </div>
+              <div id="box-fawakih" class="min-h-[70px] flex flex-wrap gap-1.5 p-1"></div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="p-4 bg-slate-800 rounded-2xl border-2 border-cyan-500/40 space-y-2">
+              <div class="flex items-center justify-between text-cyan-400 font-black text-xs pb-1 border-b border-slate-700">
+                <span>🧴 فئة المنظفات</span>
+                <span id="cat-count-monazifat" class="bg-cyan-950 px-2 py-0.5 rounded text-[11px]">0/3</span>
+              </div>
+              <div id="box-monazifat" class="min-h-[70px] flex flex-wrap gap-1.5 p-1"></div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="p-4 bg-slate-800 rounded-2xl border-2 border-amber-500/40 space-y-2">
+              <div class="flex items-center justify-between text-amber-400 font-black text-xs pb-1 border-b border-slate-700">
+                <span>📏 فئة الأدوات المدرسية</span>
+                <span id="cat-count-adawat" class="bg-amber-950 px-2 py-0.5 rounded text-[11px]">0/3</span>
+              </div>
+              <div id="box-adawat" class="min-h-[70px] flex flex-wrap gap-1.5 p-1"></div>
+            </div>
+          </div>
+
+          <!-- Victory Feedback -->
+          <div id="cat-game-success" class="hidden p-4 rounded-xl bg-emerald-500 text-slate-950 font-black text-center text-xs sm:text-sm animate-bounce">
+            🎉 مبروك! قمت بتصنيف الـ 9 كلمات ببراعة تحت 3 أبواب جامعة، وهكذا يتعامل العقل الخارق مع الكتل المصنفة!
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- المحور الثالث: طريقة الدمج وتطبيقها في القرآن الكريم -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-8">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl font-black">3</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900">طريقة الدمج في الحفظ وتطبيقها في القرآن 🧩📖</h3>
+            <p class="text-xs text-slate-500 font-semibold">دمج أوائل الكلمات والأرباع، وحل ثغرة التسميع الشهيرة عند نهايات الأرباع والصفحات</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-black">الركيزة التركيبية</span>
+      </div>
+
+      <div class="space-y-6">
+        <p class="text-sm text-slate-700 leading-relaxed font-semibold">
+          <strong>طريقة الدمج (Acronym / Sentence Integration):</strong> هي دمج الحروف الأولى أو الكلمات الأولى من مجموعة عناصر لتكوين جملة واحدة أو عبارة متماسكة، بدلاً من حفظ معلومات متفرقة يصعب استدعاؤها.
+        </p>
+
+        <!-- أمثلة تاريخية لا تزال حية في أذهاننا -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- مثال الحروف القمرية -->
+          <div class="p-5 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl border border-amber-200 space-y-3">
+            <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
+              <span>🌙 1. حفظ الحروف القمرية (في اللغة والتجويد):</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed font-medium">
+              بدلاً من حفظ 14 حرفاً قمرياً عشوائياً، دُمجت الحروف في جمل شهيرة نتذكرها جميعاً منذ الصغر:
+            </p>
+            <div class="p-3 bg-white rounded-xl border border-amber-300 text-center font-black text-amber-900 text-sm shadow-sm">
+              «كغبي خَمّه جحا فَوَاق» <br>
+              <span class="text-xs font-normal text-slate-500">أو الجملة التجويدية المعروفة: «ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ»</span>
+            </div>
+            <p class="text-[11px] text-amber-800 font-bold">
+              هذا الدمج الذكي جعل الحروف الـ 14 حاضرة في الذاكرة الدائمة لسنوات بلا نسيان.
+            </p>
+          </div>
+
+          <!-- مثال الرياضيات وحساب المثلثات -->
+          <div class="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-200 space-y-3">
+            <div class="flex items-center gap-2 text-blue-900 font-black text-sm">
+              <span>📐 2. إشارات الدوال المثلثية في الرياضيات:</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed font-medium">
+              لتحديد إشارة النسب المثلثية الموجبة في الأرباع الأربعة للمستوى الإحداثي، دمجنا أوائلها في جملة طريفة:
+            </p>
+            <div class="p-3 bg-white rounded-xl border border-blue-300 text-center font-black text-blue-900 text-sm shadow-sm">
+              «كُـلّ جَبّـار ظَالِـم جَاتُـه دَاهْيَـة»
+            </div>
+            <div class="grid grid-cols-4 gap-1 text-[11px] text-center font-bold text-slate-700 pt-1">
+              <span class="bg-blue-100/70 p-1 rounded">الربع 1: كُلّ (موجب)</span>
+              <span class="bg-blue-100/70 p-1 rounded">الربع 2: جا (Sin)</span>
+              <span class="bg-blue-100/70 p-1 rounded">الربع 3: ظا (Tan)</span>
+              <span class="bg-blue-100/70 p-1 rounded">الربع 4: جتا (Cos)</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- التطبيق القرآني وأخلاقيات صياغة جملة الدمج -->
+        <div class="p-5 bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50 rounded-2xl border border-purple-200 space-y-4">
+          <h4 class="font-black text-purple-950 text-base flex items-center gap-2">
+            <span>📖 كيف نطبق طريقة الدمج في القرآن الكريم؟</span>
+          </h4>
+          
+          <div class="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold">
+            <p>
+              نطبق الدمج على <strong>أوائل الآيات</strong> أو <strong>أوائل الأرباع</strong>؛ لنكوّن خريطة طريق متسلسلة للأرباع داخل الحزب الواحد.
+            </p>
+            
+            <div class="p-4 bg-white rounded-2xl border border-purple-300 text-purple-950 space-y-2">
+              <strong class="text-sm block text-purple-900">⚖️ شرط أدبي وأخلاقي صارم في القرآن الكريم:</strong>
+              <p class="leading-relaxed">
+                يجب عند صياغة جملة الدمج أن تكون <strong>جملة مفيدة، صالحة، ومهذبة</strong>، وألا نكوّن جملة ركيكة أو غير لائقة، ولا نستخدم أي كلام سلبي أو منافٍ حتى لو كان القصد هو مجرد مساعدة أنفسنا في الحفظ؛ فكلام الله له قدسيته وجلاله.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تطبيق عملي على الحزب الأول من سورة البقرة -->
+        <div class="space-y-4 pt-2">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <h4 class="text-base font-black text-slate-900 flex items-center gap-2">
+              <span>🌟 تطبيق عملي: دمج أوائل أرباع الحزب الأول من القرآن الكريم</span>
+            </h4>
+            <span class="text-xs px-3 py-1 bg-indigo-50 text-indigo-700 font-bold rounded-full">4 أرباع متتابعة</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs font-bold">
+            <!-- ربع 1 -->
+            <div class="p-4 bg-white rounded-2xl border border-indigo-100 shadow-sm space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-[11px]">الربع 1</span>
+                <span>الفاتحة</span>
+              </div>
+              <p class="text-slate-800 text-sm font-black">
+                ﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ﴾
+              </p>
+              <span class="text-indigo-600 block text-xs">مفتاح الدمج: [الفاتحة]</span>
+            </div>
+
+            <!-- ربع 2 -->
+            <div class="p-4 bg-white rounded-2xl border border-indigo-100 shadow-sm space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-[11px]">الربع 2</span>
+                <span>البقرة 26</span>
+              </div>
+              <p class="text-slate-800 text-sm font-black">
+                ﴿إِنَّ اللَّهَ لَا يَسْتَحْيِي أَن يَضْرِبَ مَثَلًا...﴾
+              </p>
+              <span class="text-indigo-600 block text-xs">مفتاح الدمج: [إنَّ الله]</span>
+            </div>
+
+            <!-- ربع 3 -->
+            <div class="p-4 bg-white rounded-2xl border border-indigo-100 shadow-sm space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-[11px]">الربع 3</span>
+                <span>البقرة 44</span>
+              </div>
+              <p class="text-slate-800 text-sm font-black">
+                ﴿أَتَأْمُرُونَ النَّاسَ بِالْبِرِّ وَتَنسَوْنَ أَنفُسَكُمْ...﴾
+              </p>
+              <span class="text-indigo-600 block text-xs">مفتاح الدمج: [أتأمرون بالبر]</span>
+            </div>
+
+            <!-- ربع 4 -->
+            <div class="p-4 bg-white rounded-2xl border border-indigo-100 shadow-sm space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-[11px]">الربع 4</span>
+                <span>البقرة 60</span>
+              </div>
+              <p class="text-slate-800 text-sm font-black">
+                ﴿وَإِذِ اسْتَسْقَىٰ مُوسَىٰ لِقَوْمِهِ...﴾
+              </p>
+              <span class="text-indigo-600 block text-xs">مفتاح الدمج: [استسقى موسى]</span>
+            </div>
+          </div>
+
+          <!-- جملة الدمج المبتكرة الرابطة -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white text-center space-y-2 shadow-md">
+            <span class="text-xs uppercase tracking-widest text-emerald-200 font-bold block">الجملة المفيدة المدمجة لأوائل الأرباع الأربعة:</span>
+            <div class="text-lg sm:text-xl font-black">
+              «فَاتِحَـةُ الخَيْـرِ.. إِنْ أَمَـرْتَ بِالبِـرِّ اسْتَسْقَـى اللهُ لَكَ الرَّحْمَـة»
+            </div>
+            <p class="text-xs text-emerald-100 font-medium">
+              (فاتحة ➜ إنَّ ➜ أتأمرون ➜ استسقى) — أربعة أرباع كاملة انطبعت في ذهنك في عبارة قرآنية نورانية واحدة!
+            </p>
+          </div>
+        </div>
+
+        <!-- سر أسئلة المشايخ عند التسميع وحل الثغرة -->
+        <div class="p-5 bg-amber-50 rounded-2xl border border-amber-300 space-y-3">
+          <div class="flex items-center gap-2 text-amber-950 font-black text-sm">
+            <span>💡 سر اختبارات المشايخ: لماذا يسأل الشيخ عن آخر آية في الربع أو الصفحة؟</span>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold space-y-2">
+            <p>
+              معظم الحفاظ يقسمون حفظهم إما <strong>صفحة صفحة</strong> أو <strong>ربعاً ربعاً</strong>. المشكلة العصبية الشائعة هي أن الطالب يتقن الصفحة إلى نهايتها، ولكنه عند آخر كلمة ينسى تماماً ما هو مطلع الصفحة التالية! أو يحفظ الربع حتى ختامه وينسى مطلع الربع الذي يليه.
+            </p>
+            <p>
+              لذلك، المشايخ المتقنون يتعمدون دائماً سؤال الحافظ عن <strong>آخر آية في الصفحة أو آخر آيتين في الربع</strong> ليروا: هل الطالب مربوط الذهن بالانتقال إلى الآية التالية، أم أن حفظه ينقطع عند الحافة؟!
+            </p>
+            <p class="text-amber-900 font-bold pt-1">
+              ✨ طريقة الدمج هي العلاج القاطع لهذه الثغرة؛ لأنك بمجرد أن تنتهي من الربع تستحضر فوراً الكلمة المدمجة للربع التالي فلا تتوقف أبداً!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- المحور الرابع: اختبار الاستيعاب والتحدي الفوري (5 أسئلة) -->
+    <section id="quiz-section" class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-xl font-black">4</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900">اختبار الاستيعاب السريع (5 أسئلة تفاعلية) 🎯🧠</h3>
+            <p class="text-xs text-slate-500 font-semibold">تحقق فوراً من إتقانك لمجال الرؤية، قواعد التبويب، وأسرار الدمج</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-black">تحدي فوري</span>
+      </div>
+
+      <div class="space-y-5" id="quiz-container">
+        
+        <!-- Question 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            1️⃣ ما هو المقصود بـ "مجال الرؤية" وما هي فائدته الرئيسية في القراءة والحفظ؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              أ) قوة الإبصار وحدة النظر 6/6 فقط
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="true" class="q1-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ب) المدى والمحيط الذي تراه العين حول النقطة، ويساعد في القراءة السريعة والتقاط أسطر الآيات ✨
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ج) القدرة على القراءة في الظلام الحالك
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              د) سرعة رمش العين في الدقيقة
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            2️⃣ كم عدد تمارين توسيع مجال الرؤية التي تعلمناها في هذه المحاضرة، وما المدة المخصصة لكل تمرين؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(2, this)" data-correct="true" class="q2-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              أ) 4 تمارين (أفقي ورأسي بالسبابتين، وأفقي ورأسي بالأصابع المفرودة) لمدة دقيقتين لكل تمرين ✨
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ب) تمرينان اثنان فقط لمدة 10 دقائق
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ج) تمرين واحد يطبق مرة في الأسبوع
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              د) 6 تمارين تطبق لمدة نصف ساعة متواصلة
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            3️⃣ ما هو الشرط الحاسم الذي يجب مراعاته عند استخدام طريقة "التبويب أو التصنيف"؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              أ) يشترط فيها الترتيب الصارم للعناصر
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="true" class="q3-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ب) لا يُشترط فيها الترتيب، مع اشتراط وجود أوجه تشابه أو علاقة تصنيفية بين العناصر ✨
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ج) يجب ألا يزيد عدد العناصر عن عنصرين فقط
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              د) تستخدم للأرقام فقط ولا تصلح للكلمات
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            4️⃣ عند تطبيق طريقة الدمج لصياغة جملة تساعد في حفظ أوائل الآيات القرآنية، ما هو الضابط الأساسي؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(4, this)" data-correct="true" class="q4-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              أ) أن تكون الجملة مفيدة وصالحة وخالية من أي كلام سلبي أو منافٍ تأدباً مع كتاب الله ✨
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ب) يجوز تأليف أي عبارة هزلية أو ساخرة للمساعدة في الحفظ
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ج) أن تتكون الجملة من كلمة واحدة فقط دائماً
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              د) كتابة أوائل الآيات بالترتيب المعكوس
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            5️⃣ لماذا يتعمد المشايخ سؤال الطالب عن آخر آية في الربع أو في الصفحة، وكيف يعالج الدمج ذلك؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              أ) لأن الآيات الأخيرة هي الأسهل دائماً في الحفظ
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ب) لاختبار سرعة التجويد والأحكام فقط
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="true" class="q5-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              ج) لأن أغلب الحفاظ ينسون مطلع الربع أو الصفحة التالية، والدمج يربطهم بسلاسة بلا انقطاع ✨
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 bg-white hover:bg-purple-50 border border-slate-200 rounded-xl text-right transition">
+              د) للتأكد من حفظ معاني المفردات اللغوية
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quiz Congrats Banner -->
+      <div id="quiz-congrats" class="hidden p-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-center space-y-2 shadow-lg animate-bounce">
+        <span class="text-3xl">🎉🏆</span>
+        <h4 class="font-black text-lg">مبارك! لقد استوعبت محاور المحاضرة الثامنة بنسبة 100%</h4>
+        <p class="text-xs text-emerald-100 font-semibold">بدمج مجال الرؤية الواسع مع التبويب والدمج، تصبح منظومة حفظك متكاملة وشديدة الحصانة!</p>
+      </div>
+    </section>
+
+    <!-- المحور الخامس: الواجب العملي التراكمي الشامل -->
+    <section class="bg-gradient-to-br from-indigo-50 via-teal-50 to-purple-50 rounded-3xl p-6 sm:p-8 border border-teal-200 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-teal-200/60 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-teal-700 text-white flex items-center justify-center text-xl font-black">5</span>
+          <div>
+            <h3 class="text-xl font-black text-teal-950">الواجب العملي التراكمي الشامل 📝🔥</h3>
+            <p class="text-xs text-slate-600 font-semibold">تجميع التمارين السابقة مع تكليف توسيع مجال الرؤية وحفظ الصفحة</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-teal-600 text-white rounded-full text-xs font-black">مهمة يومية</span>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- التمارين الخمسة التراكمية المستمرة -->
+        <div class="p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-200 space-y-3">
+          <span class="text-xs font-black text-teal-900 block">⭐ أولاً: مجمع التمارين التراكمية اليومية لتنشيط الدماغ:</span>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs text-slate-700 font-bold">
+            <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-100 flex items-center gap-2">
+              <span>🫁</span>
+              <span>1. تمرين التنفس التبادلي (4-4-4).</span>
+            </div>
+            <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-100 flex items-center gap-2">
+              <span>🎨</span>
+              <span>2. الرسم والتلوين باليدين معاً في آن واحد.</span>
+            </div>
+            <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-100 flex items-center gap-2">
+              <span>✍️</span>
+              <span>3. الكتابة باليدين معاً.</span>
+            </div>
+            <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-100 flex items-center gap-2">
+              <span>🔄</span>
+              <span>4. القراءة المعكوسة وعد الكلمات سطراً بسطر.</span>
+            </div>
+            <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-100 flex items-center gap-2 sm:col-span-2 lg:col-span-2">
+              <span>🖐️</span>
+              <span>5. تمارين الأصابع واليد الخمسة (التدليك، الإبهام والسبابة، الضغط المتبادل).</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- التكليفات الجديدة الخاصة بالمحاضرة الثامنة -->
+        <div class="p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-indigo-200 space-y-3">
+          <span class="text-xs font-black text-indigo-900 block">⭐ ثانياً: تكليفات المحاضرة الثامنة الجديدة:</span>
+
+          <div class="space-y-3 text-xs text-slate-700 leading-relaxed font-semibold">
+            <div class="p-3 bg-teal-50 rounded-xl border border-teal-300 space-y-1 text-teal-950 font-bold">
+              <strong class="block text-sm">👁️ 1. تطبيق تمارين توسيع مجال الرؤية الأربعة يومياً (8 دقائق):</strong>
+              <p>تطبيق تمارين السبابتين والأصابع المفرودة المتحركة (أفقياً ورأسياً) بمعدل دقيقتين لكل تمرين، للمساعدة في التقاط أسطر القرآن بالقراءة السريعة.</p>
+            </div>
+
+            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-300 space-y-1 text-emerald-950 font-bold">
+              <strong class="block text-sm">⏱️ 2. حفظ صفحة جديدة من القرآن وتدوين زمن الحفظ:</strong>
+              <p>شغّل المؤقت من لحظة بدء الحفظ البصري وسجّل بدقة بالدقيقة والثانية الزمن المستغرق حتى اكتمال التسميع التام، وقارن تحسن سرعتك بالمعادلة الذهبية.</p>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-indigo-200 space-y-1">
+              <strong class="text-indigo-950 block">3. تطبيق المراجعات الست وتجربة طريقة الدمج:</strong>
+              <p>مراجعة الصفحة وفق جدول المراجعات الست، مع تجربة دمج أوائل آيات الصفحة أو أوائل الأرباع لتفادي التوقف في التسميع.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- بطاقة تشجيعية ختامية -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-teal-700 via-indigo-700 to-purple-800 text-white text-center space-y-2 shadow-md">
+        <span class="text-2xl">🌟👁️</span>
+        <h4 class="font-black text-base">عيناك وعقلك الآن يتوسعان لآفاق بصرية وذهنية جديدة!</h4>
+        <p class="text-xs text-teal-100 font-medium">كل دقيقة تقضيها في تمرين مجال الرؤية والتبويب تصنع لك قفزة نوعية في القراءة السريعة وسلاسة التسميع.</p>
+      </div>
+
+    </section>
+
+    <!-- Navigation between lectures -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+      <a href="lecture7.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition shadow-sm">
+        <span>← المحاضرة السابقة (المحاضرة 7)</span>
+      </a>
+
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-purple-50 text-purple-700 font-black hover:bg-purple-100 transition">
+        <span>فهرس الكورس الرئيسي 📚</span>
+      </a>
+
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-100 text-amber-800 font-black text-sm">
+        <span>المحاضرة التاسعة (قريباً ⏳)</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive JavaScript for Lecture 8 -->
+  <script>
+    // 1. Vision Exercises Timer (120 seconds)
+    let visionTimerInterval = null;
+    let visionSecondsLeft = 120;
+    let isTimerRunning = false;
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(visionSecondsLeft / 60);
+      const secs = visionSecondsLeft % 60;
+      const display = document.getElementById('timer-display');
+      display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function startVisionTimer() {
+      const btn = document.getElementById('timer-start-btn');
+      if (isTimerRunning) {
+        // Pause
+        clearInterval(visionTimerInterval);
+        isTimerRunning = false;
+        btn.textContent = 'استئناف ▶️';
+        btn.classList.remove('bg-amber-400');
+        btn.classList.add('bg-teal-500');
+      } else {
+        // Start
+        if (visionSecondsLeft <= 0) visionSecondsLeft = 120;
+        isTimerRunning = true;
+        btn.textContent = 'إيقاف مؤقت ⏸️';
+        btn.classList.remove('bg-teal-500');
+        btn.classList.add('bg-amber-400');
+
+        visionTimerInterval = setInterval(() => {
+          visionSecondsLeft--;
+          updateTimerDisplay();
+
+          if (visionSecondsLeft <= 0) {
+            clearInterval(visionTimerInterval);
+            isTimerRunning = false;
+            btn.textContent = 'اكتمل التمرين! 🎉';
+            btn.classList.remove('bg-amber-400');
+            btn.classList.add('bg-emerald-400');
+            if (typeof confetti === 'function') {
+              confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
+            }
+          }
+        }, 1000);
+      }
+    }
+
+    function resetVisionTimer() {
+      clearInterval(visionTimerInterval);
+      isTimerRunning = false;
+      visionSecondsLeft = 120;
+      updateTimerDisplay();
+      const btn = document.getElementById('timer-start-btn');
+      btn.textContent = 'بدء المؤقت ▶️';
+      btn.classList.remove('bg-amber-400', 'bg-emerald-400');
+      btn.classList.add('bg-teal-500');
+    }
+
+    // 2. Interactive Categorization Game Logic
+    const categoryTargets = {
+      'تفاح': 'fawakih',
+      'موز': 'fawakih',
+      'برتقال': 'fawakih',
+      'شامبو': 'monazifat',
+      'معجون أسنان': 'monazifat',
+      'مسحوق غسيل': 'monazifat',
+      'مسطرة': 'adawat',
+      'براية': 'adawat',
+      'دفتر ملاحظات': 'adawat'
+    };
+
+    let sortedCount = 0;
+    const categoryCounts = {
+      'fawakih': 0,
+      'monazifat': 0,
+      'adawat': 0
+    };
+
+    function selectWordToCategory(btn, word, catType) {
+      if (btn.disabled) return;
+
+      const targetBoxId = categoryTargets[word];
+      const targetBox = document.getElementById(`box-${targetBoxId}`);
+      const countDisplay = document.getElementById(`cat-count-${targetBoxId}`);
+
+      // Add to category box
+      const itemSpan = document.createElement('span');
+      itemSpan.className = 'px-2.5 py-1 bg-slate-700 text-white rounded-lg text-xs font-bold border border-slate-600 animate-pulse';
+      itemSpan.textContent = btn.textContent;
+      targetBox.appendChild(itemSpan);
+
+      // Disable button in pool
+      btn.disabled = true;
+      btn.classList.add('opacity-30', 'cursor-not-allowed');
+
+      // Update counters
+      categoryCounts[targetBoxId]++;
+      sortedCount++;
+      countDisplay.textContent = `${categoryCounts[targetBoxId]}/3`;
+
+      if (sortedCount === 9) {
+        const successBox = document.getElementById('cat-game-success');
+        successBox.classList.remove('hidden');
+        if (typeof confetti === 'function') {
+          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        }
+      }
+    }
+
+    function resetCategorizationGame() {
+      sortedCount = 0;
+      ['fawakih', 'monazifat', 'adawat'].forEach(cat => {
+        categoryCounts[cat] = 0;
+        document.getElementById(`box-${cat}`).innerHTML = '';
+        document.getElementById(`cat-count-${cat}`).textContent = '0/3';
+      });
+
+      const allBtns = document.querySelectorAll('.cat-word-btn');
+      allBtns.forEach(b => {
+        b.disabled = false;
+        b.classList.remove('opacity-30', 'cursor-not-allowed');
+      });
+
+      document.getElementById('cat-game-success').classList.add('hidden');
+    }
+
+    // 3. Quiz Logic
+    let correctAnswersCount = 0;
+    const answeredQuestions = new Set();
+
+    function checkQuiz(questionNum, btnElement) {
+      if (answeredQuestions.has(questionNum)) return;
+      answeredQuestions.add(questionNum);
+
+      const isCorrect = btnElement.getAttribute('data-correct') === 'true';
+      const allBtns = document.querySelectorAll(`.q${questionNum}-btn`);
+
+      allBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.add('cursor-not-allowed', 'opacity-80');
+        if (btn.getAttribute('data-correct') === 'true') {
+          btn.classList.remove('border-slate-200', 'hover:bg-purple-50');
+          btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-black');
+        }
+      });
+
+      if (isCorrect) {
+        correctAnswersCount++;
+        btnElement.classList.add('ring-2', 'ring-emerald-500');
+      } else {
+        btnElement.classList.remove('border-slate-200', 'hover:bg-purple-50');
+        btnElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-900', 'line-through');
+      }
+
+      if (answeredQuestions.size === 5 && correctAnswersCount === 5) {
+        const congrats = document.getElementById('quiz-congrats');
+        if (congrats) {
+          congrats.classList.remove('hidden');
+          if (typeof confetti === 'function') {
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { y: 0.6 }
+            });
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
