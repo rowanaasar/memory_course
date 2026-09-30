@@ -234,68 +234,156 @@
         </p>
       </div>
 
-      <!-- عرض فكرة الكتاب الجامع للآيات الثلاث -->
-      <div class="p-6 bg-slate-900 text-white rounded-3xl space-y-5 shadow-lg">
-        <div class="flex items-center justify-between flex-wrap gap-2">
-          <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block font-playpen">
-            📖 تقنية "الكتاب المفتوح الجامع للصور الثلاث":
+      <!-- عرض فكرة الكتاب الجامع للآيات الثلاث بصورة تخيلية وإيموجي -->
+      <div class="p-6 sm:p-8 bg-slate-900 text-white rounded-3xl space-y-7 shadow-xl border border-slate-800">
+        
+        <div class="flex items-center justify-between flex-wrap gap-3 border-b border-slate-800 pb-4">
+          <div>
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block font-playpen">
+              📖 تقنية "الكتاب المفتوح الجامع": الصورة التخيلية البصرية للآيات الثلاث الأولى
+            </span>
+            <p class="text-xs text-slate-400 mt-1 font-semibold">سورة ص • صفحة 455 (الآيات 27 - 28 - 29)</p>
+          </div>
+          <span class="text-xs px-3.5 py-1.5 rounded-full bg-indigo-900/60 border border-indigo-500/30 text-indigo-300 font-bold">
+            مشهد تخيلي (Illustration) بدون نصوص 🎨✨
           </span>
-          <span class="text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-300">الآيات 27 - 29 سورة ص</span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-          
-          <!-- الآية 1 -->
-          <div class="p-4 bg-slate-800/90 rounded-2xl border border-slate-700 space-y-2">
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">🌌🌍</span>
-              <strong class="text-amber-300 font-playpen text-sm">الآية الأولى (الرمز 1):</strong>
+        <!-- 1. اللوحة التخيلية الفنية بدون كلام -->
+        <div class="space-y-3">
+          <div class="relative group cursor-pointer rounded-3xl overflow-hidden border-2 border-indigo-500/40 hover:border-amber-400 transition-all duration-300 shadow-2xl bg-slate-950 flex justify-center" onclick="openImageModal('p455_mental_scene.jpg')">
+            <img src="p455_mental_scene.jpg" alt="صورة تخيلية للآيات الثلاث الأولى - الكتاب المفتوح الجامع" class="w-full max-h-[460px] object-cover rounded-3xl group-hover:scale-[1.02] transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end justify-between p-4 sm:p-6 pointer-events-none">
+              <div class="space-y-1">
+                <span class="text-xs font-black text-amber-300 bg-slate-900/90 px-3 py-1 rounded-full border border-amber-400/40 inline-block font-playpen">
+                  ✨ المشهد التخيلي الجامع بدفتي الكتاب
+                </span>
+                <p class="text-[11px] text-slate-300 hidden sm:block">
+                  الصفحة اليمنى (السماء والأرض) • الصفحة اليسرى (ميزان العمل الصالح) • نور الكتاب الصاعد (كتاب مبارك)
+                </p>
+              </div>
+              <span class="bg-white/95 text-slate-900 text-xs font-black px-3.5 py-1.5 rounded-xl shadow-lg pointer-events-auto">
+                اضغط لتكبير الصورة 🔎
+              </span>
             </div>
-            <p class="text-slate-200 font-bold leading-relaxed">
-              ﴿وَمَا خَلَقْنَا السَّمَاءَ وَالْأَرْضَ وَمَا بَيْنَهُمَا بَاطِلًا...﴾ (27)
-            </p>
-            <p class="text-slate-400 text-[11px]">
-              <strong>الرمز الذهني:</strong> صورة بديعة جامعة بين السماوات بنجومها والأرض بجبالها.
-            </p>
           </div>
-
-          <!-- الآية 2 -->
-          <div class="p-4 bg-slate-800/90 rounded-2xl border border-slate-700 space-y-2">
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">⚖️👥</span>
-              <strong class="text-amber-300 font-playpen text-sm">الآية الثانية (الرمز 2):</strong>
-            </div>
-            <p class="text-slate-200 font-bold leading-relaxed">
-              ﴿أَمْ نَجْعَلُ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَالْمُفْسِدِينَ فِي الْأَرْضِ...﴾ (28)
-            </p>
-            <p class="text-slate-400 text-[11px]">
-              <strong>الرمز الذهني:</strong> صورة للمؤمن الصالح في مقابل المفسد الفاجر (شخص ينشر الخير وآخر يفسد).
-            </p>
-          </div>
-
-          <!-- الآية 3 -->
-          <div class="p-4 bg-slate-800/90 rounded-2xl border border-slate-700 space-y-2">
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">📖✨</span>
-              <strong class="text-amber-300 font-playpen text-sm">الآية الثالثة (الرمز 3 - الجامع):</strong>
-            </div>
-            <p class="text-slate-200 font-bold leading-relaxed">
-              ﴿كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ...﴾ (29)
-            </p>
-            <p class="text-slate-400 text-[11px]">
-              <strong>الرمز الذهني:</strong> صورة كتاب مبارك مفتوح، يضم الصورتين السابقتين في دفتيه!
-            </p>
-          </div>
-
-        </div>
-
-        <!-- اللوحة السردية الرابطة للكتاب -->
-        <div class="p-4 bg-slate-800 rounded-2xl border border-teal-400/40 text-xs text-slate-200 space-y-1.5">
-          <strong class="text-teal-300 block text-xs font-black font-playpen">🎬 كيف يجمع العقل هذه الصور الثلاث معاً؟</strong>
-          <p class="leading-relaxed">
-            تخيّل في ذهنك <strong>كتاباً مفتوحاً</strong>: الصفحة اليمنى فيه مرسوم عليها <em>(السماوات والأرض وما بينهما)</em>، والصفحة المقابلة في وجهها مرسوم عليها <em>(المؤمنون الصالحون مقابل المفسدين)</em>، وهذا كله مجموع داخل <strong>الكتاب المبارك</strong> الذي نتدبر آياته! بهذه اللقطة البصرية البسيطة، ارتبطت الآيات الثلاث بترتيبها الصحيح دون أدنى تردد.
+          <p class="text-center text-xs text-slate-400 font-semibold">
+            💡 <em>صورة تخيلية رمزية صُممت خصيصاً بدون أي نصوص، ليعتمد العقل 100% على ربط المشاهد البصرية والرموز بالآيات القرآنية.</em>
           </p>
         </div>
+
+        <!-- 2. تفكيك المشهد التخيلي بالإيموجي والآيات الكريمة -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <!-- الآية 1: 27 -->
+          <div class="p-5 bg-slate-800/90 rounded-2xl border border-slate-700 hover:border-blue-400 transition-all space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-black text-blue-400 font-playpen bg-blue-950/80 px-2.5 py-1 rounded-lg border border-blue-800/50">
+                  الآية الأولى (27)
+                </span>
+                <span class="text-xl">🌌 🌍 ☀️</span>
+              </div>
+              
+              <h5 class="text-sm font-bold text-white font-playpen">
+                📖 الصفحة اليمنى: خلق السماوات والأرض
+              </h5>
+
+              <div class="p-3 bg-slate-900/90 rounded-xl border border-blue-900/40 text-blue-100 text-xs leading-relaxed font-bold">
+                ﴿وَمَا خَلَقْنَا السَّمَاءَ وَالْأَرْضَ وَمَا بَيْنَهُمَا بَاطِلًا ۚ ذَٰلِكَ ظَنُّ الَّذِينَ كَفَرُوا ۚ فَوَيْلٌ لِّلَّذِينَ كَفَرُوا مِنَ النَّارِ﴾
+              </div>
+            </div>
+
+            <div class="p-3 bg-blue-950/40 rounded-xl border border-blue-900/30 text-[11px] text-slate-300 space-y-1">
+              <strong class="text-blue-300 block font-playpen">🎨 الرمز التخيلي الذهني:</strong>
+              <p class="leading-relaxed">
+                تخيّل في الصفحة اليمنى من الكتاب مشهد كوكب الأرض بأنهاره وجباله، وفوقه سماء زرقاء رحبة تسبح فيها الشمس المشرقة والقمر والنجوم؛ دلالة على إتقان الخلق وعدم العبثية.
+              </p>
+            </div>
+          </div>
+
+          <!-- الآية 2: 28 -->
+          <div class="p-5 bg-slate-800/90 rounded-2xl border border-slate-700 hover:border-emerald-400 transition-all space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-black text-emerald-400 font-playpen bg-emerald-950/80 px-2.5 py-1 rounded-lg border border-emerald-800/50">
+                  الآية الثانية (28)
+                </span>
+                <span class="text-xl">⚖️ 🌳 🍂</span>
+              </div>
+
+              <h5 class="text-sm font-bold text-white font-playpen">
+                ⚖️ الصفحة اليسرى: ميزان الصالحات والفساد
+              </h5>
+
+              <div class="p-3 bg-slate-900/90 rounded-xl border border-emerald-900/40 text-emerald-100 text-xs leading-relaxed font-bold">
+                ﴿أَمْ نَجْعَلُ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَالْمُفْسِدِينَ فِي الْأَرْضِ أَمْ نَجْعَلُ الْمُتَّقِينَ كَالْفُجَّارِ﴾
+              </div>
+            </div>
+
+            <div class="p-3 bg-emerald-950/40 rounded-xl border border-emerald-900/30 text-[11px] text-slate-300 space-y-1">
+              <strong class="text-emerald-300 block font-playpen">🎨 الرمز التخيلي الذهني:</strong>
+              <p class="leading-relaxed">
+                في الصفحة المقابلة ميزان عدل ذهبي: كفّة ترجح بشجرة خضراء مورقة وزهور ملونة (العمل الصالح)، وكفّة أخرى خفيفة بغصن جاف ميت وأرض قاحلة (الفساد والفجور).
+              </p>
+            </div>
+          </div>
+
+          <!-- الآية 3: 29 -->
+          <div class="p-5 bg-slate-800/90 rounded-2xl border border-slate-700 hover:border-amber-400 transition-all space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-black text-amber-400 font-playpen bg-amber-950/80 px-2.5 py-1 rounded-lg border border-amber-800/50">
+                  الآية الثالثة (29)
+                </span>
+                <span class="text-xl">📖 ✨ 🧠</span>
+              </div>
+
+              <h5 class="text-sm font-bold text-white font-playpen">
+                ✨ الرمز الجامع: الكتاب المبارك المفتوح
+              </h5>
+
+              <div class="p-3 bg-slate-900/90 rounded-xl border border-amber-900/40 text-amber-100 text-xs leading-relaxed font-bold">
+                ﴿كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِّيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُولُو الْأَلْبَابِ﴾
+              </div>
+            </div>
+
+            <div class="p-3 bg-amber-950/40 rounded-xl border border-amber-900/30 text-[11px] text-slate-300 space-y-1">
+              <strong class="text-amber-300 block font-playpen">🎨 الرمز التخيلي الذهني:</strong>
+              <p class="leading-relaxed">
+                الكتاب المفتوح ككل الذي يضم الصورتين معاً، تشع من وسطه أنوار ذهبية صاعدة تفيض بالبركة والهداية ليتدبرها أولوا الألباب والعقول النيرة.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3. مسار الاسترجاع الذهني السريع (Mental Recall Workflow) -->
+        <div class="p-4 sm:p-5 bg-slate-800/80 rounded-2xl border border-teal-500/40 space-y-2.5">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🎬</span>
+            <strong class="text-teal-300 text-sm font-black font-playpen">خريطة الاسترجاع السريع في ثوانٍ معدودة:</strong>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-2 text-xs text-slate-200">
+            <div class="p-2.5 bg-slate-900/70 rounded-xl text-center border border-slate-700">
+              <span class="block text-amber-400 font-black mb-1">1. استحضار المشهد</span>
+              <span>تتخيل كتاباً مفتوحاً يطفو في الفضاء 📖</span>
+            </div>
+            <div class="p-2.5 bg-slate-900/70 rounded-xl text-center border border-slate-700">
+              <span class="block text-blue-400 font-black mb-1">2. الصفحة اليمنى</span>
+              <span>سماء وأرض ➜ ﴿وَمَا خَلَقْنَا السَّمَاءَ وَالْأَرْضَ﴾ 🌌</span>
+            </div>
+            <div class="p-2.5 bg-slate-900/70 rounded-xl text-center border border-slate-700">
+              <span class="block text-emerald-400 font-black mb-1">3. الصفحة اليسرى</span>
+              <span>ميزان الصالح والمفسد ➜ ﴿أَمْ نَجْعَلُ الَّذِينَ آمَنُوا﴾ ⚖️</span>
+            </div>
+            <div class="p-2.5 bg-slate-900/70 rounded-xl text-center border border-slate-700">
+              <span class="block text-amber-300 font-black mb-1">4. نور الكتاب كله</span>
+              <span>الكتاب المبارك ➜ ﴿كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ مُبَارَكٌ﴾ ✨</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
