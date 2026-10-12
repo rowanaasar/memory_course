@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الحادية عشرة: القراءة السريعة، والقراءة التصويرية، وجدول الحفظ | كورس الذاكرة الخارقة</title>
+  
+  <!-- Google Fonts: Alexandria & Playpen Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Playpen+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            alexandria: ['Alexandria', 'sans-serif'],
+            playpen: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+            cairo: ['Alexandria', 'sans-serif'],
+            amiri: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printable-schedule-area, #printable-schedule-area * {
+        visibility: visible;
+      }
+      #printable-schedule-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-cairo antialiased selection:bg-purple-200 selection:text-purple-900 pb-24">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/90 border-b border-purple-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      
+      <!-- Back to Home & Title -->
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2.5 rounded-xl bg-purple-50 text-purple-700 hover:bg-purple-100 transition flex items-center gap-1.5 text-sm font-black" title="الرجوع للرئيسية">
+          <span>→</span>
+          <span class="hidden sm:inline">الرئيسية</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200 hidden sm:block"></div>
+        <div>
+          <span class="text-xs font-bold text-indigo-600 uppercase tracking-wide">المحاضرة 11 من 14</span>
+          <h1 class="text-base sm:text-lg font-black text-slate-900 line-clamp-1 font-playpen">المحاضرة الحادية عشرة: القراءة السريعة، والقراءة التصويرية، وجدول الحفظ</h1>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="#quiz-section" class="px-3.5 py-2 rounded-xl bg-purple-50 text-purple-700 hover:bg-purple-100 text-xs font-black transition flex items-center gap-1.5">
+          <span>🎯 التحدي النهائي</span>
+        </a>
+        <a href="lecture10.html" class="p-2.5 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 transition text-xs font-bold" title="المحاضرة السابقة">
+          <span>← المحاضرة 10</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 space-y-12">
+
+    <!-- Top Hero Card -->
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white p-7 sm:p-10 shadow-xl shadow-indigo-700/15">
+      <div class="absolute -top-12 -right-12 w-56 h-56 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 space-y-4 max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs font-black">
+          <span>🌟 المحاضرة الحادية عشرة</span>
+          <span>•</span>
+          <span>المحاور الأساسية للمحاضرة</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black leading-tight font-playpen">
+          المحاضرة الحادية عشرة: القراءة السريعة، والقراءة التصويرية، وجدول الحفظ
+        </h2>
+
+        <p class="text-blue-100 text-sm sm:text-base leading-relaxed">
+          ننتقل في هذه المحاضرة إلى محاور محورية لنقل الذاكرة إلى السرعة الفائقة والاستمرارية: <strong>القراءة السريعة</strong> وتاريخ تدريب الطيارين وكيفية تعاهد القرآن بها، و<strong>القراءة التصويرية</strong> وآلية المسح الفوتوغرافي لصفحات المصحف، و<strong>جدول الحفظ الأسبوعي الشامل</strong> المنظم بدقة وفق منحنى النسيان والمراجعات الست.
+        </p>
+
+        <!-- Main Pillars Pills -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
+          <div class="bg-white/15 backdrop-blur-md p-2.5 rounded-2xl border border-white/20 text-center text-xs font-black">
+            <span>⚡ 1. القراءة السريعة في القرآن</span>
+          </div>
+          <div class="bg-white/15 backdrop-blur-md p-2.5 rounded-2xl border border-white/20 text-center text-xs font-black">
+            <span>📸 2. القراءة التصويرية والتليين البصري</span>
+          </div>
+          <div class="bg-white/15 backdrop-blur-md p-2.5 rounded-2xl border border-white/20 text-center text-xs font-black">
+            <span>📅 3. جدول الحفظ ونظام المراجعة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المحور الأول: القراءة السريعة في القرآن الكريم -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-8">
+      
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-black">1</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">القراءة السريعة: أسرارها، فوائدها، وتطبيقها في القرآن ⚡📖</h3>
+            <p class="text-xs text-slate-500 font-semibold">لماذا نستخدمها؟ هل هي مفيدة؟ هل قراءة القرآن بسرعة حرام أو فيها حرج؟ وقصة نشأة التمارين</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-black">المحور الأول</span>
+      </div>
+
+      <!-- هل قراءة القرآن السريعة حرام أم فيها ذنب؟ التمييز المنهجي -->
+      <div class="p-6 bg-gradient-to-br from-indigo-50/80 to-blue-50/80 rounded-3xl border-2 border-indigo-200 space-y-4">
+        <div class="flex items-center gap-2.5 text-indigo-950 font-black">
+          <span class="text-2xl">⚖️</span>
+          <h4 class="font-playpen text-base sm:text-lg">سؤال جوهري: هل قراءة القرآن بسرعة فيها ذنب أو حرام؟</h4>
+        </div>
+        
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold">
+          في الحقيقة، يجب أن نفرق بين <strong>نوعين من القراءة</strong> كلاهما عبادة عظيمة ولكن لكل منهما غاية ومنهج:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+          
+          <!-- القراءة التعبدية -->
+          <div class="p-4 bg-white rounded-2xl border border-indigo-100 shadow-sm space-y-2">
+            <div class="flex items-center gap-2 text-indigo-900 font-black text-xs font-playpen">
+              <span>📿 النوع الأول:</span>
+              <span>القراءة التعبدية (الترتيل والتدبر)</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              تحتاج إلى <strong>هدوء وتأنٍ وسكينة</strong>، والوقوف عند معاني الآيات وتفسيرها وأحكامها، وهذه يؤجر عليها المسلم بكل حرف حسنة، والهدف منها تدبر الرسالة الإلهية والخشوع.
+            </p>
+          </div>
+
+          <!-- قراءة تثبيت الحفظ والمراجعة -->
+          <div class="p-4 bg-white rounded-2xl border border-blue-200 shadow-sm space-y-2">
+            <div class="flex items-center gap-2 text-blue-900 font-black text-xs font-playpen">
+              <span>🛡️ النوع الثاني:</span>
+              <span>قراءة تثبيت ومراجعة المحفوظ</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              هدفها <strong>حراسة القرآن في الصدر لئلا يُنسى</strong>، وتعاهد ما تم حفظه بسرعة لتثبيته. وهذا أيضاً <strong>تعبد خالص لله</strong> بنية حفظ كلام الله، لأن نسيان القرآن وإهماله بعد حفظه هو المذموم، وسرعة المراجعة تحميه من التفلت!
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- قصة نشأة تمارين القراءة السريعة (تدريب الطيارين) -->
+      <div class="p-6 bg-slate-900 text-white rounded-3xl space-y-4 shadow-lg">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">✈️</span>
+          <div>
+            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block font-playpen">القصة التاريخية الملهمة:</span>
+            <h4 class="text-base sm:text-lg font-black text-white font-playpen">كيف بدأت القراءة السريعة مع طياري الحرب العالمية؟</h4>
+          </div>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          في التدريبات الجوية قديماً، كان الطيار يحتاج إلى اتخاذ قرارات مصيرية في أجزاء من الثانية بناءً على إشارات ضوئية وصور سريعة لطائرات في الأفق (لتحديد هل هي طائرة صديقة أم معادية). وبسبب بطء الاستجابة الطبيعية للعين العادية، صمم العلماء جهازاً يُسمى <em>(التاكستوسكوب - Tachistoscope)</em> يقوم بوميض صور وكلمات على الشاشة لكسور من الثانية، فتدربت أعين الطيارين على <strong>الالتقاط البصري الفوري وتوسيع مجال الرؤية</strong>. لاحقاً، تم نقل هذه التمارين لعالم القراءة، وتبيّن أن العقل البشري قادر على استيعاب الكلمات والصور بسرعة تفوق النطق البشري بعشرات المرات!
+        </p>
+      </div>
+
+      <!-- مشكلتا القراءة السريعة وعلاجهما العملي -->
+      <div class="space-y-4">
+        <h4 class="font-black text-slate-900 text-base font-playpen flex items-center gap-2">
+          <span>⚠️</span>
+          <span>أكبر مشكلتين تواجهنا عند القراءة السريعة وكيف نتغلب عليهما:</span>
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          
+          <!-- المشكلة 1: القفزة العكسية -->
+          <div class="p-5 bg-rose-50/70 rounded-2xl border-2 border-rose-200 space-y-2">
+            <span class="text-rose-900 font-black text-sm block font-playpen">1. القفزة العكسية للعين (Eye Regression):</span>
+            <p class="text-slate-700 leading-relaxed">
+              حين تحاول القراءة بسرعة، تقفز العين تلقائياً إلى الوراء، أو تصعد للسطر الذي فوقه أو تنزل للذي تحته مما يُشتت التركيز ويهدر الوقت.
+            </p>
+            <div class="p-2.5 bg-white rounded-xl border border-rose-200 text-rose-950 font-bold">
+              💡 <strong>العلاج:</strong> استخدام الأصبع أو القلم كمؤشر دقيق (Pointer) يقود حركة العين بسرعة ثابتة للأمام فقط.
+            </div>
+          </div>
+
+          <!-- المشكلة 2: القراءة بالصوت -->
+          <div class="p-5 bg-amber-50/70 rounded-2xl border-2 border-amber-200 space-y-2">
+            <span class="text-amber-900 font-black text-sm block font-playpen">2. القراءة بالصوت أو النطق الداخلي (Subvocalization):</span>
+            <p class="text-slate-700 leading-relaxed">
+              اللسان بطيء (أقصى سرعة له 150 - 200 كلمة بالدقيقة)، بينما العين والدماغ قادران على معالجة آلاف الكلمات! القراءة بالصوت تفرمل الدماغ.
+            </p>
+            <div class="p-2.5 bg-white rounded-xl border border-amber-200 text-amber-950 font-bold">
+              💡 <strong>العلاج:</strong> كتم الصوت تماماً؛ العين ترى، المخ يلتقط ويعالج، والإصبع يمر تحت الكلمات دون نطق.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- تطبيق عملي: تمرين المؤشر وتحدي الـ 5 دقائق -->
+      <div class="p-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 text-white rounded-3xl space-y-5 shadow-lg">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">⏱️</span>
+            <h4 class="text-base sm:text-lg font-black font-playpen">التحدي العملي للقراءة السريعة (تحدي الـ 5 دقائق اليومي)</h4>
+          </div>
+          <span class="text-xs px-3 py-1 bg-white/20 rounded-full font-bold">تطبيق قياس الإنجاز</span>
+        </div>
+
+        <p class="text-xs sm:text-sm text-blue-100 leading-relaxed">
+          افتح المصحف على جزء أو سور أنت <strong>حافظها ومتقنها مسبقاً</strong> (لأن الأجزاء المحفوظة ستكون مألوفة وعينك أسرع في التقاطها)، ثم شغّل مؤقت الـ 5 دقائق أدناه، ومرر إصبعك بسرعة تحت الكلمات بعينيك فقط دون نطق، ثم سجّل كم صفحة أنجزت!
+        </p>
+
+        <!-- Interactive 5-Minute Timer Widget -->
+        <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div id="speed-timer-display" class="font-mono text-3xl sm:text-4xl font-black bg-slate-950/60 px-5 py-2 rounded-2xl border border-white/30 tracking-widest text-emerald-400">
+              05:00
+            </div>
+            <div class="text-xs text-blue-100 space-y-0.5">
+              <span class="font-bold block">مؤقت تحدي الـ 5 دقائق</span>
+              <span id="speed-timer-status" class="text-blue-200">جاهز للبدء...</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="start-timer-btn" onclick="startSpeedTimer()" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black text-xs transition shadow-md active:scale-95">
+              ▶️ ابدأ المؤقت
+            </button>
+            <button id="reset-timer-btn" onclick="resetSpeedTimer()" class="px-4 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs transition active:scale-95">
+              🔄 إعادة ضبط
+            </button>
+          </div>
+        </div>
+
+        <div class="p-3 bg-white/10 rounded-xl text-xs text-blue-100 flex items-center justify-between flex-wrap gap-2">
+          <span>📝 <strong>القاعدة الذهبية:</strong> كرر هذا التمرين كل يوم لمدة 5 دقائق، وستلاحظ أن عدد الصفحات يتضاعف تدريجياً!</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- المحور الثاني: القراءة التصويرية (PhotoReading) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-8">
+      
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl font-black">2</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">القراءة التصويرية: المسح البصري الذكي لصفحات المصحف 📸👁️</h3>
+            <p class="text-xs text-slate-500 font-semibold">"كأنها قراءة ومش قراءة" - مثال كشف النتيجة واسم روان، والتليين البصري اللاواعي للدماغ</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-black">المحور الثاني</span>
+      </div>
+
+      <!-- مثال كشف الدرجات والبحث عن اسم روان -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+        
+        <div class="md:col-span-7 space-y-4">
+          <div class="flex items-center gap-2 text-purple-900 font-black">
+            <span class="text-2xl">📋</span>
+            <h4 class="text-base sm:text-lg font-playpen">ما هي القراءة التصويرية؟ تشبيه كشف النتيجة واسم "روان":</h4>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold">
+            تخيّل أن نتيجة الامتحان قد ظهرت وعُلّق كشف طويل بأسماء مئات الطلاب. أنت تمسك إصبعك وتمرر به بسرعة فائقة باحثاً: <em>(فين اسمي؟ روان.. روان.. روان..)</em> حتى تلمح عينك اسم <strong>روان</strong> فتقف فجأة!
+          </p>
+
+          <div class="p-4 bg-purple-50 rounded-2xl border border-purple-200 text-xs text-purple-950 font-bold space-y-1.5">
+            <p>❓ <strong>السؤال هنا:</strong> هل قرأت جميع أسماء الطلاب السابقة اسماً اسماً بتركيز وتأنٍ؟</p>
+            <p class="text-slate-700 font-normal">
+              بالتأكيد لا! لكن مخك وعينك قاما <strong>بتصوير الكشف ككاميرا رقمية</strong> حتى التقطت العين الكلمة المألوفة. هذا بالضبط هو جوهر <strong>القراءة التصويرية</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 bg-gradient-to-br from-purple-100 to-indigo-100 p-6 rounded-3xl border-2 border-purple-200 text-center space-y-3">
+          <div class="text-5xl">📸📄✨</div>
+          <span class="block font-black text-purple-950 text-sm font-playpen">المسح الفوتوغرافي للدماغ</span>
+          <p class="text-xs text-slate-600 leading-relaxed font-semibold">
+            العقل الباطن يلتقط الصفحة بالكامل ويخزن تفاصيلها وأبعادها حتى لو لم يكن العقل الواعي يقرأ كل كلمة كلمة!
+          </p>
+        </div>
+
+      </div>
+
+      <!-- كيفية تطبيق القراءة التصويرية على صفحات القرآن الكريم -->
+      <div class="space-y-4">
+        <h4 class="font-black text-slate-900 text-base font-playpen">
+          📖 كيف نطبق القراءة التصويرية عملياً على صفحات المصحف الشريف؟
+        </h4>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+          
+          <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-2">
+            <div class="flex items-center gap-2 font-black text-slate-900">
+              <span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">1</span>
+              <span>تقليب الصفحات بانتظام</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              تقلب صفحات الجزء أو المصحف بيدك، وعينك تمر على الصفحة من أولها لآخرها مسحاً شاملاً في ثوانٍ معدودة.
+            </p>
+          </div>
+
+          <div class="p-4 bg-rose-50/70 rounded-2xl border border-rose-200 space-y-2">
+            <div class="flex items-center gap-2 font-black text-rose-950">
+              <span class="w-6 h-6 rounded-full bg-rose-600 text-white flex items-center justify-center text-xs">2</span>
+              <span>الحذر من فخ استكمال الآية!</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed">
+              <strong>تنبيه بالغ الأهمية:</strong> إذا كنت حافظاً، ستجذبك الآيات لإكمالها بلسانك؛ لا تسترسل! هدف التمرين هو التصوير البصري الصامت فقط.
+            </p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/70 rounded-2xl border border-emerald-200 space-y-2">
+            <div class="flex items-center gap-2 font-black text-emerald-950">
+              <span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs">3</span>
+              <span>تليين بصري لا واعٍ</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed">
+              تكرار هذا التمرين يجعل رسم المصحف وأماكن الآيات مألوفة جداً لعينك، مما يسهل ويسرع حفظها مستقبلاً بصورة مذهلة.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- المحور الثالث: جدول الحفظ الشامل (نظام المراجعات الست وتثبيت الحفظ) -->
+    <section id="schedule-section" class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-8">
+      
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl font-black">3</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">جدول الحفظ الشامل: إدارة الحفظ والمراجعات الأسبوعية 📅📋</h3>
+            <p class="text-xs text-slate-500 font-semibold">الأسئلة الثلاثة الجوهرية، تفكيك الأعمدة الستة، والنموذج التطبيقي النظيف بدون أي خلفيات أو علامات مائية</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-black">المحور الثالث</span>
+      </div>
+
+      <!-- الأسئلة الثلاثة قبل البدء في الجدول -->
+      <div class="p-5 bg-gradient-to-r from-teal-50 to-emerald-50 rounded-2xl border-2 border-emerald-200 space-y-3">
+        <div class="flex items-center gap-2 text-emerald-950 font-black">
+          <span class="text-xl">❓</span>
+          <h4 class="font-playpen text-sm sm:text-base">3 أسئلة مصيرية يجب أن تجيب عليها قبل ملء جدول الحفظ:</h4>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+          
+          <div class="p-3.5 bg-white rounded-xl border border-emerald-150 space-y-1">
+            <strong class="text-emerald-900 block font-playpen">1. كم صفحة سأحفظ باليوم/الأسبوع؟</strong>
+            <p class="text-slate-600">يحدد كمية الحفظ الجديد اليومي وحجم خانة (صفحات الحفظ الجديدة).</p>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-emerald-150 space-y-1">
+            <strong class="text-emerald-900 block font-playpen">2. من أين سأبدأ الحفظ بالضبط؟</strong>
+            <p class="text-slate-600">هل من أول المصحف (البقرة)، أم من آخره (جزء عم)، أم من سورة معينة؟</p>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-emerald-150 space-y-1">
+            <strong class="text-emerald-900 block font-playpen">3. هل أنا حافظ لأجزاء سابقة أم لا؟</strong>
+            <p class="text-slate-600">يحدد محتوى خانة (المراجعة السريعة) لمراجعة القديم بالقراءة السريعة.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- عرض الجدول التطبيقي النموذجي النظيف (The Clean Custom Schedule Table) -->
+      <div class="space-y-4" id="printable-schedule-area">
+        
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <h4 class="font-black text-slate-900 text-base font-playpen flex items-center gap-2">
+              <span>📊</span>
+              <span>النموذج التطبيقي لجدول الحفظ الأسبوعي (مثال واقعي معبأ بالكامل):</span>
+            </h4>
+            <p class="text-xs text-slate-500 font-semibold mt-0.5">
+              نموذج صافٍ ونقي تماماً يوضح توزيع (الحفظ الجديد، المراجعة الأسبوعية وفق منحنى النسيان، والمراجعة السريعة)
+            </p>
+          </div>
+
+          <button onclick="window.print()" class="no-print px-3.5 py-1.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs font-black transition flex items-center gap-1.5 border border-purple-200">
+            <span>🖨️ طباعة الجدول</span>
+          </button>
+        </div>
+
+        <!-- Table Container -->
+        <div class="overflow-x-auto rounded-2xl border-2 border-indigo-200 shadow-md bg-white">
+          <table class="w-full text-center border-collapse text-xs sm:text-sm">
+            
+            <!-- Table Header -->
+            <thead>
+              <tr class="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white font-playpen">
+                <th class="p-3 border-b border-indigo-800 font-black">اليوم</th>
+                <th class="p-3 border-b border-indigo-800 font-black">التاريخ</th>
+                <th class="p-3 border-b border-indigo-800 font-black bg-indigo-950/40">صفحات الحفظ الجديدة</th>
+                <th class="p-3 border-b border-indigo-800 font-black">المراجعة السريعة (المحفوظ القديم)</th>
+                <th class="p-3 border-b border-indigo-800 font-black bg-indigo-950/40">المراجعة خلال نفس الأسبوع</th>
+                <th class="p-3 border-b border-indigo-800 font-black">القراءة السريعة للجزء الجديد (تليين)</th>
+                <th class="p-3 border-b border-indigo-800 font-black">ملاحظات</th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody class="divide-y divide-slate-200 font-semibold text-slate-700">
+              
+              <!-- السبت -->
+              <tr class="hover:bg-purple-50/50 transition">
+                <td class="p-3 font-black text-indigo-950 bg-slate-50">السبت</td>
+                <td class="p-3 font-mono text-slate-600">1 / 10</td>
+                <td class="p-3 bg-indigo-50/50 font-black text-indigo-700">صفحة 5</td>
+                <td class="p-3 text-slate-600">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-indigo-50/50 text-slate-400">—</td>
+                <td class="p-3 text-slate-600">صفحات 7 إلى 12</td>
+                <td class="p-3 text-[11px] text-slate-500">حفظ بؤري هادئ</td>
+              </tr>
+
+              <!-- الأحد -->
+              <tr class="hover:bg-purple-50/50 transition">
+                <td class="p-3 font-black text-indigo-950 bg-slate-50">الأحد</td>
+                <td class="p-3 font-mono text-slate-600">2 / 10</td>
+                <td class="p-3 bg-indigo-50/50 font-black text-indigo-700">صفحة 6</td>
+                <td class="p-3 text-slate-600">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-indigo-50/50 font-bold text-emerald-700">مراجعة ص 5 + ص 6</td>
+                <td class="p-3 text-slate-600">صفحات 7 إلى 12</td>
+                <td class="p-3 text-[11px] text-slate-500">مراجعة ثانية لص 5 وأولى لص 6</td>
+              </tr>
+
+              <!-- الإثنين -->
+              <tr class="hover:bg-purple-50/50 transition">
+                <td class="p-3 font-black text-indigo-950 bg-slate-50">الإثنين</td>
+                <td class="p-3 font-mono text-slate-600">3 / 10</td>
+                <td class="p-3 bg-indigo-50/50 font-black text-indigo-700">صفحة 7</td>
+                <td class="p-3 text-slate-600">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-indigo-50/50 font-bold text-emerald-700">مراجعة ص 6 + ص 7</td>
+                <td class="p-3 text-slate-600">صفحات 7 إلى 12</td>
+                <td class="p-3 text-[11px] text-slate-500">مراجعة تكرارية متتابعة</td>
+              </tr>
+
+              <!-- الثلاثاء -->
+              <tr class="hover:bg-purple-50/50 transition">
+                <td class="p-3 font-black text-indigo-950 bg-slate-50">الثلاثاء</td>
+                <td class="p-3 font-mono text-slate-600">4 / 10</td>
+                <td class="p-3 bg-indigo-50/50 font-black text-indigo-700">صفحة 8</td>
+                <td class="p-3 text-slate-600">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-indigo-50/50 font-bold text-emerald-700">مراجعة ص 5 + ص 7 + ص 8</td>
+                <td class="p-3 text-slate-600">صفحات 7 إلى 12</td>
+                <td class="p-3 text-[11px] text-slate-500">تطبيق مراجعة الـ 3 أيام لص 5</td>
+              </tr>
+
+              <!-- الأربعاء -->
+              <tr class="hover:bg-purple-50/50 transition">
+                <td class="p-3 font-black text-indigo-950 bg-slate-50">الأربعاء</td>
+                <td class="p-3 font-mono text-slate-600">5 / 10</td>
+                <td class="p-3 bg-indigo-50/50 font-black text-indigo-700">صفحة 9</td>
+                <td class="p-3 text-slate-600">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-indigo-50/50 font-bold text-emerald-700">مراجعة ص 6 + ص 8 + ص 9</td>
+                <td class="p-3 text-slate-600">صفحات 7 إلى 12</td>
+                <td class="p-3 text-[11px] text-slate-500">تثبيت تدريجي متسلسل</td>
+              </tr>
+
+              <!-- الخميس -->
+              <tr class="hover:bg-purple-50/50 transition">
+                <td class="p-3 font-black text-indigo-950 bg-slate-50">الخميس</td>
+                <td class="p-3 font-mono text-slate-600">6 / 10</td>
+                <td class="p-3 bg-indigo-50/50 font-black text-indigo-700">صفحة 10</td>
+                <td class="p-3 text-slate-600">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-indigo-50/50 font-bold text-emerald-700">مراجعة ص 7 + ص 9 + ص 10</td>
+                <td class="p-3 text-slate-600">صفحات 7 إلى 12</td>
+                <td class="p-3 text-[11px] text-slate-500">ختام الحفظ الأسبوعي الجديد</td>
+              </tr>
+
+              <!-- الجمعة -->
+              <tr class="bg-amber-50/60 font-black text-amber-950">
+                <td class="p-3 bg-amber-100 text-amber-950">الجمعة</td>
+                <td class="p-3 font-mono">7 / 10</td>
+                <td class="p-3 bg-amber-100/80 text-rose-700 text-xs">
+                  🚫 لا يوجد حفظ جديد
+                </td>
+                <td class="p-3 text-slate-700">الجزء 29 (مرتان)</td>
+                <td class="p-3 bg-amber-100/60 text-emerald-800 font-black">
+                  مراجعة شاملة لجميع صفحات الأسبوع (ص 5 إلى 10)
+                </td>
+                <td class="p-3 text-slate-700 font-bold">
+                  قراءة سريعة لصفحات الأسبوع القادم
+                </td>
+                <td class="p-3 text-[11px] text-amber-900 font-bold">يوم التثبيت والختام الأسبوعي</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- تفكيك أعمدة الجدول والشرح المنهجي لكل عمود -->
+      <div class="space-y-3">
+        <h4 class="font-black text-slate-900 text-sm font-playpen">🔍 تفكيك أعمدة الجدول ووظيفة كل خانة:</h4>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-slate-700">
+          
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+            <strong class="text-indigo-950 block font-playpen">1. صفحات الحفظ الجديدة (6 أيام فقط):</strong>
+            <p>من السبت إلى الخميس نحفظ المقدار المحدد (مثلاً صفحة واحدة يومياً)، والجمعة استراحة ومراجعة عامة بدون إضافة أي آيات جديدة.</p>
+          </div>
+
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+            <strong class="text-indigo-950 block font-playpen">2. المراجعة السريعة (المحفوظ القديم):</strong>
+            <p>قراءة جزء كامل من الأجزاء السابقة المحفوظة مرتين يومياً بالقراءة السريعة الصامتة لحمايتها من التبخر.</p>
+          </div>
+
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+            <strong class="text-indigo-950 block font-playpen">3. المراجعة خلال نفس الأسبوع (منحنى النسيان):</strong>
+            <p>مراجعة صفحة الأمس، والصفحة المحفوظة قبل 3 أيام، والصفحة الجديدة؛ لكسر منحنى النسيان لـ إبنجهاوس وتثبيتها في الذاكرة الدائمة.</p>
+          </div>
+
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+            <strong class="text-indigo-950 block font-playpen">4. القراءة السريعة للجزء الجديد (التليين المستقبلي):</strong>
+            <p>قراءة صفحات الأسبوع القادم (مثلاً صفحات 7 إلى 12) قراءة سريعة يومياً، لكي تصبح مألوفة جداً لعينك وعقلك قبل البدء في حفظها الفعلي!</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- المحور الرابع: اختبار الاستيعاب والتحدي الفوري (5 أسئلة تفاعلية) -->
+    <section id="quiz-section" class="bg-white rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-6">
+      
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-xl font-black">4</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">اختبار الاستيعاب السريع (5 أسئلة تفاعلية) 🎯🧠</h3>
+            <p class="text-xs text-slate-500 font-semibold">تحقق فوراً من إتقانك لمفاهيم القراءة السريعة والتصويرية وجدول الحفظ</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-black">تحدي فوري</span>
+      </div>
+
+      <div class="space-y-5" id="quiz-container">
+        
+        <!-- Question 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            1️⃣ ما هو الفرق الجوهري بين "القراءة التعبدية" و "قراءة مراجعة وتثبيت المحفوظ" في القرآن؟
+          </p>
+          <div class="grid grid-cols-1 gap-2 text-xs">
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              أ) لا يوجد أي فرق بينهما فكلاهما يُقرأ بنفس السرعة تماماً.
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="true" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ب) التعبدية تتطلب التأنّي والتدبر، بينما قراءة التثبيت سريعة هدفها تعاهد المحفوظ وحمايته من النسيان وتُعد عبادة أيضاً.
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ج) القراءة السريعة غير مقبولة شرعاً في أي حال من الأحوال.
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            2️⃣ لماذا يُعتبر "النطق الصوتي أو الهمس" عائقاً رئيسياً أمام سرعة القراءة؟
+          </p>
+          <div class="grid grid-cols-1 gap-2 text-xs">
+            <button onclick="checkQuiz(2, this)" data-correct="true" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              أ) لأن اللسان بطيء (150-200 كلمة/دقيقة) بينما العين والدماغ يعالجان آلاف الكلمات أسرع بكثير إذا كتمنا الصوت.
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ب) لأن النطق الصوتي يرهق الأحبال الصوتية فقط ولا علاقة له بالسرعة.
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ج) لأن القراءة الصامتة ممنوعة في التمارين.
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            3️⃣ ما هو التشبيه الدقيق الذي يوضح فكرة "القراءة التصويرية"؟
+          </p>
+          <div class="grid grid-cols-1 gap-2 text-xs">
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              أ) قراءة كتاب كامل سطر بسطر بصوت مرتفع.
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="true" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ب) البحث السريع عن اسم "روان" في كشف النتيجة دون قراءة جميع الأسماء، حيث يمسح الدماغ الكلمات ككاميرا.
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ج) حفظ الصفحة عن ظهر قلب من أول نظرة.
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            4️⃣ ما هي أهم قاعدة يجب الالتزام بها في يوم الجمعة في جدول الحفظ الأسبوعي؟
+          </p>
+          <div class="grid grid-cols-1 gap-2 text-xs">
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              أ) مضاعفة كمية الحفظ الجديد بحفظ صفحتين بدلاً من صفحة.
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="true" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ب) عدم حفظ أي صفحات جديدة نهائياً، وتخصيص اليوم للمراجعة الشاملة لكل ما حُفظ في الأسبوع.
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ج) التوقف التام عن مراجعة المحفوظ القديم.
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            5️⃣ ما فائدة خانة "القراءة السريعة للجزء الجديد" في جدول الحفظ؟
+          </p>
+          <div class="grid grid-cols-1 gap-2 text-xs">
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              أ) اختبار هل نسينا المحفوظ القديم أم لا.
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="true" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ب) تليين صفحات الأسبوع القادم مسبقاً بالقراءة السريعة اليومية لتصبح مألوفة للعين والمخ قبل حفظها.
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-semibold">
+              ج) تعويض الصفحات التي لم نحفظها في الأيام السابقة.
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quiz Congrats Banner -->
+      <div id="quiz-congrats" class="hidden p-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-center space-y-2 shadow-lg animate-bounce">
+        <span class="text-3xl">🎉🏆</span>
+        <h4 class="font-black text-lg font-playpen">رائع جداً! لقد أتقنت محاور المحاضرة الحادية عشرة بالكامل</h4>
+        <p class="text-xs text-emerald-100 font-semibold">مع القراءة السريعة والتصويرية والتنظيم الدقيق لجدول الحفظ، تمتلك الآن أقوى منظومة عملية لحراسة وتثبيت القرآن الكريم!</p>
+      </div>
+
+    </section>
+
+    <!-- المحور الخامس: الواجب العملي الشامل للمحاضرة الحادية عشرة -->
+    <section class="bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-50 rounded-3xl p-6 sm:p-8 border border-blue-200 shadow-sm space-y-6">
+      
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-blue-200/60 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-indigo-700 text-white flex items-center justify-center text-xl font-black">5</span>
+          <div>
+            <h3 class="text-xl font-black text-indigo-950 font-playpen">الواجب العملي الشامل للمحاضرة الحادية عشرة 📝🔥</h3>
+            <p class="text-xs text-slate-600 font-semibold">التطبيق المباشر على جدول الحفظ، وتحدي الـ 5 دقائق، والتصوير اليومي</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-indigo-600 text-white rounded-full text-xs font-black">التطبيق العملي</span>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- التكليف المباشر للمحاضرة 11 -->
+        <div class="p-5 bg-white/90 backdrop-blur-sm rounded-2xl border-2 border-indigo-300 space-y-3">
+          <span class="text-xs font-black text-indigo-950 block font-playpen text-sm">
+            ⭐ أولاً: تكليف المحاضرة الحادية عشرة الأساسي:
+          </span>
+
+          <div class="space-y-3 text-xs text-slate-700 leading-relaxed font-semibold">
+            
+            <div class="p-3 bg-indigo-50 rounded-xl border border-indigo-200 space-y-1">
+              <strong class="text-indigo-950 block">1. إعداد وتصميم جدول الحفظ الأسبوعي الشخصي:</strong>
+              <p>الإجابة على الأسئلة الثلاثة، وتعبئة جدول الحفظ للأسبوع القادم بوضوح (تحديد صفحة الحفظ الجديد لكل يوم، وتحديد الجزء المراجع سريعاً مرتين يومياً، وتحديد صفحات التليين للأسبوع التالي).</p>
+            </div>
+
+            <div class="p-3 bg-blue-50 rounded-xl border border-blue-200 space-y-1 text-blue-950 font-bold">
+              <strong class="block text-sm">⚡ 2. تمرين القراءة السريعة بالمؤشر (5 دقائق يومياً):</strong>
+              <p>تشغيل المؤقت لمدة 5 دقائق يومياً، والقراءة السريعة بالأصبع على أجزاء محفوظة سابقاً دون نطق باللسان، وتدوين عدد الصفحات المنجزة يومياً لملاحظة تصاعد السرعة.</p>
+            </div>
+
+            <div class="p-3 bg-purple-50 rounded-xl border border-purple-200 space-y-1">
+              <strong class="text-purple-950 block">📸 3. تمرين القراءة التصويرية على جزء كامل:</strong>
+              <p>تقليب صفحات جزء كامل وتصوير كل صفحة بالعينين مسحاً شاملاً من الأعلى للأسفل دون الاسترسال في التسميع، مع قياس الزمن المستغرق لتصفح الجزء.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- مجمع التمارين السابقة -->
+        <div class="p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 space-y-3">
+          <span class="text-xs font-black text-purple-900 block">⭐ ثانياً: الاستمرار اليومي في مجمع التمارين التراكمية لتنشيط خلايا الدماغ:</span>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs text-slate-700 font-bold">
+            <div class="p-2.5 bg-purple-50/70 rounded-xl border border-purple-100 flex items-center gap-2">
+              <span>🫁</span>
+              <span>1. تمرين التنفس التبادلي (4-4-4).</span>
+            </div>
+            <div class="p-2.5 bg-purple-50/70 rounded-xl border border-purple-100 flex items-center gap-2">
+              <span>🎨</span>
+              <span>2. الرسم والتلوين باليدين معاً.</span>
+            </div>
+            <div class="p-2.5 bg-purple-50/70 rounded-xl border border-purple-100 flex items-center gap-2">
+              <span>✍️</span>
+              <span>3. الكتابة باليدين معاً في آن واحد.</span>
+            </div>
+            <div class="p-2.5 bg-purple-50/70 rounded-xl border border-purple-100 flex items-center gap-2">
+              <span>🔄</span>
+              <span>4. القراءة المعكوسة وعد الكلمات سطراً بسطر.</span>
+            </div>
+            <div class="p-2.5 bg-purple-50/70 rounded-xl border border-purple-100 flex items-center gap-2">
+              <span>🖐️</span>
+              <span>5. تمارين الأصابع واليد الخمسة.</span>
+            </div>
+            <div class="p-2.5 bg-purple-50/70 rounded-xl border border-purple-100 flex items-center gap-2">
+              <span>👁️</span>
+              <span>6. تمارين توسيع مجال الرؤية الأربعة (8 دقائق).</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- بطاقة تشجيعية ختامية -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white text-center space-y-2 shadow-md">
+        <span class="text-2xl">🌟⚡📅</span>
+        <h4 class="font-black text-base font-playpen">الانضباط مع جدول الحفظ والقراءة السريعة يصنع المعجزات في تثبيت القرآن!</h4>
+        <p class="text-xs text-blue-100 font-medium">الالتزام الصغير اليومي المنتظم والمراجعة الذكية وفق منحنى النسيان هي السر الحقيقي لحفاظ كتاب الله المتقنين.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // --- Speed Reading Timer Script ---
+    let timerDuration = 300; // 5 minutes in seconds
+    let currentTimer = timerDuration;
+    let timerInterval = null;
+    let isTimerRunning = false;
+
+    function formatTime(seconds) {
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    function startSpeedTimer() {
+      const btn = document.getElementById('start-timer-btn');
+      const status = document.getElementById('speed-timer-status');
+      const display = document.getElementById('speed-timer-display');
+
+      if (!isTimerRunning) {
+        isTimerRunning = true;
+        btn.textContent = '⏸️ إيقاف مؤقت';
+        btn.classList.remove('bg-emerald-500', 'hover:bg-emerald-600');
+        btn.classList.add('bg-amber-500', 'hover:bg-amber-600');
+        status.textContent = 'المؤقت يعمل.. انطلق في القراءة السريعة!';
+
+        timerInterval = setInterval(() => {
+          if (currentTimer > 0) {
+            currentTimer--;
+            display.textContent = formatTime(currentTimer);
+          } else {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+            btn.textContent = '🎉 اكتمل التحدي!';
+            btn.disabled = true;
+            status.textContent = 'انتهت الـ 5 دقائق! سجّل عدد الصفحات المنجزة الآن 🚀';
+            if (typeof confetti === 'function') {
+              confetti({ particleCount: 80, spread: 60, origin: { y: 0.7 } });
+            }
+          }
+        }, 1000);
+      } else {
+        isTimerRunning = false;
+        clearInterval(timerInterval);
+        btn.textContent = '▶️ استئناف';
+        btn.classList.remove('bg-amber-500', 'hover:bg-amber-600');
+        btn.classList.add('bg-emerald-500', 'hover:bg-emerald-600');
+        status.textContent = 'المؤقت متوقف مؤقتاً';
+      }
+    }
+
+    function resetSpeedTimer() {
+      clearInterval(timerInterval);
+      isTimerRunning = false;
+      currentTimer = timerDuration;
+      const display = document.getElementById('speed-timer-display');
+      const btn = document.getElementById('start-timer-btn');
+      const status = document.getElementById('speed-timer-status');
+
+      display.textContent = formatTime(timerDuration);
+      btn.disabled = false;
+      btn.textContent = '▶️ ابدأ المؤقت';
+      btn.classList.remove('bg-amber-500', 'hover:bg-amber-600');
+      btn.classList.add('bg-emerald-500', 'hover:bg-emerald-600');
+      status.textContent = 'جاهز للبدء...';
+    }
+
+    // --- Interactive Quiz Script ---
+    let correctAnswersCount = 0;
+    const answeredQuestions = new Set();
+
+    function checkQuiz(questionNum, btnElement) {
+      if (answeredQuestions.has(questionNum)) return;
+      answeredQuestions.add(questionNum);
+
+      const isCorrect = btnElement.getAttribute('data-correct') === 'true';
+      const allBtns = document.querySelectorAll(`.q${questionNum}-btn`);
+
+      allBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.add('cursor-not-allowed', 'opacity-80');
+        if (btn.getAttribute('data-correct') === 'true') {
+          btn.classList.remove('border-slate-200', 'hover:bg-purple-50');
+          btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-black');
+        }
+      });
+
+      if (isCorrect) {
+        correctAnswersCount++;
+        btnElement.classList.add('ring-2', 'ring-emerald-500');
+      } else {
+        btnElement.classList.remove('border-slate-200', 'hover:bg-purple-50');
+        btnElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-900', 'line-through');
+      }
+
+      if (answeredQuestions.size === 5 && correctAnswersCount === 5) {
+        const congrats = document.getElementById('quiz-congrats');
+        if (congrats) {
+          congrats.classList.remove('hidden');
+          if (typeof confetti === 'function') {
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { y: 0.6 }
+            });
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
