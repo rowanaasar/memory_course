@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الثانية عشرة: طريقة الشجرة | كورس الذاكرة الخارقة</title>
+  
+  <!-- Google Fonts: Alexandria & Playpen Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Playpen+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            alexandria: ['Alexandria', 'sans-serif'],
+            playpen: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+            cairo: ['Alexandria', 'sans-serif'],
+            amiri: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-alexandria antialiased selection:bg-emerald-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- Top Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 transition flex items-center justify-center" title="العودة للرئيسية">
+          <span class="text-lg">🏠</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200"></div>
+        <div>
+          <span class="text-xs text-emerald-600 font-bold block">المحاضرة 12</span>
+          <h1 class="text-sm sm:text-base font-black text-slate-900 font-playpen leading-tight">المحاضرة الثانية عشرة: طريقة الشجرة</h1>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="lecture11.html" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-600 hover:bg-slate-100 transition">
+          <span>← المحاضرة 11</span>
+        </a>
+        <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white text-xs sm:text-sm font-black shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition">
+          <span>فهرس الكورس</span>
+          <span>📚</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header Section -->
+  <div class="bg-gradient-to-r from-emerald-800 via-teal-900 to-slate-900 text-white py-12 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-5xl mx-auto relative z-10 text-center sm:text-right space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-black">
+        <span>🌳 نظام البدائل الذهنية (Peg System)</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      </div>
+
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black font-playpen leading-tight tracking-tight">
+        المحاضرة الثانية عشرة: طريقة الشجرة
+      </h2>
+
+      <p class="text-emerald-100 text-sm sm:text-base leading-relaxed max-w-3xl font-normal">
+        حين تخلو صفحة المصحف من الروابط اللفظية أو الموضوعية ولا تشتمل على قصة أو رموز مادية واضحة، تأتي <strong>طريقة الشجرة (الحفظ بالبدائل)</strong> كأقوى تقنية لتثبيت الآيات والمتشابهات وتكرارات السور بالأرقام عبر صور ذهنية حية ومحفورة في العقل.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 pt-2 text-xs font-bold text-emerald-200">
+        <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl border border-white/10">
+          <span>💡</span> الحفظ بالبدائل الذهنية
+        </div>
+        <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl border border-white/10">
+          <span>🔢</span> جدول الشجرة من 1 إلى 20
+        </div>
+        <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl border border-white/10">
+          <span>📖</span> حل تكرارات سورة المرسلات (10 مرات)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-12 flex-1">
+
+    <!-- المحور الأول: ما هي طريقة الشجرة؟ ولماذا نحفظ بالبدائل؟ -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl font-black">1</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">مفهوم طريقة الشجرة والحفظ بالبدائل 🌳🧠</h3>
+            <p class="text-xs text-slate-500 font-semibold">تحويل الأرقام والحروف المجردة إلى صور حسية مجسمة</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-black">الأساس النظري</span>
+      </div>
+
+      <!-- الشرح التحليلي للمشكلة والحل -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="p-5 rounded-2xl bg-rose-50 border border-rose-100 space-y-3">
+          <div class="flex items-center gap-2 text-rose-800 font-black text-sm font-playpen">
+            <span>❌</span> مشكلة الصور الذهنية للأرقام والحروف المجردة:
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-semibold">
+            الأرقام (1، 2، 3...) والحروف مجردة بطبيعتها، والصور الذهنية لها في الدماغ <strong>ضعيفة جداً وسريعة التلاشي</strong>. إذا حاولت حفظ أن الآية رقم 3 تتحدث عن كذا والآية 4 عن كذا، ستنسى الترتيب أو يتداخل في ذهنك سريعاً لغياب الرابط البصري الحسي.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-100 space-y-3">
+          <div class="flex items-center gap-2 text-emerald-800 font-black text-sm font-playpen">
+            <span>✅</span> حل طريقة الشجرة (الحفظ بالبدائل):
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed font-semibold">
+            استبدال كل رقم بـ <strong>صورة ذهنية ثابتة ورمز مادي قوي</strong> (مثل ربط الرقم 1 بالقلم أو الشجرة، والرقم 2 بالبطة). هذا البديل يُشكل «وتداً ذهparamياً» يُعلق عليه عقلُك المعنى القرآني أو المعلومة، فلا تنفلت أبداً من الذاكرة طويلة المدى.
+          </p>
+        </div>
+      </div>
+
+      <!-- التدريب التمهيدي بـ 5 كلمات -->
+      <div class="p-6 rounded-2xl bg-slate-50 border-2 border-emerald-200 space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h4 class="text-base font-black text-emerald-950 font-playpen flex items-center gap-2">
+            <span>🎯</span> التدريب التمهيدي العملي: حفظ 5 كلمات بالبدائل الذهنية
+          </h4>
+          <span class="text-xs bg-emerald-600 text-white px-2.5 py-1 rounded-lg font-bold">تجربة مباشرة</span>
+        </div>
+        
+        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+          لنفترض أن لديك قائمة بـ 5 أشياء تود حفظها بترتيبها الدقيق: (1. باب - 2. شباك - 3. مكتب - 4. لابتوب - 5. كاميرا). كيف نربطها ببدائل الأرقام لنستحضرها فوراً؟
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 text-center">
+          <!-- 1 -->
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+            <span class="w-7 h-7 mx-auto rounded-full bg-emerald-100 text-emerald-800 font-black text-xs flex items-center justify-center">1</span>
+            <div class="font-black text-sm text-slate-800">باب 🚪</div>
+            <div class="text-xs text-emerald-700 font-bold bg-emerald-50 py-1 rounded-md">البديل: قلم ✏️</div>
+            <p class="text-[11px] text-slate-500 leading-tight">قلم عملاق ينغرس في قفل الباب ويفتحه</p>
+          </div>
+
+          <!-- 2 -->
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+            <span class="w-7 h-7 mx-auto rounded-full bg-emerald-100 text-emerald-800 font-black text-xs flex items-center justify-center">2</span>
+            <div class="font-black text-sm text-slate-800">شباك 🪟</div>
+            <div class="text-xs text-emerald-700 font-bold bg-emerald-50 py-1 rounded-md">البديل: بطة 🦆</div>
+            <p class="text-[11px] text-slate-500 leading-tight">بطة صفراء تطل من الشباك وتصيح</p>
+          </div>
+
+          <!-- 3 -->
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+            <span class="w-7 h-7 mx-auto rounded-full bg-emerald-100 text-emerald-800 font-black text-xs flex items-center justify-center">3</span>
+            <div class="font-black text-sm text-slate-800">مكتب 🪵</div>
+            <div class="text-xs text-emerald-700 font-bold bg-emerald-50 py-1 rounded-md">البديل: شوكة 🍴</div>
+            <p class="text-[11px] text-slate-500 leading-tight">شوكة ثلاثية كبيرة مغروسة في سطح المكتب</p>
+          </div>
+
+          <!-- 4 -->
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+            <span class="w-7 h-7 mx-auto rounded-full bg-emerald-100 text-emerald-800 font-black text-xs flex items-center justify-center">4</span>
+            <div class="font-black text-sm text-slate-800">لابتوب 💻</div>
+            <div class="text-xs text-emerald-700 font-bold bg-emerald-50 py-1 rounded-md">البديل: عربية 🚗</div>
+            <p class="text-[11px] text-slate-500 leading-tight">سيارة صغيرة تسير فوق لوحة مفاتيح اللابتوب</p>
+          </div>
+
+          <!-- 5 -->
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+            <span class="w-7 h-7 mx-auto rounded-full bg-emerald-100 text-emerald-800 font-black text-xs flex items-center justify-center">5</span>
+            <div class="font-black text-sm text-slate-800">كاميرا 📷</div>
+            <div class="text-xs text-emerald-700 font-bold bg-emerald-50 py-1 rounded-md">البديل: يد ✋</div>
+            <p class="text-[11px] text-slate-500 leading-tight">يد تضغط زر العدسة لالتقاط صورة تذكارية</p>
+          </div>
+        </div>
+
+        <div class="p-3 bg-emerald-50 rounded-xl text-xs text-emerald-900 font-bold flex items-center gap-2">
+          <span>💡 السر الذهني:</span>
+          <span>كلما كان المشهد التخيلي طريفاً، غريباً، ومجسماً.. ثَبُت الترتيب في الذاكرة دون بذل أي مجهود تكرار آلي!</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- المحور الثاني: جدول شجرة البدائل العشرين (1 إلى 20) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-teal-600 text-white flex items-center justify-center text-xl font-black">2</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">جدول شجرة البدائل الذهنية من 1 إلى 20 📊🌳</h3>
+            <p class="text-xs text-slate-500 font-semibold">المرجع البصري الموحد للبدائل والرموز المعتمدة</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-black">قاموس الرموز</span>
+      </div>
+
+      <!-- عرض الصورة الأصلية المجمعة بعد الدمج التام -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-black text-slate-700">🖼️ المخطط البصري الكامل لشجرة البدائل (انقر على الصورة لتكبيرها):</span>
+          <button onclick="openImageModal('tree_combined.jpeg')" class="text-xs text-emerald-700 font-bold hover:underline flex items-center gap-1">
+            <span>🔍 تكبير بكامل الشاشة</span>
+          </button>
+        </div>
+
+        <div class="relative group cursor-pointer overflow-hidden rounded-2xl border-2 border-slate-200 shadow-sm hover:border-emerald-500 transition" onclick="openImageModal('tree_combined.jpeg')">
+          <img src="tree_combined.jpeg" alt="جدول شجرة البدائل من 1 إلى 20" class="w-full h-auto object-cover group-hover:scale-[1.01] transition duration-300">
+          <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+            <span class="bg-white/95 text-slate-900 px-4 py-2 rounded-xl text-xs font-black shadow-lg">اضغط للتكبير واستعراض كافة الخلايا العشرين 🔍</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- جدول تفصيلي منظم للبدائل العشرين والروابط الذهنية المرتبطة بها -->
+      <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+        <table class="w-full text-right text-xs">
+          <thead class="bg-slate-100 text-slate-700 font-black border-b border-slate-200">
+            <tr>
+              <th class="p-3 w-16 text-center">الرقم</th>
+              <th class="p-3 w-36">البديل الذهني الرئيسي</th>
+              <th class="p-3 w-48">الرموز والبدائل المرادفة</th>
+              <th class="p-3">سبب الرابط أو الصورة المساعدة</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-semibold text-slate-700">
+            <!-- 1 to 5 -->
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">1</td>
+              <td class="p-3 font-black text-slate-900">شجرة 🌳 / قلم ✏️</td>
+              <td class="p-3">(الله) - الواحد الأحد</td>
+              <td class="p-3 text-slate-500">القلم رأسي مستقيم كالرقم 1، والشجرة تنمو عمودياً كجذع واحد</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">2</td>
+              <td class="p-3 font-black text-slate-900">بطة 🦆</td>
+              <td class="p-3">مفتاح الكهرباء (تك تك)</td>
+              <td class="p-3 text-slate-500">انحناءة رقبة البطة تشبه الرقم 2 تماماً، ومفتاح الكهرباء ذو طرفين</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">3</td>
+              <td class="p-3 font-black text-slate-900">شوكة 🍴 / مروحة 🪭</td>
+              <td class="p-3">موسى - الخضر - توكتوك 🛺</td>
+              <td class="p-3 text-slate-500">الشوكة ذات ثلاثة أسنان، ريش المروحة 3، والتوكتوك بـ 3 عجلات</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">4</td>
+              <td class="p-3 font-black text-slate-900">عربية 🚗 / رابعة</td>
+              <td class="p-3">كرسي 🪑 - كتب سماوية</td>
+              <td class="p-3 text-slate-500">السيارة لها 4 عجلات، والكرسي 4 أرجل، والكتب السماوية المشهورة 4</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">5</td>
+              <td class="p-3 font-black text-slate-900">يد ✋</td>
+              <td class="p-3">صلاة (الصلوات الخمس) 🕌 - كحك 🍩</td>
+              <td class="p-3 text-slate-500">اليد تحتوي على 5 أصابع، وأركان الإسلام 5، والصلوات المفروضة 5</td>
+            </tr>
+
+            <!-- 6 to 10 -->
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">6</td>
+              <td class="p-3 font-black text-slate-900">فأس 🪓</td>
+              <td class="p-3">أيام الخلق ⏳ - مكعب 🎲</td>
+              <td class="p-3 text-slate-500">شكل الفأس الحاد، وخلق السماوات والأرض في ستة أيام، والمكعب بـ 6 أوجه</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">7</td>
+              <td class="p-3 font-black text-slate-900">كوب 🥛 / سموات 🌌</td>
+              <td class="p-3">أرض (سبع أرضين) 🌍</td>
+              <td class="p-3 text-slate-500">سبع سموات طباقاً، وشكل الكوب المفتوح لأعلى كعلامة 7</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">8</td>
+              <td class="p-3 font-black text-slate-900">نظارة 👓</td>
+              <td class="p-3">عرش (ويحمل عرش ربك 8) 👑</td>
+              <td class="p-3 text-slate-500">إطارا النظارة يشبهان الرقم 8 بالإنجليزية أو العربية، وحملة العرش ثمانية</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">9</td>
+              <td class="p-3 font-black text-slate-900">عصا 🦯 / مفتاح 🗝️</td>
+              <td class="p-3">آيات موسى التسع ⚡</td>
+              <td class="p-3 text-slate-500">عصا موسى المنحنية كشكل الرقم 9، وآيات موسى التسع في بني إسرائيل</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">10</td>
+              <td class="p-3 font-black text-slate-900">عيد الأضحى 🐑</td>
+              <td class="p-3">مضرب وكرة 🏏 - حسنات (الحسنة بعشر)</td>
+              <td class="p-3 text-slate-500">يوم النحر في العاشر من ذي الحجة، مضرب (1) بجانبه كرة (0)</td>
+            </tr>
+
+            <!-- 11 to 15 -->
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">11</td>
+              <td class="p-3 font-black text-slate-900">كرة قدم ⚽ / كوكب 🪐</td>
+              <td class="p-3">يوسف عليه السلام (أحد عشر كوكباً)</td>
+              <td class="p-3 text-slate-500">فريق كرة القدم مكون من 11 لاعباً، ورؤيا سيدنا يوسف أحد عشر كوكباً</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">12</td>
+              <td class="p-3 font-black text-slate-900">بئر 🪣 / ماء 💧</td>
+              <td class="p-3">عيون موسى (فانفجرت منه اثنتا عشرة عيناً)</td>
+              <td class="p-3 text-slate-500">عيون الماء الاثنتا عشرة المنفجرة من حجر موسى عليه السلام</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">13</td>
+              <td class="p-3 font-black text-slate-900">أسرة 👨‍👩‍👧‍👦</td>
+              <td class="p-3">بيت متماسك - ترابط عائلي</td>
+              <td class="p-3 text-slate-500">رقم يعبر عن الدفء الأسري وتجمع أفراد العائلة حول المائدة</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">14</td>
+              <td class="p-3 font-black text-slate-900">قمر بدر 🌕</td>
+              <td class="p-3">ليلة أربعة عشر - نور ساطع</td>
+              <td class="p-3 text-slate-500">القمر يكتمل بدراً تاماً في الليلة الرابعة عشرة من الشهر الهجري</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-3 text-center font-black text-emerald-700">15</td>
+              <td class="p-3 font-black text-slate-900">فارس 🏇</td>
+              <td class="p-3">شجاعة - درع وسيف ⚔️</td>
+              <td class="p-3 text-slate-500">سن الفتوة والفروسية والانطلاق على صهوة الجواد</td>
+            </tr>
+
+            <!-- 16 to 20 -->
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">16</td>
+              <td class="p-3 font-black text-slate-900">شاب مراهق 🧑‍🎓</td>
+              <td class="p-3">مرحلة النضج والدراسة 🎒</td>
+              <td class="p-3 text-slate-500">سن السادسة عشرة وبدايات اكتمال مرحلة الشباب والمراهقة</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">17</td>
+              <td class="p-3 font-black text-slate-900">طوفان 🌊 / سفينة ⛵</td>
+              <td class="p-3">نوح عليه السلام - أمواج عاتية</td>
+              <td class="p-3 text-slate-500">أمواج الطوفان وسفينة النجاة التي تشق عباب الماء الهادر</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">18</td>
+              <td class="p-3 font-black text-slate-900">بطاقة رقم قومي 🪪</td>
+              <td class="p-3">سن الرشد القانوني - هوية رسمية</td>
+              <td class="p-3 text-slate-500">بلوغ سن 18 عاماً واستخراج بطاقة الهوية الوطنية وبلوغ سن الأهلية</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">19</td>
+              <td class="p-3 font-black text-slate-900">ملائكة النار 🔥</td>
+              <td class="p-3">سقر (عليها تسعة عشر)</td>
+              <td class="p-3 text-slate-500">خزنة جهنم المذكورون نصاً في القرآن: ﴿عَلَيْهَا تِسْعَةَ عَشَرَ﴾</td>
+            </tr>
+            <tr class="hover:bg-teal-50/50">
+              <td class="p-3 text-center font-black text-teal-700">20</td>
+              <td class="p-3 font-black text-slate-900">سلمى 👧 / الصبار 🌵</td>
+              <td class="p-3">صمود - خضار دائم</td>
+              <td class="p-3 text-slate-500">رمزية نبات الصبار الصبور القوي وشخصية سلمى الحيوية</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- المحور الثالث: التطبيق القرآني العملي على سورة المرسلات -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-8">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-xl font-black">3</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">التطبيق القرآني العملي: حل تكرارات سورة المرسلات 📖✨</h3>
+            <p class="text-xs text-slate-500 font-semibold">تثبيت 10 مواضع لآية ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ﴾ ببدائل الشجرة</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs font-black">إتقان المتشابهات</span>
+      </div>
+
+      <!-- عرض مصحف صفحة 580 وصفحة 581 -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="text-xs font-black text-slate-800">📖 صفحات سورة المرسلات (صفحة 580 وصفحة 581) - اضغط لتكبير أي صفحة:</span>
+          <span class="text-xs text-indigo-600 font-bold">10 مواضع متطابقة لا تتغير!</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Page 580 (12.jpeg) -->
+          <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 hover:border-indigo-400 transition cursor-pointer group" onclick="openImageModal('12.jpeg')">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-black text-indigo-900">سورة المرسلات - صفحة 580</span>
+              <span class="text-[11px] text-slate-500 font-bold">المواضع: 1 إلى 5 🔍</span>
+            </div>
+            <div class="relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+              <img src="12.jpeg" alt="صفحة 580 سورة المرسلات" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+            </div>
+          </div>
+
+          <!-- Page 581 (11.jpeg) -->
+          <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 hover:border-indigo-400 transition cursor-pointer group" onclick="openImageModal('11.jpeg')">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-black text-indigo-900">سورة المرسلات - صفحة 581</span>
+              <span class="text-[11px] text-slate-500 font-bold">المواضع: 6 إلى 10 🔍</span>
+            </div>
+            <div class="relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+              <img src="11.jpeg" alt="صفحة 581 سورة المرسلات" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- مشكلة التكرار وكيف حلتها طريقة الشجرة -->
+      <div class="p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 space-y-3">
+        <h4 class="text-sm font-black text-indigo-950 font-playpen flex items-center gap-2">
+          <span>🧠</span> لماذا تُمثل سورة المرسلات التحدي الأكبر للحُفاظ؟
+        </h4>
+        <p class="text-xs text-slate-700 leading-relaxed font-semibold">
+          تتكرر آية ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ﴾ في سورة المرسلات <strong>10 مرات كاملة</strong>. عند التسميع، يقع الحافظ في حيرة وتلعثم: <em>«ما هي الآية التي تأتي بعد الويل الأولى؟ وماذا بعد الثانية؟ وماذا بعد الرابعة؟»</em>. <br>
+          هنا نستخدم بدائل الأرقام من 1 إلى 10 لنربط بداية المقطع اللاحق برمز الشجرة المقابل، فينساب الحفظ كالشلال دون توقف!
+        </p>
+      </div>
+
+      <!-- بطاقات المواضع العشرة بتطبيق شجرة البدائل -->
+      <div class="space-y-3">
+        <span class="text-xs font-black text-slate-900 block font-playpen">🌟 خريطة المواضع العشرة في سورة المرسلات مربوطة ببدائل الشجرة:</span>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+
+          <!-- موضع 1 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-emerald-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-lg text-xs font-black">الموضع الأول (1)</span>
+              <span class="text-xs font-black text-emerald-700">البديل: شجرة / قلم ✏️</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (15)﴾ ⬅️ يتلوها: <br>
+              <span class="text-emerald-900 font-black">﴿أَلَمْ نُهْلِكِ الْأَوَّلِينَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> كلمة «الْأَوَّلِينَ» تعني رقم (1)، فنربطها فوراً ببديل الرقم 1 (الأول - القلم المستقيم).
+            </p>
+          </div>
+
+          <!-- موضع 2 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-emerald-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-lg text-xs font-black">الموضع الثاني (2)</span>
+              <span class="text-xs font-black text-emerald-700">البديل: بطة 🦆</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (19)﴾ ⬅️ يتلوها: <br>
+              <span class="text-emerald-900 font-black">﴿أَلَمْ نَخْلُقكُّم مِّن مَّاءٍ مَّهِينٍ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «مَّاءٍ مَّهِينٍ» ماء تسبح فيه البطة الصفراء (رمز الرقم 2)، فتتذكر الماء فوراً!
+            </p>
+          </div>
+
+          <!-- موضع 3 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-emerald-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-lg text-xs font-black">الموضع الثالث (3)</span>
+              <span class="text-xs font-black text-emerald-700">البديل: شوكة 🍴 / مروحة</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (24)﴾ ⬅️ يتلوها: <br>
+              <span class="text-emerald-900 font-black">﴿أَلَمْ نَجْعَلِ الْأَرْضَ كِفَاتًا﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «الْأَرْضَ» تحفرها شوكة ثلاثية كأسنان المحراث لتجهيز التربة للزرع.
+            </p>
+          </div>
+
+          <!-- موضع 4 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-emerald-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-lg text-xs font-black">الموضع الرابع (4)</span>
+              <span class="text-xs font-black text-emerald-700">البديل: عربية 🚗</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (28)﴾ ⬅️ يتلوها: <br>
+              <span class="text-emerald-900 font-black">﴿انطَلِقُوا إِلَىٰ مَا كُنتُم بِهِ تُكَذِّبُونَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «انطَلِقُوا» الانطلاق السريع يتم بسيارة (عربية) ذات عجلات أربع تدوس البنزين!
+            </p>
+          </div>
+
+          <!-- موضع 5 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-emerald-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-lg text-xs font-black">الموضع الخامس (5)</span>
+              <span class="text-xs font-black text-emerald-700">البديل: يد ✋</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (34)﴾ ⬅️ يتلوها: <br>
+              <span class="text-emerald-900 font-black">﴿هَٰذَا يَوْمُ لَا يَنطِقُونَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «لَا يَنطِقُونَ» تضع يدك (بأصابعها الخمسة) على الفم كإشارة صمت ومنع من الكلام.
+            </p>
+          </div>
+
+          <!-- موضع 6 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-teal-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-teal-100 text-teal-800 rounded-lg text-xs font-black">الموضع السادس (6)</span>
+              <span class="text-xs font-black text-teal-700">البديل: فأس 🪓</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (37)﴾ ⬅️ يتلوها: <br>
+              <span class="text-teal-900 font-black">﴿هَٰذَا يَوْمُ الْفَصْلِ ۖ جَمَعْنَاكُمْ وَالْأَوَّلِينَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «يَوْمُ الْفَصْلِ» الفأس الحاد يفصل الخشب أو يفصل بين الأطراف بحسم وقوة.
+            </p>
+          </div>
+
+          <!-- موضع 7 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-teal-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-teal-100 text-teal-800 rounded-lg text-xs font-black">الموضع السابع (7)</span>
+              <span class="text-xs font-black text-teal-700">البديل: كوب 🥛 / سموات</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (40)﴾ ⬅️ يتلوها: <br>
+              <span class="text-teal-900 font-black">﴿إِنَّ الْمُتَّقِينَ فِي ظِلَالٍ وَعُيُونٍ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «وَعُيُونٍ» ماء العيون العذب يُملأ في أكواب للشرب في ظلال الجنات السبع.
+            </p>
+          </div>
+
+          <!-- موضع 8 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-teal-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-teal-100 text-teal-800 rounded-lg text-xs font-black">الموضع الثامن (8)</span>
+              <span class="text-xs font-black text-teal-700">البديل: نظارة 👓</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (45)﴾ ⬅️ يتلوها: <br>
+              <span class="text-teal-900 font-black">﴿كُلُوا وَتَمَتَّعُوا قَلِيلًا إِنَّكُم مُّجْرِمُونَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «إِنَّكُم مُّجْرِمُونَ» تنظر بالنظارة فترى المجرمين يأكلون ويتمتعون قليلاً قبل الحساب.
+            </p>
+          </div>
+
+          <!-- موضع 9 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-teal-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-teal-100 text-teal-800 rounded-lg text-xs font-black">الموضع التاسع (9)</span>
+              <span class="text-xs font-black text-teal-700">البديل: عصا 🦯 / مفتاح</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (47)﴾ ⬅️ يتلوها: <br>
+              <span class="text-teal-900 font-black">﴿وَإِذَا قِيلَ لَهُمُ ارْكَعُوا لَا يَرْكَعُونَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> «ارْكَعُوا» العصا المنحنية تمثل انحناء الركوع، والشيخ يتكئ على عصاه عند الركوع.
+            </p>
+          </div>
+
+          <!-- موضع 10 -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-teal-400 transition">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 bg-teal-100 text-teal-800 rounded-lg text-xs font-black">الموضع العاشر (10)</span>
+              <span class="text-xs font-black text-teal-700">البديل: عيد الأضحى 🐑 / حسنات</span>
+            </div>
+            <div class="text-xs font-bold text-slate-800">
+              ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (49)﴾ ⬅️ يتلوها ختام السورة: <br>
+              <span class="text-teal-900 font-black">﴿فَبِأَيِّ حَدِيثٍ بَعْدَهُ يُؤْمِنُونَ﴾</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              <strong>الرابط:</strong> ختام كامل ومضاعفة الحسنات بعشر أمثالها، فبأي حديث يؤمنون بعد كتاب الله؟
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- المحور الرابع: تدريب ولعبة تفاعلية لاستحضار بدائل الشجرة -->
+    <section class="bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-emerald-500/30 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-emerald-500 text-slate-950 flex items-center justify-center text-xl font-black">🎮</span>
+          <div>
+            <h3 class="text-xl font-black text-white font-playpen">لعبة تحدي استحضار بدائل الشجرة الذكي</h3>
+            <p class="text-xs text-emerald-200 font-semibold">اختبر سرعة ذاكرتك في إطلاق الرمز أو الرقم المعادل فوراً</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 rounded-full text-xs font-black">تمرين تفاعلي</span>
+      </div>
+
+      <!-- Card Display for Game -->
+      <div class="max-w-md mx-auto text-center space-y-6 bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20">
+        <div class="flex items-center justify-between text-xs text-emerald-200 font-bold">
+          <span>الجولة: <span id="game-round">1</span> / 10</span>
+          <span>النقاط: <span id="game-score">0</span> 🌟</span>
+        </div>
+
+        <div class="py-6 space-y-3">
+          <div class="text-xs text-emerald-300 font-bold uppercase tracking-wider" id="card-prompt-label">ما هو البديل الذهني للرقم:</div>
+          <div class="text-5xl sm:text-6xl font-black font-playpen text-amber-300 drop-shadow-md animate-pulse" id="card-question-text">
+            2
+          </div>
+        </div>
+
+        <div id="card-answer-box" class="hidden p-4 rounded-2xl bg-emerald-500/30 border border-emerald-400/50 text-white space-y-1">
+          <span class="text-xs text-emerald-200 font-bold block">الإجابة النموذجية:</span>
+          <span class="text-xl font-black text-white block" id="card-answer-text">بطة 🦆 (أو مفتاح الكهرباء)</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 pt-2">
+          <button id="reveal-btn" onclick="revealCardAnswer()" class="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs shadow-md transition">
+            👁️ كشف البديل
+          </button>
+          <button id="next-card-btn" onclick="nextCardQuestion(true)" class="hidden px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shadow-md transition">
+            ✅ عرفتها (+1)
+          </button>
+          <button id="fail-card-btn" onclick="nextCardQuestion(false)" class="hidden px-5 py-3 rounded-xl bg-rose-500 hover:bg-rose-400 text-white font-black text-xs shadow-md transition">
+            ❌ لم أتذكرها
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- المحور الخامس: اختبار الفهم الذاتي (Interactive Quiz) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-xl font-black">4</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">اختبار الفهم الذاتي للمحاضرة الثانية عشرة 📝</h3>
+            <p class="text-xs text-slate-500 font-semibold">5 أسئلة لاختبار استيعابك لطريقة الشجرة وتطبيقها على سورة المرسلات</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-black">تقييم فوري</span>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- Question 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            1️⃣ متى نلجأ إلى استخدام «طريقة الشجرة» في حفظ القرآن الكريم؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(1, this)" data-correct="true" class="q1-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              أ) عند انعدام الروابط اللفظية والموضوعية وغياب القصص والرموز المباشرة في الصفحة ✨
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ب) فقط عند قراءة صفحات الأحكام الفقهية الصعبة
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ج) كبديل دائم يلغي طريقة القصة تماماً
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              د) عند التسميع بدون مصحف في الصلاة فقط
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            2️⃣ ما هو البديل الذهني المعتمد للرقم (2) وللرقم (4) في شجرة البدائل؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              أ) 2 = شوكة، و 4 = نظارة
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="true" class="q2-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ب) 2 = بطة (🦆)، و 4 = عربية / سيارة (🚗) ✨
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ج) 2 = قلم، و 4 = يد
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              د) 2 = كوب، و 4 = فأس
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            3️⃣ في سورة المرسلات، كم مرة تكررت آية ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ﴾؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              أ) 7 مرات
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ب) 8 مرات
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="true" class="q3-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ج) 10 مرات كاملة ✨
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              د) 12 مرة
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            4️⃣ ما هي الآية التي تلي الموضع الثاني لـ ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ﴾ وكيف ربطناها ببديل الرقم 2؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              أ) ﴿أَلَمْ نَجْعَلِ الْأَرْضَ كِفَاتًا﴾ - برابط الشوكة
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="true" class="q4-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ب) ﴿أَلَمْ نَخْلُقكُّم مِّن مَّاءٍ مَّهِينٍ﴾ - برابط البطة التي تسبح في الماء ✨
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ج) ﴿انطَلِقُوا إِلَىٰ مَا كُنتُم بِهِ تُكَذِّبُونَ﴾ - برابط العربية
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              د) ﴿هَٰذَا يَوْمُ لَا يَنطِقُونَ﴾ - برابط اليد
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="font-bold text-slate-900 text-sm">
+            5️⃣ ما هو البديل الذهني للرقم (19) في شجرة البدائل، وما أصله القرآني؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              أ) سن الرشد والبطاقة الشخصية
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="true" class="q5-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ب) ملائكة النار وخزنة جهنم - من قوله تعالى: ﴿عَلَيْهَا تِسْعَةَ عَشَرَ﴾ ✨
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              ج) سفينة نوح عليه السلام
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 bg-white hover:bg-emerald-50 border border-slate-200 rounded-xl text-right transition">
+              د) القمر ليلة البدر التام
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quiz Congrats Banner -->
+      <div id="quiz-congrats" class="hidden p-5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white text-center space-y-2 shadow-lg animate-bounce">
+        <span class="text-3xl">🎉🏆🌳</span>
+        <h4 class="font-black text-lg font-playpen">مبارك! لقد أتقنت طريقة الشجرة وبدائلها الذهنية بنسبة 100%</h4>
+        <p class="text-xs text-emerald-100 font-semibold">أصبح عقلك الآن مجهزاً بأوتاد بصرية متينة لتثبيت أي متشابه أو تكرار قرآني دون أدنى ارتباك!</p>
+      </div>
+    </section>
+
+    <!-- المحور السادس: الواجب العملي الشامل للمحاضرة الثانية عشرة -->
+    <section class="bg-gradient-to-br from-emerald-50 via-teal-50 to-slate-50 rounded-3xl p-6 sm:p-8 border border-emerald-200 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4 border-b border-emerald-200/60 pb-5">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-2xl bg-emerald-700 text-white flex items-center justify-center text-xl font-black">5</span>
+          <div>
+            <h3 class="text-xl font-black text-emerald-950 font-playpen">الواجب العملي الشامل للمحاضرة الثانية عشرة 📝🔥</h3>
+            <p class="text-xs text-slate-600 font-semibold">التطبيق العملي المباشر وحفظ قاموس البدائل الذهنية</p>
+          </div>
+        </div>
+        <span class="px-3 py-1 bg-emerald-600 text-white rounded-full text-xs font-black">التطبيق التراكمي</span>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- التكليف المباشر للمحاضرة الثانية عشرة -->
+        <div class="p-5 bg-white/90 backdrop-blur-sm rounded-2xl border-2 border-emerald-300 space-y-3">
+          <span class="text-xs font-black text-emerald-950 block font-playpen text-sm">
+            ⭐ أولاً: تكليف المحاضرة الثانية عشرة الأساسي:
+          </span>
+
+          <div class="space-y-3 text-xs text-slate-700 leading-relaxed font-semibold">
+            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 space-y-1">
+              <strong class="text-emerald-950 block">1. حفظ جدول شجرة البدائل الذهنية من 1 إلى 20 غيباً:</strong>
+              <p>تثبيت الرموز الأساسية (1 قلم/شجرة، 2 بطة، 3 شوكة، 4 عربية، 5 يد، ... إلى 20 صبار) حتى تستحضر أي رمز خلال نصف ثانية.</p>
+            </div>
+
+            <div class="p-3 bg-teal-50 rounded-xl border border-teal-200 space-y-1">
+              <strong class="text-teal-950 block">2. تسميع مواضع سورة المرسلات العشرة بالترتيب مع البدائل:</strong>
+              <p>تسميع مواضع ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ﴾ العشرة وما يتلو كلاً منها مستعيناً بروابط الشجرة من 1 إلى 10 دون النظر في المصحف.</p>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-emerald-200 space-y-1 text-emerald-900 font-bold">
+              <strong class="block text-sm">⏱️ 3. تسجيل زمن استحضار البدائل العشرين:</strong>
+              <p>شغّل المؤقت واكتب أو سَمّع البدائل من 1 إلى 20، وسجّل الزمن المستغرق لتحقيق الاستحضار الآلي اللحظي.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- مجمع التمارين السابقة -->
+        <div class="p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-emerald-200 space-y-3">
+          <span class="text-xs font-black text-emerald-900 block">⭐ ثانياً: الاستمرار اليومي في مجمع التمارين التراكمية لتنشيط خلايا الدماغ:</span>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs text-slate-700 font-bold">
+            <div class="p-2.5 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center gap-2">
+              <span>🫁</span>
+              <span>1. تمرين التنفس التبادلي (4-4-4).</span>
+            </div>
+            <div class="p-2.5 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center gap-2">
+              <span>🎨</span>
+              <span>2. الرسم والتلوين باليدين معاً.</span>
+            </div>
+            <div class="p-2.5 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center gap-2">
+              <span>✍️</span>
+              <span>3. الكتابة باليدين معاً في آن واحد.</span>
+            </div>
+            <div class="p-2.5 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center gap-2">
+              <span>🔄</span>
+              <span>4. القراءة المعكوسة وعد الكلمات سطراً بسطر.</span>
+            </div>
+            <div class="p-2.5 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center gap-2">
+              <span>🖐️</span>
+              <span>5. تمارين الأصابع واليد الخمسة.</span>
+            </div>
+            <div class="p-2.5 bg-emerald-50/70 rounded-xl border border-emerald-100 flex items-center gap-2">
+              <span>👁️</span>
+              <span>6. تمارين توسيع مجال الرؤية والقراءة السريعة.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- بطاقة تشجيعية ختامية -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-emerald-800 via-teal-800 to-slate-900 text-white text-center space-y-2 shadow-md">
+        <span class="text-2xl">🌟🌳✨</span>
+        <h4 class="font-black text-base font-playpen">مع طريقة الشجرة.. انتهى عصر النسيان والارتباك في المتشابهات!</h4>
+        <p class="text-xs text-emerald-100 font-medium">كل رمز تبنيه في خيالك هو أصل ثابت وفرع باسق يثمر حفظاً راسخاً لا يتزعزع أبداً بإذن الله.</p>
+      </div>
+
+    </section>
+
+    <!-- Navigation between lectures -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+      <a href="lecture11.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition shadow-sm">
+        <span>← المحاضرة السابقة (المحاضرة 11)</span>
+      </a>
+
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-50 text-emerald-800 font-black hover:bg-emerald-100 transition">
+        <span>فهرس الكورس الرئيسي 📚</span>
+      </a>
+
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-100 text-amber-800 font-black text-sm">
+        <span>المحاضرة الثالثة عشرة (قريباً ⏳)</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal for Fullscreen Image Zoom -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4" onclick="closeImageModal()">
+    <div class="relative max-w-4xl max-h-[90vh] bg-white rounded-3xl p-3 overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+      <button onclick="closeImageModal()" class="absolute top-4 left-4 z-10 w-9 h-9 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white font-black text-sm flex items-center justify-center transition">
+        ✕
+      </button>
+      <img id="modal-image" src="" alt="صورة مكبرة" class="w-auto max-h-[82vh] mx-auto rounded-2xl object-contain">
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Scripts -->
+  <script>
+    // --- 1. Image Modal Logic ---
+    function openImageModal(imgSrc) {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-image');
+      modalImg.src = imgSrc;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // --- 2. Interactive Tree Pegs Challenge Game ---
+    const pegDatabase = [
+      { num: 1, peg: "قلم ✏️ / شجرة 🌳", note: "قلم مستقيم أو شجرة قائمة كالألف" },
+      { num: 2, peg: "بطة 🦆 / مفتاح كهرباء", note: "رقبة البطة المنحنية تشبه الرقم 2" },
+      { num: 3, peg: "شوكة 🍴 / مروحة 🪭", note: "الشوكة بثلاثة أسنان والمروحة بـ 3 ريش" },
+      { num: 4, peg: "عربية 🚗 / كرسي 🪑", note: "4 عجلات للسيارة و4 أرجل للكرسي" },
+      { num: 5, peg: "يد ✋ / صلاة 🕌", note: "اليد ذات 5 أصابع والصلوات الخمس" },
+      { num: 6, peg: "فأس 🪓 / مكعب 🎲", note: "نصل الفأس أو مكعب بستة أوجه" },
+      { num: 7, peg: "كوب 🥛 / سموات 🌌", note: "كوب مفتوح لأعلى أو سبع سموات" },
+      { num: 8, peg: "نظارة 👓 / عرش 👑", note: "عدستا النظارة كشكل 8 وحملة العرش 8" },
+      { num: 9, peg: "عصا 🦯 / مفتاح 🗝️", note: "عصا موسى المنحنية أو آيات موسى التسع" },
+      { num: 10, peg: "عيد الأضحى 🐑 / حسنات", note: "عاشر ذي الحجة ومضاعفة الحسنات بعشر" },
+      { num: 11, peg: "كرة قدم ⚽ / كوكب 🪐", note: "11 لاعباً في الفريق أو 11 كوكباً ليوسف" },
+      { num: 12, peg: "بئر 🪣 / ماء 💧", note: "اثنتا عشرة عيناً من الماء لحجر موسى" },
+      { num: 14, peg: "قمر بدر 🌕", note: "ليلة أربعة عشر واكتمال البدر" },
+      { num: 19, peg: "ملائكة النار 🔥", note: "سقر عليها تسعة عشر" },
+      { num: 20, peg: "سلمى 👧 / الصبار 🌵", note: "رمزية الصبار والصمود الدائم" }
+    ];
+
+    let gameIndex = 0;
+    let score = 0;
+    let currentShuffled = [];
+
+    function shufflePegs() {
+      currentShuffled = [...pegDatabase].sort(() => Math.random() - 0.5).slice(0, 10);
+      gameIndex = 0;
+      score = 0;
+      loadCard();
+    }
+
+    function loadCard() {
+      if (gameIndex >= currentShuffled.length) {
+        document.getElementById('card-prompt-label').textContent = '🎉 أحسنت! انتهت جولة التحدي!';
+        document.getElementById('card-question-text').textContent = `${score} / 10`;
+        document.getElementById('card-answer-box').classList.add('hidden');
+        document.getElementById('reveal-btn').classList.remove('hidden');
+        document.getElementById('reveal-btn').textContent = '🔄 العب جولة جديدة';
+        document.getElementById('reveal-btn').onclick = shufflePegs;
+        document.getElementById('next-card-btn').classList.add('hidden');
+        document.getElementById('fail-card-btn').classList.add('hidden');
+        if (typeof confetti === 'function' && score >= 8) {
+          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        }
+        return;
+      }
+
+      const item = currentShuffled[gameIndex];
+      document.getElementById('game-round').textContent = (gameIndex + 1);
+      document.getElementById('game-score').textContent = score;
+      document.getElementById('card-prompt-label').textContent = 'ما هو البديل الذهني للرقم:';
+      document.getElementById('card-question-text').textContent = item.num;
+      document.getElementById('card-answer-text').textContent = `${item.peg} (${item.note})`;
+
+      document.getElementById('card-answer-box').classList.add('hidden');
+      document.getElementById('reveal-btn').classList.remove('hidden');
+      document.getElementById('reveal-btn').textContent = '👁️ كشف البديل';
+      document.getElementById('reveal-btn').onclick = revealCardAnswer;
+      document.getElementById('next-card-btn').classList.add('hidden');
+      document.getElementById('fail-card-btn').classList.add('hidden');
+    }
+
+    function revealCardAnswer() {
+      document.getElementById('card-answer-box').classList.remove('hidden');
+      document.getElementById('reveal-btn').classList.add('hidden');
+      document.getElementById('next-card-btn').classList.remove('hidden');
+      document.getElementById('fail-card-btn').classList.remove('hidden');
+    }
+
+    function nextCardQuestion(isCorrect) {
+      if (isCorrect) score++;
+      gameIndex++;
+      loadCard();
+    }
+
+    // Initialize Game on load
+    shufflePegs();
+
+    // --- 3. Interactive Quiz Script ---
+    let correctAnswersCount = 0;
+    const answeredQuestions = new Set();
+
+    function checkQuiz(questionNum, btnElement) {
+      if (answeredQuestions.has(questionNum)) return;
+      answeredQuestions.add(questionNum);
+
+      const isCorrect = btnElement.getAttribute('data-correct') === 'true';
+      const allBtns = document.querySelectorAll(`.q${questionNum}-btn`);
+
+      allBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.add('cursor-not-allowed', 'opacity-80');
+        if (btn.getAttribute('data-correct') === 'true') {
+          btn.classList.remove('border-slate-200', 'hover:bg-emerald-50');
+          btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-black');
+        }
+      });
+
+      if (isCorrect) {
+        correctAnswersCount++;
+        btnElement.classList.add('ring-2', 'ring-emerald-500');
+      } else {
+        btnElement.classList.remove('border-slate-200', 'hover:bg-emerald-50');
+        btnElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-900', 'line-through');
+      }
+
+      if (answeredQuestions.size === 5 && correctAnswersCount === 5) {
+        const congrats = document.getElementById('quiz-congrats');
+        if (congrats) {
+          congrats.classList.remove('hidden');
+          if (typeof confetti === 'function') {
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { y: 0.6 }
+            });
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
