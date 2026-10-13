@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الخامسة عشرة: المراجعة الشاملة وخطة الدوام</title>
+  
+  <!-- Google Fonts: Alexandria & Playpen Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Playpen+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            alexandria: ['Alexandria', 'sans-serif'],
+            playpen: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fdf2f8',
+              100: '#fce7f3',
+              200: '#fbcfe8',
+              300: '#f9a8d4',
+              400: '#f472b6',
+              500: '#ec4899',
+              600: '#db2777',
+              700: '#be185d',
+              800: '#9d174d',
+              900: '#831843',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-alexandria antialiased selection:bg-pink-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- Top Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2 rounded-xl bg-slate-100 hover:bg-pink-50 text-slate-600 hover:text-pink-700 transition flex items-center justify-center" title="العودة للرئيسية">
+          <span class="text-lg">🏠</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200"></div>
+        <div>
+          <span class="text-xs text-pink-600 font-bold block">المحاضرة 15 (مسك الختام) 🌟</span>
+          <h1 class="text-sm sm:text-base font-black text-slate-900 font-playpen leading-tight">المحاضرة الخامسة عشرة: المراجعة الشاملة وخطة الدوام</h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="lecture14.html" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-pink-700 hover:bg-pink-50 transition border border-slate-200">
+          ← السابقة (14: الذاكرة السمعية)
+        </a>
+        <a href="index.html" class="px-3 py-1.5 rounded-lg text-xs font-black bg-gradient-to-r from-pink-600 to-purple-600 text-white shadow-sm">
+          فهرس الكورس 🏆
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-pink-950 via-purple-950 to-slate-950 text-white py-12 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto relative z-10 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-bold text-pink-200">
+        <span>🌟 المحطة الجامعة: كبسولة الكورس الكاملة وخارطة طريق المستقبل</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black font-playpen leading-tight">
+        المحاضرة الخامسة عشرة: المراجعة الشاملة وخطة الدوام
+      </h2>
+      <p class="text-sm sm:text-base text-pink-100/90 max-w-2xl mx-auto leading-relaxed">
+        أهلاً بك يا بطل الذاكرة الخارقة في المحطة التتويجية! نجمع لك هنا خلاصة وتقطير كل ما تعلمناه في المحاضرات الـ 14 بشكل خفيف وممتع، مع خطة عملية محكمة للدوام اليومي والأسبوعي تضمن بقاء ذاكرتك في أوج توهجها طوال العمر!
+      </p>
+
+      <!-- Quick Highlights -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs font-bold max-w-3xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🗺️💎</span>
+          مراجعة 14 محاضرة
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🔄📅</span>
+          خطة الدوام الأسبوعية
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🧠✨</span>
+          العادات الـ 5 الذهبية
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🎓🏆</span>
+          شهادة التخرج والإنجاز
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-12 flex-1">
+
+    <!-- Section 1: الموسوعة المختصرة للمحاضرات الـ 14 -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-100 pb-4">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-pink-100 text-pink-700 font-black flex items-center justify-center text-lg shadow-sm">1</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">خلاصة المحاضرات الـ 14: كبسولات سريعة ومركزة</h3>
+            <p class="text-xs text-slate-500">كل تقنية تعلمتها في سطرين لتبقى دائماً في متناول يدك</p>
+          </div>
+        </div>
+        <span class="text-xs font-bold px-3 py-1 bg-pink-50 text-pink-700 rounded-full border border-pink-200">
+          14 كبسولة معرفية 💊
+        </span>
+      </div>
+
+      <!-- شبكة الـ 14 محاضرة ملخصة -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- 1 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-lg">المحاضرة 01</span>
+            <span class="text-lg">🧠💧</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">التعرف على الذاكرة، تمارين، طرق الحفظ السريعة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> فهم طبيعة الذاكرة والنسيان، تغذية الدماغ بالماء والأكسجين، قدرات الفصين، تمارين التنفس العميق، والرسم والتلوين لفتح مسارات الإبداع.
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-lg">المحاضرة 02</span>
+            <span class="text-lg">🛡️⚡</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">قوانين العقل الباطن، مداخل الشيطان، خطوات الحفظ الصحيحة، تمارين</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> تسخير قوانين العقل الباطن (التوقع والتكرار)، سد ثغرات وساوس الشيطان، والانطلاق بخطوات الحفظ الصحيحة المنضبطة ذهنياً.
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-teal-700 bg-teal-100 px-2.5 py-0.5 rounded-lg">المحاضرة 03</span>
+            <span class="text-lg">🎯🧘‍♂️</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">التركيز وعوامل التشتت، تمارين زيادة التركيز، خطوات الحفظ الصحيحة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> القضاء على مشتتات البيئة الخارجية والتشتت الداخلي، تطبيق تمارين التركيز العددي والبصري، وتثبيت بيئة الحفظ الهادئة.
+          </p>
+        </div>
+
+        <!-- 4 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-lg">المحاضرة 04</span>
+            <span class="text-lg">✋📖</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">تمارين، أساسيات الحفظ الصحيح، الرابط الموضوعي</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> تمارين الأصابع واليد، أركان الحفظ (قبل وأثناء وبعد)، والرابط الموضوعي لفهم السياق العام للآيات قبل نطق حرف واحد.
+          </p>
+        </div>
+
+        <!-- 5 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-blue-700 bg-blue-100 px-2.5 py-0.5 rounded-lg">المحاضرة 05</span>
+            <span class="text-lg">🔗🗣️</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">التلقين، أساسيات ما بعد الحفظ، الرابط اللفظي، أساسيات أثناء الحفظ</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> التلقين السليم، منحنى النسيان والمراجعات الست، والرابط اللفظي لربط أواخر الآيات بأوائلها بالحروف المتشابهة لتفادي التوقف.
+          </p>
+        </div>
+
+        <!-- 6 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-lg">المحاضرة 06</span>
+            <span class="text-lg">🔄⚖️</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">مراجعة على أساسيات الحفظ والرابط اللفظي</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> ترسيخ خطوات التليين الخمس، ودمج الرابط الموضوعي مع اللفظي في آن واحد (صفحة 460 سورة الزمر) مع الرابط الإجرائي الحركي.
+          </p>
+        </div>
+
+        <!-- 7 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-lg">المحاضرة 07</span>
+            <span class="text-lg">🎬🍿</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">طريقة القصة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> نسج المعلومات في مشاهد سينمائية خيالية مشوقة (بطل، مكان، حركة غير مألوفة) لحفظ التسلسل الطويل والأرقام الكبيرة دون جهد.
+          </p>
+        </div>
+
+        <!-- 8 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-teal-700 bg-teal-100 px-2.5 py-0.5 rounded-lg">المحاضرة 08</span>
+            <span class="text-lg">🗂️👀</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">طريقة الحفظ الصحيحة (التبويب)</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> توسيع مجال الرؤية البصرية، وتصنيف الأفكار المتناثرة في "أبواب وفئات متجانسة" مع طريقة الدمج لحفظ أوائل الأرباع ببراعة.
+          </p>
+        </div>
+
+        <!-- 9 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-indigo-700 bg-indigo-100 px-2.5 py-0.5 rounded-lg">المحاضرة 09</span>
+            <span class="text-lg">📜🔤</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">المتون العلمية، صفحات الأحكام، طريقة الترميز</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> حفظ المتون بالنظم المقفى (الرحبية)، فك تشابك صفحات الأحكام (البقرة 36)، واستخدام الرموز الحسية المختصرة للآيات القصيرة (التكوير).
+          </p>
+        </div>
+
+        <!-- 10 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-rose-700 bg-rose-100 px-2.5 py-0.5 rounded-lg">المحاضرة 10</span>
+            <span class="text-lg">✨🖼️</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">مراجعة على القصة والترميز</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> دمج الترميز البصري خارج قصار السور عبر صورة ذهنية شاملة وربط القصص في صفحة 455 من سورة ص (سليمان وأيوب عليهما السلام).
+          </p>
+        </div>
+
+        <!-- 11 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-blue-700 bg-blue-100 px-2.5 py-0.5 rounded-lg">المحاضرة 11</span>
+            <span class="text-lg">⚡📸</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">القراءة السريعة، القراءة التصويرية، جدول الحفظ</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> تمرين المؤشر البصري لمنع الارتداد العكسي، المسح الفوتوغرافي لصفحات المصحف، وتصميم جدول الحفظ الأسبوعي بالمراجعات التراكمية.
+          </p>
+        </div>
+
+        <!-- 12 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-lg">المحاضرة 12</span>
+            <span class="text-lg">🌳🔢</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">طريقة الشجرة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> حفظ المتشابهات بالأرقام والبدائل الحسية من 1 إلى 20 عند انعدام الروابط، وحل تكرارات سورة المرسلات العشرة بسهولة تامة.
+          </p>
+        </div>
+
+        <!-- 13 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-lg">المحاضرة 13</span>
+            <span class="text-lg">🗺️⏰</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">الخرائط الذهنية</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> لوحة بصرية متكاملة (ورقة غير مسطرة، ألوان خشب، عقارب الساعة) تدمج الذاكرة البصرية والسمعية والإجرائية معاً لأي صفحة أو ربع.
+          </p>
+        </div>
+
+        <!-- 14 -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-pink-300 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-indigo-700 bg-indigo-100 px-2.5 py-0.5 rounded-lg">المحاضرة 14</span>
+            <span class="text-lg">👂🎧</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm font-playpen">الذاكرة السمعية</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>الجوهر:</strong> إحياء الحاسة الأولى الفطرية، تدريب الاسترجاع العكسي ذو الـ 7 مستويات، الاستغناء عن البصر 5 دقائق، وقاعدة الفهم قبل الحفظ في الحديث.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: خطة الدوام اليومية والأسبوعية المحكمة -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 font-black flex items-center justify-center text-lg shadow-sm">2</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">خطة الدوام: الروتين اليومي والأسبوعي لتثبيت الدماغ الخارق</h3>
+          <p class="text-xs text-slate-500">كيف تحافظ على هذه المهارات حية ونابضة كل يوم بدون استهلاك وقت طويل؟</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+        السر الحقيقي للتفوق ليس في قضاء ساعات طويلة مرهقة، بل في <strong class="text-purple-800 font-black">"قليل دائم خير من كثير منقطع"</strong>. إليك جدول الدوام المتكامل الذي يوزع التمارين بذكاء على مدار يومك وأسبوعك:
+      </p>
+
+      <!-- الجدول اليومي العملي (20 دقيقة موزعة) -->
+      <div class="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-pink-50 to-white border-2 border-purple-200 space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="font-black text-purple-950 text-base font-playpen flex items-center gap-2">
+            <span>☀️🌙</span>
+            <span>الروتين اليومي الذهبي (20 دقيقة موزعة على اليوم):</span>
+          </span>
+          <span class="text-xs bg-purple-600 text-white font-bold px-3 py-1 rounded-full">سهل وممتع</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+          <!-- صباحاً -->
+          <div class="p-3.5 bg-white rounded-xl border border-purple-100 space-y-1">
+            <div class="flex items-center justify-between font-black text-purple-900">
+              <span>🌅 صباحاً (5 دقائق):</span>
+              <span>💧🫁</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              كوب ماء كبير على الريق + تمرين تنفس عميق 4-2-4 + تمرين بسيط للأصابع لتنشيط نصفي الدماغ.
+            </p>
+          </div>
+
+          <!-- قبل الحفظ -->
+          <div class="p-3.5 bg-white rounded-xl border border-purple-100 space-y-1">
+            <div class="flex items-center justify-between font-black text-purple-900">
+              <span>📖 قبل الحفظ (5 دقائق):</span>
+              <span>🔍🔗</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              خطوات التليين الخمس: مسح فوتوغرافي سريع + فهم الرابط الموضوعي + التقاط الروابط اللفظية.
+            </p>
+          </div>
+
+          <!-- أثناء الحفظ -->
+          <div class="p-3.5 bg-white rounded-xl border border-purple-100 space-y-1">
+            <div class="flex items-center justify-between font-black text-purple-900">
+              <span>🧠 أثناء الحفظ (5 دقائق):</span>
+              <span>🗺️🌳</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              تطبيق التقنية المناسبة: خريطة ذهنية سريعة، أو قصة مشوقة، أو بدائل الشجرة للمتشابهات.
+            </p>
+          </div>
+
+          <!-- مساءً -->
+          <div class="p-3.5 bg-white rounded-xl border border-purple-100 space-y-1">
+            <div class="flex items-center justify-between font-black text-purple-900">
+              <span>🌙 مساءً (5 دقائق):</span>
+              <span>🙈👂</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              تمرين الاستغناء عن البصر وتنشيط السمع، أو كتابة سريعة باليد اليسرى لترويض الفص الأيمن.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- الجدول الأسبوعي الدائري -->
+      <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+        <h4 class="font-black text-slate-900 text-sm font-playpen flex items-center gap-2">
+          <span>📅</span>
+          <span>توزيع خطة الدوام الأسبوعية (جدول الـ 7 أيام):</span>
+        </h4>
+
+        <div class="grid grid-cols-2 sm:grid-cols-7 gap-2 text-center text-xs">
+          <div class="p-3 rounded-xl bg-white border border-slate-200">
+            <span class="font-black text-purple-700 block mb-1">السبت</span>
+            <span class="text-[11px] text-slate-600 block">حفظ جديد + رابط موضوعي</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-slate-200">
+            <span class="font-black text-purple-700 block mb-1">الأحد</span>
+            <span class="text-[11px] text-slate-600 block">تطبيق قصة أو ترميز</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-slate-200">
+            <span class="font-black text-purple-700 block mb-1">الإثنين</span>
+            <span class="text-[11px] text-slate-600 block">مراجعة سريعة بالمؤشر</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-slate-200">
+            <span class="font-black text-purple-700 block mb-1">الثلاثاء</span>
+            <span class="text-[11px] text-slate-600 block">رسم خريطة ذهنية</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-slate-200">
+            <span class="font-black text-purple-700 block mb-1">الأربعاء</span>
+            <span class="text-[11px] text-slate-600 block">تمرين الشجرة والأرقام</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-slate-200">
+            <span class="font-black text-purple-700 block mb-1">الخميس</span>
+            <span class="text-[11px] text-slate-600 block">استرجاع سمعي وعكسي</span>
+          </div>
+          <div class="p-3 rounded-xl bg-emerald-100 border border-emerald-300 font-black text-emerald-900">
+            <span class="block mb-1">الجمعة</span>
+            <span class="text-[11px] block">المراجعة الأسبوعية الشاملة 🌟</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: العادات الذهبية الـ 5 التي لا تتوقف أبداً -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 font-black flex items-center justify-center text-lg shadow-sm">3</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">العادات الذهبية الـ 5 لصيانة الدماغ مدى الحياة</h3>
+          <p class="text-xs text-slate-500">قواعد ذهبية مستمرة تجعل ذاكرتك شابة ومتجددة دائماً</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+        
+        <!-- 1 -->
+        <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <strong class="text-blue-950 font-black text-sm">1. الماء هو حياة الدماغ</strong>
+            <span class="text-xl">💧</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            لا تنتظر حتى تعطش؛ لأن العطش يعني جفاف الخلايا بنسبة 2% مما يقلل التركيز بنسبة 20%. اجعل الماء رفيقك الدائم قبل وأثناء الحفظ.
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <strong class="text-purple-950 font-black text-sm">2. التنفس العميق المنتظم</strong>
+            <span class="text-xl">🫁</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            الدماغ يستهلك 20% من أكسجين الجسم. 3 تنفسات عميقة بطيئة قبل فتح المصحف تعيد ضبط كهرباء الدماغ وتفرغ القلق فوراً.
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="p-4 rounded-2xl bg-pink-50/70 border border-pink-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <strong class="text-pink-950 font-black text-sm">3. كسر الروتين باليد غير المعتادة</strong>
+            <span class="text-xl">🎨</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            اكتب أو لوّن أو افتح الباب بيدك اليسرى بين الحين والآخر؛ هذا الإجراء البسيط يجبر فصي الدماغ على بناء مسارات تشابكية عصبية جديدة.
+          </p>
+        </div>
+
+        <!-- 4 -->
+        <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <strong class="text-amber-950 font-black text-sm">4. قاعدة المراجعات الست</strong>
+            <span class="text-xl">📈</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            اهزم منحنى النسيان بالمراجعة المتباعدة: (بعد ساعة، بعد يوم، بعد أسبوع، بعد شهر). خمس دقائق مراجعة في الوقت المناسب توفر ساعات من إعادة الحفظ.
+          </p>
+        </div>
+
+        <!-- 5 -->
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-2 sm:col-span-2 lg:col-span-2">
+          <div class="flex items-center justify-between">
+            <strong class="text-emerald-950 font-black text-sm">5. الإخلاص وحسن الظن برب العالمين</strong>
+            <span class="text-xl">🤲</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            أعظم محفز للطاقة الذهنية هو النية الصادقة واليقين بأن الله يسّر القرآن للذكر ﴿وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ﴾. استعن بالله ولا تعجز، وتذكر أن كل حرف تتلوه وتحفظه لك به حسنة والحسنة بعشر أمثالها.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: بطاقة التخرج والاحتفال الختامي الكبير -->
+    <section class="bg-gradient-to-r from-purple-900 via-pink-900 to-indigo-950 text-white rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+      <div class="absolute -top-16 -left-16 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 space-y-4 max-w-2xl mx-auto">
+        <div class="text-6xl animate-bounce">🎓🌟🏆</div>
+        
+        <h3 class="text-2xl sm:text-4xl font-black font-playpen leading-tight">
+          مبارك من القلب إتمام كورس الذاكرة الخارقة كاملاً!
+        </h3>
+        
+        <p class="text-xs sm:text-base text-pink-100/90 leading-relaxed font-medium">
+          يا بطل الذاكرة.. بدأت الرحلة بالتعرف على خلايا الدماغ والتنفس، واليوم تقف ومعك 14 تقنية متقدمة تمزج البصر والسمع والحركة والمنطق والخيال. لم يعد القرآن الكريم لديك كلمات تحفظ بالتكرار الأعمى، بل أصبح لوحة نورانية حية محفورة في وجدانك وعقلك!
+        </p>
+
+        <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm text-pink-200">
+          ✨ <strong>وسام الإنجاز:</strong> أتممت 15 محاضرة تفاعلية كاملة بنجاح واستحقاق!
+        </div>
+
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button onclick="launchGrandCelebration()" class="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-white text-purple-950 font-black text-sm shadow-xl hover:bg-pink-50 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+            <span>🎉 انقر للاحتفال الكبير وإطلاق الألعاب النارية</span>
+          </button>
+          <a href="index.html" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-bold text-sm transition">
+            العودة للرئيسية 🏠
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between lectures -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+      <a href="lecture14.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition shadow-sm">
+        <span>← المحاضرة السابقة (المحاضرة 14: الذاكرة السمعية)</span>
+      </a>
+
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-black hover:opacity-90 transition shadow-md">
+        <span>فهرس الكورس الرئيسي 📚</span>
+      </a>
+
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-100 text-emerald-800 font-black text-sm border border-emerald-200">
+        <span>أتممت الكورس بنجاح 100%! 🏆✨</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive JavaScript Scripts -->
+  <script>
+    function launchGrandCelebration() {
+      if (typeof confetti === 'function') {
+        // Multi-stage fireworks confetti
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+        setTimeout(() => {
+          confetti({
+            particleCount: 150,
+            spread: 100,
+            origin: { y: 0.4 }
+          });
+        }, 300);
+        setTimeout(() => {
+          confetti({
+            particleCount: 200,
+            spread: 120,
+            origin: { y: 0.5 }
+          });
+        }, 600);
+      }
+    }
+
+    // Auto celebration on first load
+    window.addEventListener('load', () => {
+      setTimeout(launchGrandCelebration, 500);
+    });
+  </script>
+
+</body>
+</html>
