@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الرابعة عشرة: الذاكرة السمعية</title>
+  
+  <!-- Google Fonts: Alexandria & Playpen Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Playpen+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            alexandria: ['Alexandria', 'sans-serif'],
+            playpen: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-alexandria antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- Top Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 transition flex items-center justify-center" title="العودة للرئيسية">
+          <span class="text-lg">🏠</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200"></div>
+        <div>
+          <span class="text-xs text-indigo-600 font-bold block">المحاضرة 14 (الختامية) 🎓</span>
+          <h1 class="text-sm sm:text-base font-black text-slate-900 font-playpen leading-tight">المحاضرة الرابعة عشرة: الذاكرة السمعية</h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="lecture13.html" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-indigo-700 hover:bg-indigo-50 transition border border-slate-200">
+          ← السابقة (13: الخرائط الذهنية)
+        </a>
+        <a href="index.html" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+          ختام الكورس 🏆
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-indigo-950 via-slate-900 to-blue-950 text-white py-12 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto relative z-10 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-bold text-indigo-200">
+        <span>🎧 المحطة الختامية للكورس: إيقاظ الحاسة الأولى للإنسان</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black font-playpen leading-tight">
+        المحاضرة الرابعة عشرة: الذاكرة السمعية
+      </h2>
+      <p class="text-sm sm:text-base text-indigo-100/90 max-w-2xl mx-auto leading-relaxed">
+        اكتشف أسرار الإدخال السمعي، ولماذا تراجع لصالح البصر في حياتنا المعاصرة، وكيف نعيد بناء قدرتنا السمعية الفائقة عبر تمارين القراءة العكسية ذات الـ 7 مستويات، الاستغناء عن البصر، حفظ الحديث الشريف، ومنظومة الاستمرارية الدائمة للدماغ!
+      </p>
+
+      <!-- Quick Highlights -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs font-bold max-w-3xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">👂🍼</span>
+          أسبقية السمع الفطرية
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🔢🔤</span>
+          7 مستويات استرجاع عكسي
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🙈⏳</span>
+          تحدي الـ 5 دقائق بدون بصر
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">📜🌱</span>
+          حفظ الحديث وخطة الاستدامة
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-12 flex-1">
+
+    <!-- Section 1: مفهوم الذاكرة السمعية والمقارنة مع الإدخال البصري -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 font-black flex items-center justify-center text-lg shadow-sm">1</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">مفهوم الذاكرة السمعية: الفرق بين الإدخال السمعي والإدخال البصري</h3>
+          <p class="text-xs text-slate-500">هل الإدخال السمعي أضعف بطبيعته؟ أم نحن من أهملنا تدريبه؟</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+        سبحان الله، خلق الله تعالى كل حاسة وكل نظام إدخال في أجسادنا في أفضل تقويم وأكمل صورة. ولكن في واقعنا الحالي، نجد أن <strong class="text-indigo-800 font-black">الإدخال السمعي يكاد يكون أضعف بكثير من الإدخال البصري</strong> لدى معظم الناس. والسبب لا يعود لنقص في خِلقة الأذن، بل لأن الإنسان الحديث هو من وجّه كل اهتمامه ونشاطه اليومي نحو البصر، فأهمل تغذية وتدريب الذاكرة السمعية!
+      </p>
+
+      <!-- الدليل العلمي والفطري: الطفل في بطن أمه -->
+      <div class="p-5 rounded-2xl bg-gradient-to-br from-indigo-50 via-blue-50 to-white border border-indigo-200/80 space-y-4">
+        <div class="flex items-center gap-2 text-indigo-950 font-black text-base font-playpen">
+          <span>👶</span>
+          <span>الدليل الفطري والإعجازي: حاسة السمع هي بوابة الحياة الأولى!</span>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
+          <div class="p-4 rounded-xl bg-white border border-indigo-100 space-y-2">
+            <strong class="text-indigo-900 font-black block">1. في بطن الأم (الإدخال السمعي الخالص):</strong>
+            <p class="leading-relaxed text-slate-600">
+              يبدأ الجنين بتمييز الأصوات في رحم أمه قبل ولادته، فيسمع نبضات قلبها، ويميز صوت والده ومحيطه الخارجي، ويعتاد على رنين التلاوة والكلام. حاسة السمع تعمل بكفاءة تامة قبل أن تفتح العين نافذة واحدة على العالم!
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white border border-indigo-100 space-y-2">
+            <strong class="text-indigo-900 font-black block">2. عند الولادة (البصر لا يزال في المهد):</strong>
+            <p class="leading-relaxed text-slate-600">
+              عندما يولد الطفل، لا يرى بوضوح؛ بل يرى العالم في البداية بالأبيض والأسود والظلال، وتأخذ شبكية العين أشهراً لتكتمل رؤية الألوان والمسافات. الإدخال السمعي كان سابقاً ورائداً!
+            </p>
+          </div>
+        </div>
+
+        <!-- التحول الحضاري والتراجع السمعي -->
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed space-y-1">
+          <strong class="font-black flex items-center gap-1.5">
+            <span>⚠️</span>
+            <span>لماذا تراجع السمع بعد ذلك وأصبح البصر طاغياً؟</span>
+          </strong>
+          <p class="text-slate-700">
+            مع نمو الإنسان وتطوره، يصبح كل شيء حوله معتمداً على الرؤية: الشوارع مليئة باللافتات، المدارس تعتمد على السبورات والكتب المصورة، والشاشات والهواتف الذكية تضخ آلاف المشاهد البصرية في الثانية. أصبح الإنسان <strong>"يرى دون أن يُصغي"</strong>، واقتصر الإدخال السمعي على الاستماع السريع العابر، مما جعل العضلة السمعية في الدماغ خاملة وتحتاج إلى إعادة إحياء وتنشيط!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: تدريبات القراءة العكسية للأذن (الأرقام، الحروف، الكلمات) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 font-black flex items-center justify-center text-lg shadow-sm">2</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">تمارين تنشيط الذاكرة السمعية: الاسترجاع العكسي ذو الـ 7 مستويات</h3>
+          <p class="text-xs text-slate-500">تدريب السمع الخالص دون كتابة أو رؤية من المستوى 1 إلى المستوى 7</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+        فكرة هذا التدريب الخارق: أن تستقبل معلومة من خلال <strong class="text-indigo-800 font-black">أذنك فقط</strong>، فتحتفظ بها في ذاكرتك العاملة، ثم تقوم بـ <strong class="text-slate-900 font-black">قراءتها واسترجاعها بالعكس</strong>! نبدأ من 3 عناصر ونتدرج حتى نصل للمستوى السابع (7 عناصر).
+      </p>
+
+      <!-- التبويبات التفاعلية للتمارين الثلاثة (أرقام، حروف، كلمات) -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <button onclick="switchDrillTab('numbers')" id="tab-btn-numbers" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-black bg-indigo-600 text-white shadow-md transition">
+            1️⃣ تدريب الأرقام العكسية (1-7)
+          </button>
+          <button onclick="switchDrillTab('letters')" id="tab-btn-letters" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">
+            2️⃣ تدريب الحروف العكسية (1-7)
+          </button>
+          <button onclick="switchDrillTab('words')" id="tab-btn-words" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">
+            3️⃣ تدريب الكلمات العكسية (1-7)
+          </button>
+        </div>
+
+        <!-- 1. محتوى تدريب الأرقام -->
+        <div id="drill-numbers-content" class="space-y-4">
+          <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 text-xs text-slate-700 leading-relaxed">
+            <strong class="text-indigo-950 font-black block text-sm mb-1">🎯 طريقة تطبيق تدريب الأرقام:</strong>
+            استمع أو اقرأ السلسلة مرة واحدة، رددها بنفس الترتيب، ثم اقلبها مباشرة بصوت مسموع (مثلاً: تسمع <strong>[ 1 - 2 - 3 ]</strong> ➜ تردد <strong>1-2-3</strong> ➜ ثم تعكس: <strong>3-2-1</strong>). انقر على الزر الصوتي لكل مستوى لسماعه بصوت النظام!
+          </div>
+
+          <div class="space-y-2">
+            <!-- Level 1 (3 digits) -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-black text-xs flex items-center justify-center shrink-0">L1</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الأول (3 أرقام):</div>
+                  <div class="text-base font-black text-indigo-950 font-mono tracking-wider">1 - 2 - 3</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('واحد، اثنان، ثلاثة')" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: 3 - 2 - 1
+                </span>
+              </div>
+            </div>
+
+            <!-- Level 2 (4 digits) -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-black text-xs flex items-center justify-center shrink-0">L2</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الثاني (4 أرقام):</div>
+                  <div class="text-base font-black text-indigo-950 font-mono tracking-wider">7 - 9 - 4 - 2</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('سبعة، تسعة، أربعة، اثنان')" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: 2 - 4 - 9 - 7
+                </span>
+              </div>
+            </div>
+
+            <!-- Level 3 (5 digits) -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-black text-xs flex items-center justify-center shrink-0">L3</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الثالث (5 أرقام):</div>
+                  <div class="text-base font-black text-indigo-950 font-mono tracking-wider">5 - 8 - 1 - 6 - 3</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('خمسة، ثمانية، واحد، ستة، ثلاثة')" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: 3 - 6 - 1 - 8 - 5
+                </span>
+              </div>
+            </div>
+
+            <!-- Level 4 (6 digits) -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-black text-xs flex items-center justify-center shrink-0">L4</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الرابع (6 أرقام):</div>
+                  <div class="text-base font-black text-indigo-950 font-mono tracking-wider">8 - 3 - 9 - 2 - 7 - 4</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('ثمانية، ثلاثة، تسعة، اثنان، سبعة، أربعة')" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: 4 - 7 - 2 - 9 - 3 - 8
+                </span>
+              </div>
+            </div>
+
+            <!-- Level 5 (7 digits) -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white font-black text-xs flex items-center justify-center shrink-0">L5</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الخامس (7 أرقام):</div>
+                  <div class="text-base font-black text-indigo-950 font-mono tracking-wider">2 - 6 - 9 - 1 - 5 - 8 - 3</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('اثنان، ستة، تسعة، واحد، خمسة، ثمانية، ثلاثة')" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: 3 - 8 - 5 - 1 - 9 - 6 - 2
+                </span>
+              </div>
+            </div>
+
+            <!-- Level 6 (تحدي متقدم - 7 أرقام غير متسلسلة) -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-700 text-white font-black text-xs flex items-center justify-center shrink-0">L6</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى السادس (تثبيت الذاكرة الفائقة):</div>
+                  <div class="text-base font-black text-indigo-950 font-mono tracking-wider">9 - 4 - 7 - 2 - 8 - 3 - 5</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('تسعة، أربعة، سبعة، اثنان، ثمانية، ثلاثة، خمسة')" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: 5 - 3 - 8 - 2 - 7 - 4 - 9
+                </span>
+              </div>
+            </div>
+
+            <!-- Level 7 (قمة المستوى السابع السمعي) -->
+            <div class="p-3.5 rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 border-2 border-indigo-300 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-purple-700 text-white font-black text-xs flex items-center justify-center shrink-0">L7</span>
+                <div>
+                  <div class="text-xs text-purple-700 font-black">المستوى السابع (قمة التحدي السمعي - 7 أرقام معقدة):</div>
+                  <div class="text-base font-black text-purple-950 font-mono tracking-wider">6 - 1 - 8 - 4 - 9 - 7 - 2</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('ستة، واحد، ثمانية، أربعة، تسعة، سبعة، اثنان')" class="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white text-xs font-black transition flex items-center gap-1 shadow-sm">
+                  <span>🔊 استمع وتحد نفسك</span>
+                </button>
+                <span class="text-xs font-bold text-purple-900 bg-purple-100 px-3 py-1.5 rounded-lg border border-purple-200">
+                  العكس: 2 - 7 - 9 - 4 - 8 - 1 - 6
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. محتوى تدريب الحروف -->
+        <div id="drill-letters-content" class="hidden space-y-4">
+          <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 text-xs text-slate-700 leading-relaxed">
+            <strong class="text-blue-950 font-black block text-sm mb-1">🎯 طريقة تطبيق تدريب الحروف:</strong>
+            سماع الحروف المجردة وعكسها في الذهن مباشرة (مثلاً: <strong>م - ن - ك</strong> ➜ ثم تعكس: <strong>ك - ن - م</strong>). هذا التمرين يقوي المعالجة الفونولوجية في الفص الصدغي المسؤول عن تمييز أصوات اللغة!
+          </div>
+
+          <div class="space-y-2">
+            <!-- L1 Letters -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black text-xs flex items-center justify-center shrink-0">L1</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الأول (3 حروف):</div>
+                  <div class="text-base font-black text-blue-950 tracking-wider">م - ن - ك</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('ميم، نون، كاف')" class="px-3 py-1.5 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: ك - ن - م
+                </span>
+              </div>
+            </div>
+
+            <!-- L2 Letters -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black text-xs flex items-center justify-center shrink-0">L2</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الثاني (4 حروف):</div>
+                  <div class="text-base font-black text-blue-950 tracking-wider">س - ب - ح - ت</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('سين، باء، حاء، تاء')" class="px-3 py-1.5 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: ت - ح - ب - س
+                </span>
+              </div>
+            </div>
+
+            <!-- L3 Letters -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black text-xs flex items-center justify-center shrink-0">L3</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الثالث (5 حروف):</div>
+                  <div class="text-base font-black text-blue-950 tracking-wider">ف - ل - ق - ص - ر</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('فاء، لام، قاف، صاد، راء')" class="px-3 py-1.5 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: ر - ص - ق - ل - ف
+                </span>
+              </div>
+            </div>
+
+            <!-- L4 Letters -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black text-xs flex items-center justify-center shrink-0">L4</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الرابع (6 حروف):</div>
+                  <div class="text-base font-black text-blue-950 tracking-wider">ج - د - و - ل - هـ - ي</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('جيم، دال، واو، لام، هاء، ياء')" class="px-3 py-1.5 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: ي - هـ - ل - و - د - ج
+                </span>
+              </div>
+            </div>
+
+            <!-- L5 Letters -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white font-black text-xs flex items-center justify-center shrink-0">L5</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الخامس (7 حروف):</div>
+                  <div class="text-base font-black text-blue-950 tracking-wider">ش - ج - ر - ة - ق - ل - م</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('شين، جيم، راء، تاء مربوطة، قاف، لام، ميم')" class="px-3 py-1.5 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: م - ل - ق - ة - ر - ج - ش
+                </span>
+              </div>
+            </div>
+
+            <!-- L6 Letters -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-700 text-white font-black text-xs flex items-center justify-center shrink-0">L6</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى السادس (تركيز الحروف المتشابهة صوتياً):</div>
+                  <div class="text-base font-black text-blue-950 tracking-wider">ض - ظ - ذ - ز - ث - ص - س</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('ضاد، ظاء، ذال، زاي، ثاء، صاد، سين')" class="px-3 py-1.5 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: س - ص - ث - ز - ذ - ظ - ض
+                </span>
+              </div>
+            </div>
+
+            <!-- L7 Letters -->
+            <div class="p-3.5 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-300 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-indigo-700 text-white font-black text-xs flex items-center justify-center shrink-0">L7</span>
+                <div>
+                  <div class="text-xs text-indigo-700 font-black">المستوى السابع (القمة: 7 حروف عربية متباعدة المخارج):</div>
+                  <div class="text-base font-black text-indigo-950 tracking-wider">ء - ع - ح - خ - غ - ق - ك</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('همزة، عين، حاء، خاء، غين، قاف، كاف')" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-black transition flex items-center gap-1 shadow-sm">
+                  <span>🔊 استمع وتحد نفسك</span>
+                </button>
+                <span class="text-xs font-bold text-indigo-900 bg-indigo-100 px-3 py-1.5 rounded-lg border border-indigo-200">
+                  العكس: ك - ق - غ - خ - ح - ع - ء
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. محتوى تدريب الكلمات -->
+        <div id="drill-words-content" class="hidden space-y-4">
+          <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-100 text-xs text-slate-700 leading-relaxed">
+            <strong class="text-teal-950 font-black block text-sm mb-1">🎯 طريقة تطبيق تدريب الكلمات:</strong>
+            سماع سلسلة من الكلمات المتباينة ثم استرجاعها بترتيب عكسي من الأخيرة إلى الأولى، كأنك تقوم بـ <strong>"قراءة سمعية عكسية"</strong> دون الاستعانة بالبصر نهائياً!
+          </div>
+
+          <div class="space-y-2">
+            <!-- L1 Words -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-600 text-white font-black text-xs flex items-center justify-center shrink-0">L1</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الأول (3 كلمات):</div>
+                  <div class="text-base font-black text-teal-950">باب - شباك - مكتب</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('باب، شباك، مكتب')" class="px-3 py-1.5 rounded-lg bg-teal-100 hover:bg-teal-200 text-teal-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: مكتب - شباك - باب
+                </span>
+              </div>
+            </div>
+
+            <!-- L2 Words -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-600 text-white font-black text-xs flex items-center justify-center shrink-0">L2</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الثاني (4 كلمات):</div>
+                  <div class="text-base font-black text-teal-950">شمس - قمر - سماء - غيم</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('شمس، قمر، سماء، غيم')" class="px-3 py-1.5 rounded-lg bg-teal-100 hover:bg-teal-200 text-teal-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: غيم - سماء - قمر - شمس
+                </span>
+              </div>
+            </div>
+
+            <!-- L3 Words -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-600 text-white font-black text-xs flex items-center justify-center shrink-0">L3</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الثالث (5 كلمات):</div>
+                  <div class="text-base font-black text-teal-950">ماء - شجرة - جبل - وادٍ - بحر</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('ماء، شجرة، جبل، وادٍ، بحر')" class="px-3 py-1.5 rounded-lg bg-teal-100 hover:bg-teal-200 text-teal-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: بحر - وادٍ - جبل - شجرة - ماء
+                </span>
+              </div>
+            </div>
+
+            <!-- L4 Words -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-600 text-white font-black text-xs flex items-center justify-center shrink-0">L4</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الرابع (6 كلمات):</div>
+                  <div class="text-base font-black text-teal-950">نور - فجر - ضحى - ليل - صبح - شفق</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('نور، فجر، ضحى، ليل، صبح، شفق')" class="px-3 py-1.5 rounded-lg bg-teal-100 hover:bg-teal-200 text-teal-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: شفق - صبح - ليل - ضحى - فجر - نور
+                </span>
+              </div>
+            </div>
+
+            <!-- L5 Words -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-600 text-white font-black text-xs flex items-center justify-center shrink-0">L5</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى الخامس (7 كلمات متناسقة):</div>
+                  <div class="text-base font-black text-teal-950">قلم - كتاب - ورقة - فكرة - علم - حكمة - نور</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('قلم، كتاب، ورقة، فكرة، علم، حكمة، نور')" class="px-3 py-1.5 rounded-lg bg-teal-100 hover:bg-teal-200 text-teal-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: نور - حكمة - علم - فكرة - ورقة - كتاب - قلم
+                </span>
+              </div>
+            </div>
+
+            <!-- L6 Words -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-teal-700 text-white font-black text-xs flex items-center justify-center shrink-0">L6</span>
+                <div>
+                  <div class="text-xs text-slate-500 font-bold">المستوى السادس (7 كلمات عشوائية غير مترابطة):</div>
+                  <div class="text-base font-black text-teal-950">ساعة - مفتاح - قطار - زهرة - حجر - مرآة - عصفور</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('ساعة، مفتاح، قطار، زهرة، حجر، مرآة، عصفور')" class="px-3 py-1.5 rounded-lg bg-teal-100 hover:bg-teal-200 text-teal-800 text-xs font-black transition flex items-center gap-1">
+                  <span>🔊 استمع</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: عصفور - مرآة - حجر - زهرة - قطار - مفتاح - ساعة
+                </span>
+              </div>
+            </div>
+
+            <!-- L7 Words -->
+            <div class="p-3.5 rounded-xl bg-gradient-to-r from-teal-50 to-emerald-50 border-2 border-teal-300 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-emerald-700 text-white font-black text-xs flex items-center justify-center shrink-0">L7</span>
+                <div>
+                  <div class="text-xs text-emerald-800 font-black">المستوى السابع (قمة الذاكرة المعجمية السمعية):</div>
+                  <div class="text-base font-black text-emerald-950">إخلاص - يقين - صدق - صبر - شكر - توكل - رضا</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="speakText('إخلاص، يقين، صدق، صبر، شكر، توكل، رضا')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black transition flex items-center gap-1 shadow-sm">
+                  <span>🔊 استمع وتحد نفسك</span>
+                </button>
+                <span class="text-xs font-bold text-emerald-900 bg-emerald-100 px-3 py-1.5 rounded-lg border border-emerald-200">
+                  العكس: رضا - توكل - شكر - صبر - صدق - يقين - إخلاص
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: تمرين الاستغناء عن البصر لمدة 5 دقائق يومياً -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 font-black flex items-center justify-center text-lg shadow-sm">3</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">تمرين الاستغناء عن البصر (5 دقائق يومياً)</h3>
+          <p class="text-xs text-slate-500">كيف تكتشف عالماً سمعياً خفياً لم تكن تلحظه في بيتك وحياتك؟</p>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-amber-50/80 border border-amber-200 space-y-4">
+        <div class="flex items-center gap-2 text-amber-950 font-black text-base font-playpen">
+          <span>🙈⏳</span>
+          <span>فلسفة التمرين وهدفه العصبي:</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          الهدف من هذا التدريب ليس التقليل من نعمة البصر العظيمة حاشا لله، بل هو <strong class="text-amber-900 font-black">إعادة توجيه الطاقة الذهنية المركزة نحو حاسة السمع</strong>. عندما نحجب البصر مؤقتاً، يتوقف الدفق الهائل من الإشارات الضوئية التي تشغل 80% من قشرة الدماغ المخية، فتتحول طاقة الانتباه بكامل قوتها نحو الأذنين!
+        </p>
+
+        <!-- خطوات تمرين الـ 5 دقائق اليومي -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-1">
+          <div class="p-4 rounded-xl bg-white border border-amber-200 space-y-1">
+            <span class="font-black text-amber-900 block text-sm">1. إغماض العينين تماماً:</span>
+            <p class="text-slate-600 leading-relaxed">
+              اختر وقتاً هادئاً، وأغمض عينيك لمدة 5 دقائق كاملة، واستحضر في نفسك أنك ستعتمد على أذنيك وحواسك الأخرى فقط.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white border border-amber-200 space-y-1">
+            <span class="font-black text-amber-900 block text-sm">2. الحركة البسيطة بحذر:</span>
+            <p class="text-slate-600 leading-relaxed">
+              تحرك داخل غرفتك أو منزلك برفق ووعي، وحاول ممارسة نشاط بسيط (كشرب الماء، أو ترتيب شيء، أو المشي لخطوات).
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white border border-amber-200 space-y-1">
+            <span class="font-black text-amber-900 block text-sm">3. رصد الأصوات الخفية:</span>
+            <p class="text-slate-600 leading-relaxed">
+              ستلاحظ على الفور أنك بدأت تسمع أصواتاً كنت تتجاهلها تماماً: صوت عقارب الساعة، صدى خطواتك، حركة الهواء، والمسافات المكانية!
+            </p>
+          </div>
+        </div>
+
+        <!-- مؤقت تفاعلي للـ 5 دقائق -->
+        <div class="p-5 rounded-2xl bg-white border border-amber-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="space-y-1 text-center sm:text-right">
+            <strong class="text-sm font-black text-slate-900 block font-playpen">⏱️ مؤقت تمرين الـ 5 دقائق الصامت:</strong>
+            <p class="text-xs text-slate-500">اضغط للبدء، وأغمض عينيك حتى يرن الجرس اللطيف عند انتهاء الوقت!</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="timer-display" class="font-mono text-2xl font-black text-amber-800 bg-amber-100 px-4 py-2 rounded-xl">05:00</span>
+            <button id="timer-btn" onclick="toggleTimer()" class="px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-black text-xs shadow-md transition">
+              ابدأ الآن 🚀
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: تطبيق حفظ الحديث الشريف بالإدخال السمعي والفهم أولاً -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-black flex items-center justify-center text-lg shadow-sm">4</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">حفظ الحديث الشريف بالإدخال السمعي: قاعدة "الفهم قبل الحفظ"</h3>
+          <p class="text-xs text-slate-500">تطبيق عملي هادئ لتنشيط الذاكرة بنيل بركة كلام المصطفى ﷺ</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+        الحفظ عامة يغذي الدماغ وينشط تشابكاته العصبية. وقد اخترنا لتطبيق هذه المحاضرة <strong class="text-emerald-800 font-black">حديثاً نبوياً شريفاً جامعاً</strong>، لكي يتمرن الطالب على السمع الصافي بأريحية وثقة، متجنباً أي توتر قد يصيبه عند الحفظ الأولي لكتاب الله.
+      </p>
+
+      <div class="p-6 rounded-3xl bg-gradient-to-br from-emerald-50 via-teal-50 to-white border-2 border-emerald-200 space-y-5">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="px-3 py-1 bg-emerald-600 text-white rounded-full text-xs font-black shadow-sm">
+            الحديث الشريف المختار للتدريب 📜✨
+          </span>
+          <span class="text-xs font-bold text-emerald-800">صحيح مسلم</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-emerald-200 text-center space-y-3 shadow-inner">
+          <p class="text-xs text-slate-500 font-bold">عن تميم بن أوس الداري رضي الله عنه أن النبي ﷺ قال:</p>
+          <p class="text-base sm:text-xl font-black text-emerald-950 font-playpen leading-relaxed">
+            «الدِّينُ النَّصِيحَةُ»<br>
+            <span class="text-sm sm:text-base font-bold text-slate-700">قُلْنَا: لِمَنْ؟</span><br>
+            «لِلَّهِ، وَلِكِتَابِهِ، وَلِرَسُولِهِ، وَلِأَئِمَّةِ الْمُسْلِمِينَ، وَعَامَّتِهِمْ»
+          </p>
+        </div>
+
+        <!-- الخطوتان المنهجيتان: الفهم ثم الحفظ -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <!-- الخطوة 1: الفهم أولاً -->
+          <div class="p-4 rounded-2xl bg-white border border-emerald-200 space-y-2">
+            <div class="flex items-center justify-between">
+              <strong class="text-emerald-950 font-black text-sm block">1️⃣ المرة الأولى: استماع بهدف الفهم</strong>
+              <span class="text-lg">💡</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              (تذكر قاعدة التليين): لا تسارع للحفظ في أول استماع! استمع لتدرك المعنى الإجمالي: الدين كله يقوم على إخلاص النصح وحب الخير لله تعالى بالتوحيد، ولكتابه بتلاوته والعمل به، ولرسوله باتباع سنته، ولأئمة المسلمين بالنصرة والرأي السديد، ولعامة المسلمين بالرحمة والتعاون.
+            </p>
+            <button onclick="playHadithAudio(false)" class="w-full mt-2 py-2 px-3 rounded-xl bg-emerald-100 hover:bg-emerald-200 text-emerald-900 font-black transition flex items-center justify-center gap-1.5">
+              <span>🎧 1. استمع الآن بهدف الفهم والتدبر</span>
+            </button>
+          </div>
+
+          <!-- الخطوة 2: الحفظ السمعي -->
+          <div class="p-4 rounded-2xl bg-white border border-emerald-200 space-y-2">
+            <div class="flex items-center justify-between">
+              <strong class="text-emerald-950 font-black text-sm block">2️⃣ المرة الثانية: استماع بهدف الحفظ</strong>
+              <span class="text-lg">🧠</span>
+            </div>
+            <p class="text-slate-600 leading-relaxed">
+              بعد أن استقر المعنى وفهمت الأركان الخمسة، استمع مرة ثانية بتركيز على الألفاظ ومواقعها وتتابعها بالأذن فقط، ثم ردد الحديث بصوتك غيباً وتأكد من حفظك الراسخ لكلام الحبيب ﷺ.
+            </p>
+            <button onclick="playHadithAudio(true)" class="w-full mt-2 py-2 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black transition flex items-center justify-center gap-1.5 shadow-sm">
+              <span>🎧 2. استمع الآن بهدف التثبيت والحفظ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: مختبر الاستماع والكتابة السمعية (تدريب 30 ثانية وتدريب 1 دقيقة) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 font-black flex items-center justify-center text-lg shadow-sm">5</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">مختبر الاستماع والكتابة: قراءة صوتية وتفريغ مباشر</h3>
+          <p class="text-xs text-slate-500">استمع للقطعة الصوتية واكتب ما سمعته بدقة عبر أذنيك فقط</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+        أمامك تدريبان عمليان مجهزان بالقراءة الصوتية الفورية (Text-to-Speech). مهمتك: الضغط على زر التشغيل، الاستماع بإنصات دون قراءة النص، ثم كتابة ما سمعته في الصندوق المخصص والتحقق من نسبة دقة استرجاعك السمعي!
+      </p>
+
+      <!-- التدريبان: 30 ثانية و 1 دقيقة -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- القطعة الأولى: 30 ثانية (موجزة ومركزة) -->
+        <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-200 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-black text-purple-800 bg-purple-200/80 px-2.5 py-1 rounded-lg">التدريب الأول (~30 ثانية) ⏱️</span>
+              <span class="text-xs text-slate-500 font-bold">مستوى أساسي</span>
+            </div>
+            <h4 class="font-black text-slate-900 text-base font-playpen mb-1">قطعة: "أهمية الماء للدماغ"</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              انقر للاستماع، ثم دوّن في الأسفل ما التقطه عقلك بدقة.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <button onclick="playClip(1)" id="play-btn-1" class="flex-1 py-2.5 px-4 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-black text-xs transition flex items-center justify-center gap-2 shadow-sm">
+                <span>🔊 تشغيل التسجيل الصوتي</span>
+              </button>
+              <button onclick="stopAudio()" class="py-2.5 px-3 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold transition">
+                ⏹️ إيقاف
+              </button>
+            </div>
+
+            <!-- مكان الكتابة والتفريغ -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">اكتب ما سمعته هنا:</label>
+              <textarea id="user-input-1" rows="3" placeholder="ابدأ الكتابة بعد الاستماع..." class="w-full p-3 rounded-xl border border-purple-200 text-xs text-slate-800 focus:ring-2 focus:ring-purple-400 focus:outline-none resize-none"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <button onclick="verifyText(1)" class="px-4 py-2 rounded-lg bg-purple-100 hover:bg-purple-200 text-purple-900 text-xs font-black transition">
+                ✓ تحقق من المطابقة
+              </button>
+              <button onclick="toggleOriginal(1)" class="text-xs text-purple-600 hover:underline font-bold">
+                إظهار النص الأصلي 👁️
+              </button>
+            </div>
+
+            <div id="original-box-1" class="hidden p-3 rounded-xl bg-white border border-purple-200 text-xs text-slate-700 leading-relaxed">
+              <strong class="text-purple-900 font-bold block mb-1">النص الأصلي:</strong>
+              «يتكون دماغ الإنسان من نحو ثمانين بالمئة من الماء. لذا فإن شرب الماء بانتظام يحافظ على مرونة الخلايا العصبية ويزيد من سرعة الإدراك والتركيز وتدفق الأفكار.»
+            </div>
+            <div id="result-box-1" class="hidden p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+        </div>
+
+        <!-- القطعة الثانية: 1 دقيقة (شاملة ومترابطة) -->
+        <div class="p-5 rounded-2xl bg-blue-50/70 border border-blue-200 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-black text-blue-800 bg-blue-200/80 px-2.5 py-1 rounded-lg">التدريب الثاني (~دقيقة واحدة) ⏱️</span>
+              <span class="text-xs text-slate-500 font-bold">مستوى متقدم</span>
+            </div>
+            <h4 class="font-black text-slate-900 text-base font-playpen mb-1">قطعة: "سر الذاكرة الدائمة وتكامل الحواس"</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              قطعة أطول تختبر سعة الذاكرة السمعية وقدرتها على استيعاب التفاصيل.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <button onclick="playClip(2)" id="play-btn-2" class="flex-1 py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-black text-xs transition flex items-center justify-center gap-2 shadow-sm">
+                <span>🔊 تشغيل التسجيل الصوتي</span>
+              </button>
+              <button onclick="stopAudio()" class="py-2.5 px-3 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold transition">
+                ⏹️ إيقاف
+              </button>
+            </div>
+
+            <!-- مكان الكتابة والتفريغ -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">اكتب ما سمعته هنا:</label>
+              <textarea id="user-input-2" rows="3" placeholder="ابدأ الكتابة بعد الاستماع..." class="w-full p-3 rounded-xl border border-blue-200 text-xs text-slate-800 focus:ring-2 focus:ring-blue-400 focus:outline-none resize-none"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <button onclick="verifyText(2)" class="px-4 py-2 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-900 text-xs font-black transition">
+                ✓ تحقق من المطابقة
+              </button>
+              <button onclick="toggleOriginal(2)" class="text-xs text-blue-600 hover:underline font-bold">
+                إظهار النص الأصلي 👁️
+              </button>
+            </div>
+
+            <div id="original-box-2" class="hidden p-3 rounded-xl bg-white border border-blue-200 text-xs text-slate-700 leading-relaxed">
+              <strong class="text-blue-900 font-bold block mb-1">النص الأصلي:</strong>
+              «إن الذاكرة الخارقة ليست موهبة فطرية يولد بها القليل، بل هي مهارة وعلم يكتسبه كل من يفهم طبيعة عقله. عندما تدمج الذاكرة البصرية مع السمعية والإجرائية، وتغذي عقلك بالتنفس العميق والماء النقي، يتحول عقلك إلى مخزن عملاق لا يتفلت منه علم ولا قرآن بإذن الله.»
+            </div>
+            <div id="result-box-2" class="hidden p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 6: ميثاق الاستمرارية الذهنية وخطة ما بعد الكورس -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-black flex items-center justify-center text-lg shadow-sm">6</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">ميثاق الاستمرارية: ركائز الدماغ الخارق بعد نهاية الكورس</h3>
+          <p class="text-xs text-slate-500">ما الذي يجب أن يستمر معك كل يوم لتبقى ذاكرتك في قمة أوجها؟</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+        وصلنا بحمد الله إلى المحطة الختامية من الكورس، ولكن رحلة عقلك الخارق تبدأ اليوم! الدماغ يشبه العضلة الحية؛ ما تستمر في تفعيله يقوى ويكبر، وما تهمله يضمر. إليك <strong class="text-emerald-800 font-black">الركائز الأربعة الأساسية للاستمرارية اليومية</strong>:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <!-- ركيزة 1: شرب الماء -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <h4 class="font-black text-blue-950 text-sm font-playpen">1. شرب الماء بانتظام 💧</h4>
+            <span class="text-2xl">🌊</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            اجعل كوب الماء رفيقك الدائم قبل الحفظ وأثناءه وبعده؛ فالجفاف يقلل من تركيز الدماغ وسرعة النواقل العصبية فوراً.
+          </p>
+        </div>
+
+        <!-- ركيزة 2: تمارين التنفس العميق -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-indigo-50 to-white border-2 border-indigo-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <h4 class="font-black text-indigo-950 text-sm font-playpen">2. تمارين التنفس الدماغي 🫁</h4>
+            <span class="text-2xl">💨</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            تمرين التنفس العميق (شهيق بطيء - حبس - زفير هادئ) لإشباع خلايا المخ بالأكسجين النقي وتهدئة موجات الدماغ قبل الحفظ.
+          </p>
+        </div>
+
+        <!-- ركيزة 3: تمارين تنشيط نصفي الدماغ (اليد واليد اليسرى والأصابع) -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <h4 class="font-black text-purple-950 text-sm font-playpen">3. تمارين اليد غير المعتادة والأصابع ✋</h4>
+            <span class="text-2xl">🎨</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            الاستمرار في الكتابة أو الرسم باليد اليسرى (أو اليد الأقل استخداماً)، وممارسة ألعاب تشابك الأصابع لفتح مسارات عصبية جديدة وتناغم الفصين.
+          </p>
+        </div>
+
+        <!-- ركيزة 4: تمارين التركيز والاسترخاء -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-50 to-white border-2 border-emerald-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <h4 class="font-black text-emerald-950 text-sm font-playpen">4. جلسات التركيز والاسترخاء 🧘‍♂️</h4>
+            <span class="text-2xl">✨</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            تخصيص 5 إلى 10 دقائق يومياً للاسترخاء الذهني وتفريغ التشتت والمشتتات الرقمية، مما يمنح الذاكرة استقراراً وقوة استرجاع فورية.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- بطاقة الاحتفال بختام الكورس الكامل -->
+      <div class="p-6 rounded-3xl bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white text-center space-y-3 shadow-xl">
+        <span class="text-4xl block animate-bounce">🎓🌟🏆</span>
+        <h4 class="font-black text-xl sm:text-2xl font-playpen">مبارك إتمامك لجميع محاضرات كورس الذاكرة الخارقة الـ 14!</h4>
+        <p class="text-xs sm:text-sm text-purple-100 max-w-xl mx-auto leading-relaxed">
+          أنت الآن تملك ترسانة كاملة من أسرار وقوانين الدماغ: التليين، الروابط اللفظية والموضوعية، تقنية القصة، الترميز، القراءة السريعة والتصويرية، طريقة الشجرة بالبدائل، الخرائط الذهنية الشاملة، والذاكرة السمعية الفائقة. انطلق وثبّت كتاب الله في صدرك بثقة ورسوخ!
+        </p>
+        <div class="pt-2">
+          <button onclick="celebrateGraduation()" class="px-6 py-3 rounded-2xl bg-white text-indigo-950 font-black text-sm shadow-lg hover:bg-purple-50 hover:scale-105 active:scale-95 transition-all">
+            🎉 احتفل بتخرجك واضغط لمفاجأة النجاح!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between lectures -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+      <a href="lecture13.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition shadow-sm">
+        <span>← المحاضرة السابقة (المحاضرة 13: الخرائط الذهنية)</span>
+      </a>
+
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 text-white font-black hover:bg-indigo-700 transition shadow-md">
+        <span>العودة لفهرس الكورس الكامل 📚</span>
+      </a>
+
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-100 text-emerald-800 font-black text-sm">
+        <span>تم إتمام الكورس بنجاح 100% 🏆</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive JavaScript Scripts -->
+  <script>
+    // --- 1. Web Speech Synthesis (Text-to-Speech) Helper ---
+    function speakText(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel(); // Stop any ongoing speech
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'ar-SA';
+        utterance.rate = 0.85; // slightly slower for optimal clarity
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("متصفحك لا يدعم القراءة الصوتية المباشرة، يرجى قراءة النص ذهنياً.");
+      }
+    }
+
+    function stopAudio() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    // --- 2. Drill Tab Switching ---
+    function switchDrillTab(tab) {
+      const tabs = ['numbers', 'letters', 'words'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        const content = document.getElementById(`drill-${t}-content`);
+        if (t === tab) {
+          btn.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-black bg-indigo-600 text-white shadow-md transition";
+          content.classList.remove('hidden');
+        } else {
+          btn.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition";
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    // --- 3. 5-Minute Timer Logic ---
+    let timerInterval = null;
+    let timeLeft = 300; // 5 minutes in seconds
+    let isTimerRunning = false;
+
+    function toggleTimer() {
+      const btn = document.getElementById('timer-btn');
+      const display = document.getElementById('timer-display');
+
+      if (isTimerRunning) {
+        clearInterval(timerInterval);
+        isTimerRunning = false;
+        btn.innerText = "استئناف ▶️";
+        btn.className = "px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-md transition";
+      } else {
+        isTimerRunning = true;
+        btn.innerText = "إيقاف مؤقت ⏸️";
+        btn.className = "px-5 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-black text-xs shadow-md transition";
+
+        timerInterval = setInterval(() => {
+          if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+            display.innerText = "00:00";
+            btn.innerText = "انتهى الوقت! 🔔";
+            speakText("انتهت الخمس دقائق، مبارك إتمام تدريب السمع والاستغناء عن البصر!");
+            if (typeof confetti === 'function') confetti({ particleCount: 80, spread: 60 });
+          } else {
+            timeLeft--;
+            const mins = Math.floor(timeLeft / 60).toString().padStart(2, '0');
+            const secs = (timeLeft % 60).toString().padStart(2, '0');
+            display.innerText = `${mins}:${secs}`;
+          }
+        }, 1000);
+      }
+    }
+
+    // --- 4. Hadith Audio Helper ---
+    function playHadithAudio(forMemorization) {
+      const hadithText = "عن تميم بن أوس الداري رضي الله عنه أن النبي صلى الله عليه وسلم قال: الدين النصيحة. قلنا: لمن؟ قال: لله، ولكتابه، ولرسوله، ولأئمة المسلمين، وعامتهم.";
+      if (forMemorization) {
+        speakText(hadithText);
+      } else {
+        speakText("استمع الآن بتركيز لفهم المعنى: " + hadithText);
+      }
+    }
+
+    // --- 5. Dictation Audio & Verification Logic ---
+    const clips = {
+      1: "يتكون دماغ الإنسان من نحو ثمانين بالمئة من الماء. لذا فإن شرب الماء بانتظام يحافظ على مرونة الخلايا العصبية ويزيد من سرعة الإدراك والتركيز وتدفق الأفكار.",
+      2: "إن الذاكرة الخارقة ليست موهبة فطرية يولد بها القليل، بل هي مهارة وعلم يكتسبه كل من يفهم طبيعة عقله. عندما تدمج الذاكرة البصرية مع السمعية والإجرائية، وتغذي عقلك بالتنفس العميق والماء النقي، يتحول عقلك إلى مخزن عملاق لا يتفلت منه علم ولا قرآن بإذن الله."
+    };
+
+    function playClip(num) {
+      speakText(clips[num]);
+    }
+
+    function toggleOriginal(num) {
+      const box = document.getElementById(`original-box-${num}`);
+      box.classList.toggle('hidden');
+    }
+
+    function verifyText(num) {
+      const userInput = document.getElementById(`user-input-${num}`).value.trim();
+      const original = clips[num];
+      const resultBox = document.getElementById(`result-box-${num}`);
+      resultBox.classList.remove('hidden');
+
+      if (userInput.length < 10) {
+        resultBox.className = "p-3 rounded-xl bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold";
+        resultBox.innerText = "يرجى كتابة ما سمعته في الصندوق أولاً قبل التحقق!";
+        return;
+      }
+
+      // Simple keyword matching ratio
+      const origWords = original.split(/\s+/).filter(w => w.length > 2);
+      let matchCount = 0;
+      origWords.forEach(w => {
+        // Strip basic punctuation
+        const cleanW = w.replace(/[،.؟«»]/g, '');
+        if (userInput.includes(cleanW)) matchCount++;
+      });
+
+      const accuracy = Math.round((matchCount / origWords.length) * 100);
+      if (accuracy >= 60) {
+        resultBox.className = "p-3 rounded-xl bg-emerald-100 text-emerald-900 border border-emerald-300 text-xs font-bold";
+        resultBox.innerHTML = `🌟 رائع جداً! نسبة الاستيعاب والمطابقة السمعية لديك تقارب ${accuracy}%. ذاكرتك السمعية نشطة وممتازة!`;
+        if (typeof confetti === 'function') confetti({ particleCount: 50, spread: 50 });
+      } else {
+        resultBox.className = "p-3 rounded-xl bg-indigo-100 text-indigo-900 border border-indigo-300 text-xs font-bold";
+        resultBox.innerHTML = `👍 بداية طيبة! حققت مطابقة بنسبة ${accuracy}%. أعد الاستماع مرة أخرى وحاول التقاط الكلمات المفقودة!`;
+      }
+    }
+
+    // --- 6. Celebrate Graduation ---
+    function celebrateGraduation() {
+      if (typeof confetti === 'function') {
+        confetti({
+          particleCount: 150,
+          spread: 80,
+          origin: { y: 0.5 }
+        });
+        setTimeout(() => {
+          confetti({
+            particleCount: 100,
+            spread: 100,
+            origin: { y: 0.3 }
+          });
+        }, 400);
+      }
+    }
+  </script>
+
+</body>
+</html>
