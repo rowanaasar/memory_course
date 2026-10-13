@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحاضرة الثالثة عشرة: الخرائط الذهنية</title>
+  
+  <!-- Google Fonts: Alexandria & Playpen Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Playpen+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            alexandria: ['Alexandria', 'sans-serif'],
+            playpen: ['Playpen Sans Arabic', 'cursive', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fdf4ff',
+              100: '#fae8ff',
+              200: '#f5d0fe',
+              300: '#f0abfc',
+              400: '#e879f9',
+              500: '#d946ef',
+              600: '#c026d3',
+              700: '#a21caf',
+              800: '#86198f',
+              900: '#701a75',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-alexandria antialiased selection:bg-purple-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- Top Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="p-2 rounded-xl bg-slate-100 hover:bg-purple-50 text-slate-600 hover:text-purple-700 transition flex items-center justify-center" title="العودة للرئيسية">
+          <span class="text-lg">🏠</span>
+        </a>
+        <div class="h-6 w-px bg-slate-200"></div>
+        <div>
+          <span class="text-xs text-purple-600 font-bold block">المحاضرة 13</span>
+          <h1 class="text-sm sm:text-base font-black text-slate-900 font-playpen leading-tight">المحاضرة الثالثة عشرة: الخرائط الذهنية</h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="lecture12.html" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition border border-slate-200">
+          ← السابقة (12)
+        </a>
+        <span class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-100 text-amber-800">
+          القادمة (14 قريباً)
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 text-white py-12 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto relative z-10 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-bold text-purple-200">
+        <span>🧠 تقنية الخرائط الشاملة المتكاملة لكتاب الله</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black font-playpen leading-tight">
+        المحاضرة الثالثة عشرة: الخرائط الذهنية
+      </h2>
+      <p class="text-sm sm:text-base text-purple-100/90 max-w-2xl mx-auto leading-relaxed">
+        اكتشف التقنية الملكية التي تدمج وتفعل أنواع الذاكرة الثلاثة (البصرية، السمعية، والإجرائية) وتطلق طاقات فصي المخ معاً عبر الألوان المنحنية والرموز المحفزة لحفظ راسخ لا ينسى!
+      </p>
+
+      <!-- Quick Stats / Highlights -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs font-bold max-w-3xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">👁️👂✋</span>
+          3 أنواع ذاكرة نشطة
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">📄🎨</span>
+          ورقة بيضاء وألوان خشب
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">🔄⏰</span>
+          دوران مع عقارب الساعة
+        </div>
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/10">
+          <span class="block text-xl mb-1">📖🎯</span>
+          تطبيق على الصفحات والأرباع
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Body -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-12 flex-1">
+
+    <!-- Section 1: مقدمة الخرائط الذهنية وعلاقتها بالطرق السابقة -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 font-black flex items-center justify-center text-lg shadow-sm">1</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">مفهوم الخرائط الذهنية وتطور رحلة الحفظ</h3>
+          <p class="text-xs text-slate-500">أين تقع الخريطة الذهنية وسط بحر التقنيات التي تعلمناها؟</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+        تحدثنا في المحاضرات السابقة عن روابط وتقنيات متنوعة لحفظ كتاب الله؛ بدءاً من <strong class="text-purple-700 font-black">الرابط الموضوعي</strong> (الذي يربط المعنى والموضوع العام)، و<strong class="text-blue-700 font-black">الرابط اللفظي</strong> (الذي يربط بدايات الآيات ونهاياتها بالحروف والكلمات)، ثم <strong class="text-amber-700 font-black">طريقة القصة</strong>، وطريقة <strong class="text-rose-700 font-black">الترميز</strong>، وصولاً إلى <strong class="text-emerald-700 font-black">طريقة الشجرة</strong> لحفظ المتشابهات والأرقام بالبدائل.
+      </p>
+
+      <div class="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-indigo-50 to-white border border-purple-200/80 space-y-3">
+        <div class="flex items-center gap-2 text-purple-900 font-black text-base font-playpen">
+          <span>🌟</span>
+          <span>ما هي الخرائط الذهنية؟ وميزتها الكبرى؟</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          الخرائط الذهنية تشبه في شموليتها طريقة الشجرة في أنها <strong class="text-purple-800 font-black">قابلة للتطبيق على أي صفحة من صفحات القرآن الكريم</strong> بدون استثناء! سواء احتوت الصفحة على قصة أم لا، وسواء وجد رابط لفظي أم لا. ولكن الخريطة الذهنية تتميز بأنها <strong class="text-slate-900 font-black">تجمع كل هذه الطرق في إطار بصري حركي موحد</strong>، وتنقش الآيات في العقل كنظام إحداثيات جغرافي لا يضيع منه تفصيل.
+        </p>
+      </div>
+
+      <!-- المقارنة بين الطرق السابقة والخريطة الذهنية -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+          <span class="text-xs font-black text-slate-500 block">الطرق السابقة (القصة، الترميز، الشجرة)</span>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            تركز كل منها على زاوية معينة: القصة تربط التسلسل، الترميز يثبت كلمات مجردة، والشجرة تربط المتشابهات بالأرقام.
+          </p>
+        </div>
+        <div class="p-4 rounded-2xl bg-purple-50/80 border border-purple-200 space-y-2">
+          <span class="text-xs font-black text-purple-700 block">الخريطة الذهنية (المنظومة المتكاملة)</span>
+          <p class="text-xs text-purple-900 leading-relaxed font-semibold">
+            لوحة شاملة تجمع الموضوع (المركز) والآيات (الفروع) والرموز والألوان، وتُشغل الحواس كاملة في جلسة واحدة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: أنواع الذاكرة الثلاثة وسر قوة الخريطة الذهنية -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 font-black flex items-center justify-center text-lg shadow-sm">2</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">أنواع الذاكرة الثلاثة: لماذا الخريطة الذهنية خارقة؟</h3>
+          <p class="text-xs text-slate-500">التفسير العصبي لقوة ثبات الخريطة الذهنية في الدماغ</p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+        يمتلك الإنسان في دماغه ثلاثة قنوات تخزين رئيسية للمعلومات: الذاكرة البصرية، الذاكرة السمعية، والذاكرة الإجرائية (الحركية). الحفظ التقليدي يكتفي عادةً بالسمع والتكرار المجرد، أما <strong class="text-indigo-800 font-black">الخريطة الذهنية فتستنفر القنوات الثلاث في آن واحد</strong>!
+      </p>
+
+      <!-- بطاقات أنواع الذاكرة الثلاث -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <!-- 1. البصرية -->
+        <div class="p-5 rounded-2xl bg-gradient-to-b from-blue-50 to-white border-2 border-blue-200/80 space-y-3 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl shadow-md mb-2">
+              👁️
+            </div>
+            <h4 class="font-black text-blue-900 text-base font-playpen">1. الذاكرة البصرية (العين)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mt-2">
+              تستقبل الألوان الزاهية، تشعبات الفروع المنحنية، والرموز والأيقونات الرسومية. يتذكر العقل شكل الخريطة وموقع كل آية تلقائياً كما تلتقط الكاميرا المشهد.
+            </p>
+          </div>
+          <div class="bg-blue-100/70 p-2.5 rounded-xl text-center text-[11px] font-black text-blue-800">
+            العضو الفاعل: العين 👁️
+          </div>
+        </div>
+
+        <!-- 2. السمعية -->
+        <div class="p-5 rounded-2xl bg-gradient-to-b from-amber-50 to-white border-2 border-amber-200/80 space-y-3 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center text-2xl shadow-md mb-2">
+              👂
+            </div>
+            <h4 class="font-black text-amber-900 text-base font-playpen">2. الذاكرة السمعية (الأذن)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mt-2">
+              تنشط عندما ترتل الآية بصوتك أثناء رسم الفرع وتسمع نغمات التلاوة وتكرر ألفاظ رؤوس الآيات. نبرة الصوت ورنين الكلمات يرسخان في الفص الصدغي.
+            </p>
+          </div>
+          <div class="bg-amber-100/70 p-2.5 rounded-xl text-center text-[11px] font-black text-amber-800">
+            العضو الفاعل: الأذن 👂
+          </div>
+        </div>
+
+        <!-- 3. الإجرائية -->
+        <div class="p-5 rounded-2xl bg-gradient-to-b from-emerald-50 to-white border-2 border-emerald-200/80 space-y-3 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-md mb-2">
+              ✋
+            </div>
+            <h4 class="font-black text-emerald-900 text-base font-playpen">3. الذاكرة الإجرائية (الحركة)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mt-2">
+              الذاكرة القائمة على الفعل والإجراء الحركي (مثل رفع اليدين عند ذكر السماء 👆، أو تمثيل حركة ما). وفي الخريطة: حركة اليد بالقلم وتلوين الفروع تثبت مسارات عصبية حسية لا تمحى!
+            </p>
+          </div>
+          <div class="bg-emerald-100/70 p-2.5 rounded-xl text-center text-[11px] font-black text-emerald-800">
+            العضو الفاعل: الحركة واليد ✋
+          </div>
+        </div>
+
+      </div>
+
+      <!-- نتيجة تشغيل الذاكرات الثلاث -->
+      <div class="p-4 rounded-2xl bg-indigo-900 text-white text-center sm:text-right flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md">
+        <div class="space-y-1">
+          <span class="text-xs font-black text-indigo-300">السر العصبي الجوهري ⚡</span>
+          <p class="text-xs sm:text-sm font-bold">
+            عندما تتحد (العين 👁️ + الأذن 👂 + حركة اليد ✋)، يتحول الحفظ من مجهود شاق إلى بصمة ثلاثية الأبعاد يستحيل على النسيان اختراقها!
+          </p>
+        </div>
+        <span class="text-3xl shrink-0">🎯✨</span>
+      </div>
+    </section>
+
+    <!-- Section 3: الأدوات المطلوبة والقواعد الذهبية لرسم الخريطة -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-pink-100 text-pink-700 font-black flex items-center justify-center text-lg shadow-sm">3</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">الأدوات الأربعة والقواعد الذهبية لتصميم الخريطة</h3>
+          <p class="text-xs text-slate-500">ماذا نحتاج قبل البدء؟ ولماذا يكره الدماغ السطور المستقيمة؟</p>
+        </div>
+      </div>
+
+      <!-- الأدوات الأربعة -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+          <span class="text-3xl block">📄</span>
+          <h4 class="font-black text-slate-900 text-sm">1. ورقة بيضاء غير مسطرة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            ضرورة قاطعة: <strong>بدون خطوط أو سطور</strong>؛ لأن العقل الطبيعي ينفر من القيود المستقيمة!
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+          <span class="text-3xl block">✏️🎨</span>
+          <h4 class="font-black text-slate-900 text-sm">2. ألوان خشبية متنوعة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            ألوان متعددة زاهية، نستخدم لوناً خاصاً ومستقلاً لكل فرع وآية.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+          <span class="text-3xl block">🧠💡</span>
+          <h4 class="font-black text-slate-900 text-sm">3. عقل مركز وفايق</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            أن تكون في قمة النشاط واليقظة والاستعداد الذهني الصافي بدون تشتت.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-2">
+          <span class="text-3xl block">🎭✨</span>
+          <h4 class="font-black text-slate-900 text-sm">4. خيال وإبداع وتناغم الفصين</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            تشغيل الفص الأيمن (خيال، فن، ألوان) مع الفص الأيسر (كلمات، نصوص، تسلسل).
+          </p>
+        </div>
+      </div>
+
+      <!-- لفتة إعجازية: المخ والخطوط المستقيمة -->
+      <div class="p-5 rounded-2xl bg-amber-50/80 border border-amber-200 space-y-2">
+        <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
+          <span>🔍</span>
+          <span>سر علمي وإعجازي: لماذا ورقة بيضاء غير مسطرة؟</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <strong class="text-amber-950 font-black">المخ البشري لا يحب الخطوط المستقيمة ولا يتعامل معها في طبيعته الحيوية!</strong> إذا نظرت إلى تكوين جسم الإنسان العجيب (شرايين الدم، الشعب الهوائية، التشعبات العصبية في الدماغ، عروق أوراق الشجر، مسارات الأنهار في الطبيعة) تجدها كلها <strong>منحنية وتتفرع بسلاسة وبدون أي زوايا حادة مستقيمة</strong>. الورقة المسطرة تسجن العقل في قوالب جامدة وتحد من تدفق الأفكار، بينما الورقة البيضاء تمنحه أفقاً حراً للتمدد والتخيل.
+        </p>
+      </div>
+
+      <!-- خطوات رسم الخريطة القرآنية بالتفصيل -->
+      <div class="space-y-4 pt-2">
+        <h4 class="text-base font-black text-slate-900 font-playpen flex items-center gap-2">
+          <span>📐</span>
+          <span>خطوات رسم وتشكيل الخريطة الذهنية القرآنية:</span>
+        </h4>
+
+        <div class="space-y-3">
+          <!-- الخطوة 1 -->
+          <div class="flex items-start gap-3 p-4 rounded-2xl bg-purple-50/60 border border-purple-100">
+            <span class="w-7 h-7 rounded-lg bg-purple-600 text-white font-black text-xs flex items-center justify-center shrink-0 mt-0.5">أ</span>
+            <div class="space-y-1">
+              <strong class="text-sm text-purple-950 font-black">تحديد النطاق (Scope):</strong>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                حدد ما الذي سترسم له الخريطة بدقة: هل هي <strong>صفحة واحدة</strong>؟ أم <strong>ربع كامل</strong>؟ أم <strong>حزب</strong>؟ أم <strong>سورة بأكملها</strong>؟
+              </p>
+            </div>
+          </div>
+
+          <!-- الخطوة 2 -->
+          <div class="flex items-start gap-3 p-4 rounded-2xl bg-indigo-50/60 border border-indigo-100">
+            <span class="w-7 h-7 rounded-lg bg-indigo-600 text-white font-black text-xs flex items-center justify-center shrink-0 mt-0.5">ب</span>
+            <div class="space-y-1">
+              <strong class="text-sm text-indigo-950 font-black">المركز والنواة في المنتصف (3 ألوان + رسمة):</strong>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                نضع في منتصف الورقة دائرة أو شكلاً بارزاً يمثل المحور الأساسي (مثلاً: رقم الصفحة، أو اسم السورة والربع). ونحرص على تصميمه بـ <strong>3 ألوان مختلفة أو أكثر</strong> مع رسمة معبرة واضحة؛ لأن هذا المركز هو <strong>أول ما تقع عليه عين القارئ</strong> ويجب أن يشد الانتباه بقوة!
+              </p>
+            </div>
+          </div>
+
+          <!-- الخطوة 3 -->
+          <div class="flex items-start gap-3 p-4 rounded-2xl bg-teal-50/60 border border-teal-100">
+            <span class="w-7 h-7 rounded-lg bg-teal-600 text-white font-black text-xs flex items-center justify-center shrink-0 mt-0.5">ج</span>
+            <div class="space-y-1">
+              <strong class="text-sm text-teal-950 font-black">السير في اتجاه عقارب الساعة (Clockwise):</strong>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                نبدأ بتفريع الآيات انطلاقاً من الجزء العلوي الأيمن ونتحرك <strong class="text-teal-900 font-bold">مع عقارب الساعة (1 ➜ 2 ➜ 3 ➜ 4)</strong>. هذا الاتجاه الدائري الموحد يمنع التشتت ويجعل استرجاع الترتيب تلقائياً في الذاكرة.
+              </p>
+            </div>
+          </div>
+
+          <!-- الخطوة 4 -->
+          <div class="flex items-start gap-3 p-4 rounded-2xl bg-rose-50/60 border border-rose-100">
+            <span class="w-7 h-7 rounded-lg bg-rose-600 text-white font-black text-xs flex items-center justify-center shrink-0 mt-0.5">د</span>
+            <div class="space-y-1">
+              <strong class="text-sm text-rose-950 font-black">فروع مستقلة بألوان دلالية ورموز ورؤوس الآيات:</strong>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                كل فرع يمثل آية (أو موضوعاً فرعياً) بلون مختلف تماماً عن الفرع السابق. ونضع على الفرع: <strong>رأس الآية</strong> + <strong>رمز أو رسمة مصغرة</strong> + <strong>اختيار اللون بحسب الدلالة النفسية</strong> (مثلاً: اللون الأحمر لآيات القتال والتحذير ﴿وَقَاتِلُوا فِي سَبِيلِ اللَّهِ﴾، والأخضر للصيام والجنة، والأصفر للأهلة والنور).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: التطبيقات العملية المصورة (الصفحة والربع) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-8">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-black flex items-center justify-center text-lg shadow-sm">4</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">التطبيقات العملية والشواهد القرآنية المصورة</h3>
+          <p class="text-xs text-slate-500">خريطة الصفحة الواحدة (ص 29) + خريطة الربع الكامل (ربع ليس البر)</p>
+        </div>
+      </div>
+
+      <!-- المثال الأول: الصفحة الواحدة (سورة البقرة صفحة 29) -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="px-3 py-1 bg-emerald-100 text-emerald-900 rounded-full text-xs font-black">
+            المثال الأول: خريطة الصفحة الواحدة 📄
+          </span>
+          <span class="text-xs text-slate-500 font-bold">سورة البقرة - الصفحة 29 (4 آيات)</span>
+        </div>
+
+        <h4 class="text-lg font-black text-slate-900 font-playpen">
+          تحليل خريطة الصفحة 29 من سورة البقرة
+        </h4>
+
+        <!-- الصورة 1: 29_clean.jpeg مع زر تكبير -->
+        <div class="relative group rounded-3xl overflow-hidden border-2 border-slate-200 bg-slate-900 shadow-md">
+          <img src="29_clean.jpeg" alt="خريطة ذهنية للصفحة 29 من سورة البقرة" class="w-full h-auto object-contain max-h-[500px] mx-auto cursor-pointer group-hover:scale-[1.01] transition duration-300" onclick="openImageModal('29_clean.jpeg')">
+          <button onclick="openImageModal('29_clean.jpeg')" class="absolute bottom-4 left-4 px-4 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-900 text-white text-xs font-bold backdrop-blur-md flex items-center gap-2 shadow-lg transition">
+            <span>🔍 انقر لتكبير الخريطة ملء الشاشة</span>
+          </button>
+        </div>
+
+        <!-- تحليل فروع الصفحة 29 بالتفصيل والدوران مع عقارب الساعة -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
+          <div class="flex items-center gap-2 text-slate-900 font-black text-sm">
+            <span>🧭</span>
+            <span>تفصيل عناصر خريطة الصفحة 29 واتجاه عقارب الساعة:</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <!-- المركز -->
+            <div class="sm:col-span-2 p-3.5 rounded-xl bg-purple-100/70 border border-purple-200">
+              <strong class="text-purple-950 font-black block text-sm mb-1">🎯 المركز (النواة):</strong>
+              <p class="text-slate-700 leading-relaxed">
+                رقم الصفحة <strong class="text-purple-900 font-bold">(29)</strong> في المنتصف + رسمة <strong>بقرة</strong> تعبر عن اسم السورة، مصممة بألوان واضحة وجذابة لتكون أول ما تركز عليه العين.
+              </p>
+            </div>
+
+            <!-- الفرع 1 -->
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="font-black text-slate-900 font-playpen">1️⃣ الفرع الأول (الصيام):</span>
+                <span class="text-lg">🏮🌙</span>
+              </div>
+              <p class="text-emerald-850 font-bold text-slate-800">
+                ﴿أُحِلَّ لَكُمْ لَيْلَةَ الصِّيَامِ الرَّفَثُ إِلَىٰ نِسَائِكُمْ...﴾
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                <strong>الرمز البصري:</strong> فانوس وهلال رمضان للدلالة على فريضة الصيام وأحكام ليالي رمضان.
+              </p>
+            </div>
+
+            <!-- الفرع 2 -->
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="font-black text-slate-900 font-playpen">2️⃣ الفرع الثاني (المال الحرام):</span>
+                <span class="text-lg">💰❌</span>
+              </div>
+              <p class="font-bold text-slate-800">
+                ﴿وَلَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ...﴾
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                <strong>الرمز البصري:</strong> نقود / أموال موضوع عليها علامة خطأ (❌) إشارة لحرمة أكل أموال الناس بالباطل والرشوة.
+              </p>
+            </div>
+
+            <!-- الفرع 3 -->
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="font-black text-slate-900 font-playpen">3️⃣ الفرع الثالث (الأهلة ومواقيت الناس):</span>
+                <span class="text-lg">❓🌙</span>
+              </div>
+              <p class="font-bold text-slate-800">
+                ﴿يَسْأَلُونَكَ عَنِ الْأَهِلَّةِ قُلْ هِيَ مَوَاقِيتُ لِلنَّاسِ وَالْحَجِّ...﴾
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                <strong>الرمز البصري:</strong> علامة استفهام (❓) بجوار هلال القمر لتمثيل السؤال عن مراحل القمر ومواسم العبادة.
+              </p>
+            </div>
+
+            <!-- الفرع 4 -->
+            <div class="p-3.5 rounded-xl bg-white border border-rose-200 bg-rose-50/40 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="font-black text-rose-900 font-playpen">4️⃣ الفرع الرابع (القتال في سبيل الله):</span>
+                <span class="text-lg">⚔️🔴</span>
+              </div>
+              <p class="font-bold text-rose-950">
+                ﴿وَقَاتِلُوا فِي سَبِيلِ اللَّهِ الَّذِينَ يُقَاتِلُونَكُمْ...﴾
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                <strong>الرمز والدلالة اللونية:</strong> سيف / سلاح مع اختيار <strong>اللون الأحمر</strong> ليعكس الدلالة النفسية للجهاد والقتال ورد العدوان.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-slate-200 my-6">
+
+      <!-- المثال الثاني: الربع الكامل (سورة البقرة - ربع ليس البر) -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-900 rounded-full text-xs font-black">
+            المثال الثاني: خريطة الربع الكامل ودمج الرابط الموضوعي 📑
+          </span>
+          <span class="text-xs text-slate-500 font-bold">سورة البقرة - ربع ليس البر</span>
+        </div>
+
+        <h4 class="text-lg font-black text-slate-900 font-playpen">
+          تحليل خريطة ربع "ليس البر" (دمج الخريطة الذهنية مع الروابط الموضوعية)
+        </h4>
+
+        <!-- الصورة 2: 111.jpeg مع زر تكبير -->
+        <div class="relative group rounded-3xl overflow-hidden border-2 border-slate-200 bg-slate-900 shadow-md">
+          <img src="111.jpeg" alt="خريطة ذهنية لربع ليس البر من سورة البقرة" class="w-full h-auto object-contain max-h-[500px] mx-auto cursor-pointer group-hover:scale-[1.01] transition duration-300" onclick="openImageModal('111.jpeg')">
+          <button onclick="openImageModal('111.jpeg')" class="absolute bottom-4 left-4 px-4 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-900 text-white text-xs font-bold backdrop-blur-md flex items-center gap-2 shadow-lg transition">
+            <span>🔍 انقر لتكبير الخريطة ملء الشاشة</span>
+          </button>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-indigo-50/60 border border-indigo-200/80 space-y-4">
+          <div class="flex items-center gap-2 text-indigo-950 font-black text-sm">
+            <span>💡</span>
+            <span>الدمج العبقري: كيف ننظم ربعاً كاملاً في خريطة واحدة مقسمة موضوعياً؟</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            عند الانتقال من صفحة واحدة إلى ربع كامل، لا نوزع الآيات عشوائياً، بل <strong class="text-indigo-900 font-black">ندمج الخريطة الذهنية مع الرابط الموضوعي</strong>؛ فنقسم الربع إلى موضوعات كبرى رئيسية، ثم نخرج من كل موضوع فرعي الفروع الصغرى للآيات التابعة له:
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <span class="font-black text-indigo-900 block font-playpen">1. النواة والمركز:</span>
+              <p class="text-slate-600">
+                سورة البقرة + ربع ليس البر + رسمة البقرة بالألوان المتعددة في قلب الصفحة.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <span class="font-black text-indigo-900 block font-playpen">2. موضوع آية البر:</span>
+              <p class="text-slate-600">
+                آية جامعة لأركان الإيمان والإنفاق والوفاء ﴿لَّيْسَ الْبِرَّ أَن تُوَلُّوا وُجُوهَكُمْ﴾ برمز شخص وجوهره.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <span class="font-black text-indigo-900 block font-playpen">3. موضوع القصاص (آيتان):</span>
+              <p class="text-slate-600">
+                ﴿كُتِبَ عَلَيْكُمُ الْقِصَاصُ فِي الْقَتْلَى﴾ و﴿وَلَكُمْ فِي الْقِصَاصِ حَيَاةٌ﴾ برمز حبل أو ميزان عدالة.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <span class="font-black text-indigo-900 block font-playpen">4. موضوع الوصية (آيات الوصية):</span>
+              <p class="text-slate-600">
+                ﴿كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ﴾ برمز ورقة وقلم وصية.
+              </p>
+            </div>
+
+            <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+              <span class="font-black text-indigo-900 block font-playpen">5. موضوع العبادات (الصيام والدعاء):</span>
+              <p class="text-slate-600">
+                فروع آيات الصيام ﴿كُتِبَ عَلَيْكُمُ الصِّيَامُ﴾، متبوعة بفرع آية الدعاء العظيمة ﴿وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ﴾ برمز كفي ضراعة ودعاء، ثم أحكام ليلة الصيام.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: أداة تفاعلية - مستكشف فروع الخريطة الذهنية -->
+    <section class="bg-gradient-to-br from-purple-900 via-indigo-900 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-2 border-b border-white/10 pb-4">
+        <div>
+          <span class="text-xs font-bold text-purple-300 block">لعبة تفاعلية 🎮</span>
+          <h3 class="text-xl font-black font-playpen">محاكي الخريطة الذهنية: تتبع عقارب الساعة</h3>
+        </div>
+        <span class="px-3 py-1 bg-white/10 rounded-full text-xs font-semibold text-purple-200">
+          انقر على الفروع بالترتيب الدائري
+        </span>
+      </div>
+
+      <p class="text-xs sm:text-sm text-purple-100/90 leading-relaxed">
+        جرب بناء وتفعيل خريطة الصفحة 29 في ذاكرتك الآن! انقر على الفروع أدناه بترتيب عقارب الساعة لاختبار تذكرك لرأس الآية والرمز واللون الدلالي:
+      </p>
+
+      <!-- الدائرة التفاعلية المحاكية -->
+      <div class="relative bg-white/5 rounded-3xl p-6 border border-white/10 flex flex-col items-center justify-center min-h-[360px]">
+        
+        <!-- النواة المركزية -->
+        <div id="interactive-center" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-pink-500 via-purple-600 to-indigo-600 p-1 flex items-center justify-center shadow-xl text-center z-10 transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="w-full h-full bg-slate-900/90 rounded-full flex flex-col items-center justify-center p-2 text-white">
+            <span class="text-xl sm:text-2xl">🐮</span>
+            <span class="text-xs font-bold text-purple-300">سورة البقرة</span>
+            <span class="text-sm sm:text-base font-black">صفحة 29</span>
+          </div>
+        </div>
+
+        <!-- أزرار الفروع الـ 4 حول المركز -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mt-6">
+          <button onclick="revealBranch(1)" id="branch-btn-1" class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 text-right transition flex items-center justify-between group">
+            <div>
+              <div class="text-xs text-purple-300 font-bold">1. الخطوة الأولى (12:00 - 02:00)</div>
+              <div class="text-sm font-black text-white">الفرع الأول: الصيام 🏮</div>
+            </div>
+            <span class="text-xl group-hover:scale-125 transition">🌙</span>
+          </button>
+
+          <button onclick="revealBranch(2)" id="branch-btn-2" class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 text-right transition flex items-center justify-between group">
+            <div>
+              <div class="text-xs text-purple-300 font-bold">2. الخطوة الثانية (03:00 - 05:00)</div>
+              <div class="text-sm font-black text-white">الفرع الثاني: أكل الأموال 💰</div>
+            </div>
+            <span class="text-xl group-hover:scale-125 transition">❌</span>
+          </button>
+
+          <button onclick="revealBranch(3)" id="branch-btn-3" class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 text-right transition flex items-center justify-between group">
+            <div>
+              <div class="text-xs text-purple-300 font-bold">3. الخطوة الثالثة (06:00 - 08:00)</div>
+              <div class="text-sm font-black text-white">الفرع الثالث: الأهلة ❓</div>
+            </div>
+            <span class="text-xl group-hover:scale-125 transition">🌙</span>
+          </button>
+
+          <button onclick="revealBranch(4)" id="branch-btn-4" class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 text-right transition flex items-center justify-between group">
+            <div>
+              <div class="text-xs text-purple-300 font-bold">4. الخطوة الرابعة (09:00 - 11:00)</div>
+              <div class="text-sm font-black text-white">الفرع الرابع: القتال ⚔️</div>
+            </div>
+            <span class="text-xl group-hover:scale-125 transition">🔴</span>
+          </button>
+        </div>
+
+        <!-- صندوق عرض تفاصيل الفرع المختار -->
+        <div id="branch-detail-box" class="w-full mt-4 p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/20 text-center transition-all duration-300">
+          <p class="text-xs text-purple-200">اختر أحد الفروع في الأعلى لترى كيف يتجسد في الخريطة الذهنية!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: الاختبار التفاعلي الذكي (5 أسئلة) -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-100 pb-4">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 font-black flex items-center justify-center text-lg shadow-sm">5</span>
+          <div>
+            <h3 class="text-xl font-black text-slate-900 font-playpen">اختبار المحاضرة التفاعلي (5 أسئلة)</h3>
+            <p class="text-xs text-slate-500">تحقق من استيعابك لقواعد الخرائط الذهنية وأسرار الدماغ</p>
+          </div>
+        </div>
+        <span class="text-xs font-bold px-3 py-1 bg-purple-50 text-purple-700 rounded-full border border-purple-200">
+          🎯 التحدي الكامل
+        </span>
+      </div>
+
+      <!-- الأسئلة -->
+      <div class="space-y-6">
+        
+        <!-- السؤال 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="text-sm font-black text-slate-900">
+            1. ما هي أنواع الذاكرة الثلاثة التي تنشطها الخريطة الذهنية وتجمع بينها؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              الذاكرة المؤقتة، والذاكرة الدائمة، والذاكرة الرقمية
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="true" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              الذاكرة البصرية (العين)، والسمعية (الأذن)، والإجرائية الحركية (اليد)
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              الذاكرة التخيلية، والذاكرة الفوتوغرافية، وذاكرة الأرقام فقط
+            </button>
+            <button onclick="checkQuiz(1, this)" data-correct="false" class="q1-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              الذاكرة اللفظية فقط عبر التكرار الصوتي المباشر
+            </button>
+          </div>
+        </div>
+
+        <!-- السؤال 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="text-sm font-black text-slate-900">
+            2. لماذا نشترط استخدام ورقة بيضاء "غير مسطرة" عند رسم الخريطة الذهنية؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لتوفير ثمن الدفاتر المسطرة فقط
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="true" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لأن المخ البشري لا يحب الخطوط المستقيمة وطبيعته منحنية كعروق الشجر والشرايين
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لأن الخطوط المسطرة تمسح الألوان الخشبية تلقائياً
+            </button>
+            <button onclick="checkQuiz(2, this)" data-correct="false" class="q2-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لكي نتمكن من كتابة صفحتين في ورقة واحدة
+            </button>
+          </div>
+        </div>
+
+        <!-- السؤال 3 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="text-sm font-black text-slate-900">
+            3. بأي اتجاه ندور عند رسم وتفريغ فروع الآيات في الخريطة الذهنية؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              عكس اتجاه عقارب الساعة دائماً
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              من الأسفل إلى الأعلى بشكل عمودي مستقيم
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="true" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              مع اتجاه عقارب الساعة بالترتيب (بدءاً من أعلى اليمين)
+            </button>
+            <button onclick="checkQuiz(3, this)" data-correct="false" class="q3-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              بشكل عشوائي في أي مكان متاح بالورقة
+            </button>
+          </div>
+        </div>
+
+        <!-- السؤال 4 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="text-sm font-black text-slate-900">
+            4. ما هي الشروط الأساسية للنواة والمركز في منتصف الخريطة الذهنية؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <button onclick="checkQuiz(4, this)" data-correct="true" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              تلوينه بـ 3 ألوان مختلفة أو أكثر مع رسمة معبرة لأنه أول ما تقع عليه العين
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              كتابته بالقلم الرصاص الأسود وبحجم صغير جداً
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              أن يحتوي على الآية كاملة بجميع كلماتها وحروفها
+            </button>
+            <button onclick="checkQuiz(4, this)" data-correct="false" class="q4-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              أن يوضع في أقصى زاوية الورقة وليس في المنتصف
+            </button>
+          </div>
+        </div>
+
+        <!-- السؤال 5 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <p class="text-sm font-black text-slate-900">
+            5. في خريطة الصفحة 29 من سورة البقرة، لماذا تم اختيار اللون الأحمر لآية ﴿وَقَاتِلُوا فِي سَبِيلِ اللَّهِ﴾؟
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لأنه اللون الوحيد المتبقي في علبة الألوان
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              للإشارة إلى أن الآية منسوخة ولا يجب تلاوتها
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="true" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لتطابق الدلالة النفسية للون مع معنى القتال والجهاد ورد العدوان
+            </button>
+            <button onclick="checkQuiz(5, this)" data-correct="false" class="q5-btn p-3 rounded-xl border border-slate-200 bg-white hover:bg-purple-50 text-right transition font-medium text-slate-700">
+              لأن سورة البقرة كلها يجب أن تلون باللون الأحمر
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- رسالة التهنئة بالنجاح -->
+      <div id="quiz-congrats" class="hidden p-6 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 text-white text-center space-y-3 shadow-lg">
+        <span class="text-4xl block">🎉🏆✨</span>
+        <h4 class="font-black text-xl font-playpen">أحسنت صنعاً! أتقنت أسرار الخرائط الذهنية بامتياز!</h4>
+        <p class="text-xs sm:text-sm text-purple-100 max-w-lg mx-auto">
+          عقلك الآن جاهز لتحويل أي صفحة قرآنية مستعصية إلى لوحة إبداعية ملونة تنقشها حواسك الثلاث في ذاكرتك الدائمة!
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 7: الواجب العملي والتمارين التراكمية -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+        <span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 font-black flex items-center justify-center text-lg shadow-sm">6</span>
+        <div>
+          <h3 class="text-xl font-black text-slate-900 font-playpen">الواجب العملي والتمارين التطبيقية</h3>
+          <p class="text-xs text-slate-500">ممارسة يدوية لتثبيت الذاكرة الإجرائية</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- تمرين 1 -->
+        <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-purple-800">التكليف الأول 📄</span>
+            <span class="text-lg">🎨</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm">ارسم خريطتك الخاصة</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            أحضر ورقة بيضاء غير مسطرة وألوان خشب، واختر صفحة من سورة تحفظها، وارسم لها خريطة ذهنية كاملة مع عقارب الساعة بـ 3 ألوان للمركز ورمز لكل آية.
+          </p>
+        </div>
+
+        <!-- تمرين 2 -->
+        <div class="p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-indigo-800">التكليف الثاني ✋</span>
+            <span class="text-lg">🎭</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm">تفعيل الذاكرة الإجرائية</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            أثناء رسم كل فرع، رتل الآية بصوت واضح (سمعية) ومثل بحركة يدك أو جسدك المعنى المحوري للآية (إجرائية) لدمج القنوات الثلاث.
+          </p>
+        </div>
+
+        <!-- تمرين 3 -->
+        <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black text-emerald-800">التكليف الثالث 🔄</span>
+            <span class="text-lg">🧠</span>
+          </div>
+          <h4 class="font-black text-slate-900 text-sm">المراجعة بالاسترجاع البصري</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            أغلق الورقة والمصحف، وأغمض عينيك، واستحضر صورة الخريطة الذهنية في مخيلتك وسر مع عقارب الساعة مستعرضاً رؤوس الآيات ورموزها وألوانها.
+          </p>
+        </div>
+      </div>
+
+      <!-- بطاقة تشجيعية ختامية -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-purple-800 via-indigo-800 to-slate-900 text-white text-center space-y-2 shadow-md">
+        <span class="text-2xl">🌟🗺️✨</span>
+        <h4 class="font-black text-base font-playpen">مع الخرائط الذهنية.. يتحول المصحف الشريف إلى حديقة بصرية مبهجة ومحفورة في وجدانك!</h4>
+        <p class="text-xs text-purple-100 font-medium">كل لون تختاره، وكل فرع تخطه بيدك، هو جسر نوراني يربط قلبك وعقلك بآيات الذكر الحكيم.</p>
+      </div>
+    </section>
+
+    <!-- Navigation between lectures -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-200">
+      <a href="lecture12.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition shadow-sm">
+        <span>← المحاضرة السابقة (المحاضرة 12: طريقة الشجرة)</span>
+      </a>
+
+      <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-purple-50 text-purple-800 font-black hover:bg-purple-100 transition">
+        <span>فهرس الكورس الرئيسي 📚</span>
+      </a>
+
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-100 text-amber-800 font-black text-sm">
+        <span>المحاضرة الرابعة عشرة (قريباً ⏳)</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal for Fullscreen Image Zoom -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4" onclick="closeImageModal()">
+    <div class="relative max-w-4xl max-h-[90vh] bg-white rounded-3xl p-3 overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+      <button onclick="closeImageModal()" class="absolute top-4 left-4 z-10 w-9 h-9 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white font-black text-sm flex items-center justify-center transition">
+        ✕
+      </button>
+      <img id="modal-image" src="" alt="صورة مكبرة" class="w-auto max-h-[82vh] mx-auto rounded-2xl object-contain">
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Scripts -->
+  <script>
+    // --- 1. Image Modal Logic ---
+    function openImageModal(imgSrc) {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-image');
+      modalImg.src = imgSrc;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // --- 2. Interactive Branch Explorer Logic ---
+    const branchData = {
+      1: {
+        title: "الفرع الأول: الصيام وأحكامه 🌙",
+        ayah: "﴿أُحِلَّ لَكُمْ لَيْلَةَ الصِّيَامِ الرَّفَثُ إِلَىٰ نِسَائِكُمْ...﴾",
+        symbol: "🏮 فانوس وهلال رمضان",
+        colorDesc: "لون الفرع زاهٍ يميز أحكام ليالي الصيام في أول أرباع الدائرة (مع عقارب الساعة).",
+        highlight: "border-purple-400 bg-purple-900/50"
+      },
+      2: {
+        title: "الفرع الثاني: حرمة أكل أموال الناس بالباطل 💰",
+        ayah: "﴿وَلَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ...﴾",
+        symbol: "❌ حقيبة نقود عليها علامة خطأ حمراء",
+        colorDesc: "تنبيه نفسي حاسم لمنع الرشوة وأكل الحرام، يرتبط بالرمز التحذيري المباشر.",
+        highlight: "border-indigo-400 bg-indigo-900/50"
+      },
+      3: {
+        title: "الفرع الثالث: السؤال عن الأهلة والمواقيت ❓",
+        ayah: "﴿يَسْأَلُونَكَ عَنِ الْأَهِلَّةِ ۖ قُلْ هِيَ مَوَاقِيتُ لِلنَّاسِ وَالْحَجِّ...﴾",
+        symbol: "🌙❓ علامة استفهام كبيرة بجوار هلال",
+        colorDesc: "يرمز لحكمة الله في دورات القمر لتحديد مواسم العبادات والمعاملات والحج.",
+        highlight: "border-teal-400 bg-teal-900/50"
+      },
+      4: {
+        title: "الفرع الرابع: القتال في سبيل الله والدفاع عن الحق ⚔️",
+        ayah: "﴿وَقَاتِلُوا فِي سَبِيلِ اللَّهِ الَّذِينَ يُقَاتِلُونَكُمْ وَلَا تَعْتَدُوا...﴾",
+        symbol: "⚔️ سلاح / سيف قاطع",
+        colorDesc: "اختيار اللون الأحمر يخدم الدلالة النفسية للجهاد والقتال واليقظة الشديدة.",
+        highlight: "border-rose-400 bg-rose-900/50"
+      }
+    };
+
+    function revealBranch(num) {
+      const data = branchData[num];
+      const box = document.getElementById('branch-detail-box');
+      
+      // Update buttons highlight
+      [1, 2, 3, 4].forEach(i => {
+        const btn = document.getElementById(`branch-btn-${i}`);
+        if (i === num) {
+          btn.classList.add('ring-2', 'ring-purple-400', 'bg-white/25');
+        } else {
+          btn.classList.remove('ring-2', 'ring-purple-400', 'bg-white/25');
+        }
+      });
+
+      box.innerHTML = `
+        <div class="space-y-2 text-right">
+          <div class="flex items-center justify-between border-b border-white/20 pb-2">
+            <h4 class="font-black text-sm text-purple-200 font-playpen">${data.title}</h4>
+            <span class="text-xs bg-white/20 px-2.5 py-0.5 rounded-full font-bold">${data.symbol}</span>
+          </div>
+          <p class="text-xs sm:text-sm font-black text-white leading-relaxed">${data.ayah}</p>
+          <p class="text-xs text-purple-100/80 leading-relaxed">${data.colorDesc}</p>
+        </div>
+      `;
+    }
+
+    // --- 3. Interactive Quiz Script ---
+    let correctAnswersCount = 0;
+    const answeredQuestions = new Set();
+
+    function checkQuiz(questionNum, btnElement) {
+      if (answeredQuestions.has(questionNum)) return;
+      answeredQuestions.add(questionNum);
+
+      const isCorrect = btnElement.getAttribute('data-correct') === 'true';
+      const allBtns = document.querySelectorAll(`.q${questionNum}-btn`);
+
+      allBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.add('cursor-not-allowed', 'opacity-80');
+        if (btn.getAttribute('data-correct') === 'true') {
+          btn.classList.remove('border-slate-200', 'hover:bg-purple-50');
+          btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-black');
+        }
+      });
+
+      if (isCorrect) {
+        correctAnswersCount++;
+        btnElement.classList.add('ring-2', 'ring-emerald-500');
+      } else {
+        btnElement.classList.remove('border-slate-200', 'hover:bg-purple-50');
+        btnElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-900', 'line-through');
+      }
+
+      if (answeredQuestions.size === 5 && correctAnswersCount === 5) {
+        const congrats = document.getElementById('quiz-congrats');
+        if (congrats) {
+          congrats.classList.remove('hidden');
+          if (typeof confetti === 'function') {
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { y: 0.6 }
+            });
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
