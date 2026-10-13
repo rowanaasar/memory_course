@@ -196,7 +196,7 @@
             </p>
           </div>
           <div class="space-y-2">
-            <button onclick="speakText('الذاكرة السمعية: تنشط عندما ترتل الآية بصوتك أثناء رسم الفرع وتسمع نغمات التلاوة وتكرر ألفاظ رؤوس الآيات.')" class="w-full py-2 px-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-black transition flex items-center justify-center gap-1.5 shadow-sm">
+            <button onclick="speakText('الذاكرة السمعية: تنشط عندما ترتل الآية بصوتك أثناء رسم الفرع وتسمع نغمات التلاوة وتكرر ألفاظ رؤوس الآيات.', this)" class="w-full py-2 px-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-black transition flex items-center justify-center gap-1.5 shadow-sm">
               <span>🔊 استمع لشرح الذاكرة السمعية</span>
             </button>
             <div class="bg-amber-100/70 p-2 rounded-xl text-center text-[11px] font-black text-amber-800">
@@ -405,8 +405,8 @@
               <p class="text-slate-600 leading-relaxed">
                 <strong>الرمز البصري:</strong> فانوس وهلال رمضان للدلالة على فريضة الصيام وأحكام ليالي رمضان.
               </p>
-              <button onclick="speakText('أُحِلَّ لَكُمْ لَيْلَةَ الصِّيَامِ الرَّفَثُ إِلَىٰ نِسَائِكُمْ')" class="py-1.5 px-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-black transition flex items-center gap-1.5 border border-emerald-200">
-                <span>🔊 استمع لنطق رأس الآية</span>
+              <button onclick="playAyahAudio(1, this)" class="w-full py-2 px-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-black transition flex items-center justify-center gap-1.5 border border-emerald-200">
+                <span>🔊 استمع لتلاوة الآية (الشيخ مشاري العفاسي)</span>
               </button>
             </div>
 
@@ -422,8 +422,8 @@
               <p class="text-slate-600 leading-relaxed">
                 <strong>الرمز البصري:</strong> نقود / أموال موضوع عليها علامة خطأ (❌) إشارة لحرمة أكل أموال الناس بالباطل والرشوة.
               </p>
-              <button onclick="speakText('وَلَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ')" class="py-1.5 px-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-black transition flex items-center gap-1.5 border border-emerald-200">
-                <span>🔊 استمع لنطق رأس الآية</span>
+              <button onclick="playAyahAudio(2, this)" class="w-full py-2 px-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-black transition flex items-center justify-center gap-1.5 border border-emerald-200">
+                <span>🔊 استمع لتلاوة الآية (الشيخ مشاري العفاسي)</span>
               </button>
             </div>
 
@@ -439,8 +439,8 @@
               <p class="text-slate-600 leading-relaxed">
                 <strong>الرمز البصري:</strong> علامة استفهام (❓) بجوار هلال القمر لتمثيل السؤال عن مراحل القمر ومواسم العبادة.
               </p>
-              <button onclick="speakText('يَسْأَلُونَكَ عَنِ الْأَهِلَّةِ قُلْ هِيَ مَوَاقِيتُ لِلنَّاسِ وَالْحَجِّ')" class="py-1.5 px-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-black transition flex items-center gap-1.5 border border-emerald-200">
-                <span>🔊 استمع لنطق رأس الآية</span>
+              <button onclick="playAyahAudio(3, this)" class="w-full py-2 px-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-black transition flex items-center justify-center gap-1.5 border border-emerald-200">
+                <span>🔊 استمع لتلاوة الآية (الشيخ مشاري العفاسي)</span>
               </button>
             </div>
 
@@ -456,8 +456,8 @@
               <p class="text-slate-600 leading-relaxed">
                 <strong>الرمز والدلالة اللونية:</strong> سيف / سلاح مع اختيار <strong>اللون الأحمر</strong> ليعكس الدلالة النفسية للجهاد والقتال ورد العدوان.
               </p>
-              <button onclick="speakText('وَقَاتِلُوا فِي سَبِيلِ اللَّهِ الَّذِينَ يُقَاتِلُونَكُمْ وَلَا تَعْتَدُوا')" class="py-1.5 px-3 rounded-lg bg-rose-100 hover:bg-rose-200 text-rose-900 text-xs font-black transition flex items-center gap-1.5 border border-rose-300">
-                <span>🔊 استمع لنطق رأس الآية</span>
+              <button onclick="playAyahAudio(4, this)" class="w-full py-2 px-3 rounded-lg bg-rose-100 hover:bg-rose-200 text-rose-900 text-xs font-black transition flex items-center justify-center gap-1.5 border border-rose-300">
+                <span>🔊 استمع لتلاوة الآية (الشيخ مشاري العفاسي)</span>
               </button>
             </div>
           </div>
@@ -841,17 +841,109 @@
       modal.classList.remove('flex');
     }
 
-    // --- 2. Interactive Branch Explorer Logic ---
-    function speakText(text) {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'ar-SA';
-        utterance.rate = 0.85;
-        window.speechSynthesis.speak(utterance);
-      } else {
-        alert("متصفحك لا يدعم القراءة الصوتية المباشرة.");
+    // --- 2. Robust Audio System (Direct MP3 & Multi-Engine Speech Fallback) ---
+    let currentAudio = null;
+
+    // Direct high-quality recitations from EveryAyah (Mishary Alafasy)
+    const ayahAudioUrls = {
+      1: "https://everyayah.com/data/Alafasy_128kbps/002187.mp3", // آية 187: أحل لكم ليلة الصيام
+      2: "https://everyayah.com/data/Alafasy_128kbps/002188.mp3", // آية 188: ولا تأكلوا أموالكم
+      3: "https://everyayah.com/data/Alafasy_128kbps/002189.mp3", // آية 189: يسألونك عن الأهلة
+      4: "https://everyayah.com/data/Alafasy_128kbps/002190.mp3"  // آية 190: وقاتلوا في سبيل الله
+    };
+
+    function playAyahAudio(ayahNum, btnElement) {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
       }
+
+      const url = ayahAudioUrls[ayahNum];
+      if (!url) return;
+
+      const audio = new Audio(url);
+      currentAudio = audio;
+
+      // Visual indicator on button
+      const originalText = btnElement ? btnElement.innerHTML : '';
+      if (btnElement) {
+        btnElement.innerHTML = `<span>⏳ جاري تشغيل التلاوة...</span>`;
+      }
+
+      audio.play().then(() => {
+        if (btnElement) {
+          btnElement.innerHTML = `<span>🔊 يتلو الآن الشيخ العفاسي...</span>`;
+        }
+      }).catch(err => {
+        console.warn("Audio play error, falling back to speech:", err);
+        if (btnElement) btnElement.innerHTML = originalText;
+        const textFallback = branchData[ayahNum] ? branchData[ayahNum].speechAyah : '';
+        speakText(textFallback, btnElement);
+      });
+
+      audio.onended = () => {
+        if (btnElement) btnElement.innerHTML = originalText;
+      };
+      audio.onerror = () => {
+        if (btnElement) btnElement.innerHTML = originalText;
+      };
+    }
+
+    function speakText(text, btnElement) {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+
+      // Try Online Audio Stream first (Google Translate TTS - always has arabic voice)
+      const encoded = encodeURIComponent(text);
+      const onlineAudioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=${encoded}`;
+      const onlineAudio = new Audio(onlineAudioUrl);
+      currentAudio = onlineAudio;
+
+      const originalText = btnElement ? btnElement.innerHTML : '';
+      if (btnElement) {
+        btnElement.innerHTML = `<span>⏳ جاري القراءة الصوتية...</span>`;
+      }
+
+      onlineAudio.play().then(() => {
+        if (btnElement) {
+          btnElement.innerHTML = `<span>🔊 جاري الاستماع...</span>`;
+        }
+      }).catch(err => {
+        // Fallback to Web Speech API
+        console.warn("Online audio blocked, trying SpeechSynthesis:", err);
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'ar-SA';
+          utterance.rate = 0.85;
+
+          // Attempt to find Arabic voice if installed
+          const voices = window.speechSynthesis.getVoices();
+          const arVoice = voices.find(v => v.lang.startsWith('ar'));
+          if (arVoice) utterance.voice = arVoice;
+
+          utterance.onend = () => {
+            if (btnElement) btnElement.innerHTML = originalText;
+          };
+          utterance.onerror = () => {
+            if (btnElement) btnElement.innerHTML = originalText;
+          };
+
+          window.speechSynthesis.speak(utterance);
+        } else {
+          if (btnElement) btnElement.innerHTML = originalText;
+          alert("تنبيه: لتفعيل الصوت، تأكد من اتصال الإنترنت أو رفع صوت الجهاز.");
+        }
+      });
+
+      onlineAudio.onended = () => {
+        if (btnElement) btnElement.innerHTML = originalText;
+      };
+      onlineAudio.onerror = () => {
+        if (btnElement) btnElement.innerHTML = originalText;
+      };
     }
 
     const branchData = {
@@ -911,8 +1003,8 @@
           </div>
           <p class="text-xs sm:text-sm font-black text-white leading-relaxed">${data.ayah}</p>
           <div class="flex items-center justify-between flex-wrap gap-2 pt-1">
-            <button onclick="speakText('${data.speechAyah}')" class="py-1.5 px-3 rounded-xl bg-purple-500 hover:bg-purple-600 text-white text-xs font-black transition flex items-center gap-1.5 shadow-md">
-              <span>🔊 استمع لتلاوة الفرع</span>
+            <button onclick="playAyahAudio(${num}, this)" class="py-1.5 px-3 rounded-xl bg-purple-500 hover:bg-purple-600 text-white text-xs font-black transition flex items-center gap-1.5 shadow-md">
+              <span>🔊 استمع لتلاوة الفرع (العفاسي)</span>
             </button>
             <p class="text-[11px] text-purple-200 leading-relaxed">${data.colorDesc}</p>
           </div>
